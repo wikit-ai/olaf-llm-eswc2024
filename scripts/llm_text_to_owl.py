@@ -52,7 +52,7 @@ def main() -> None:
             )
     llm_output = response.choices[0].message.content
 
-    text_file = open("results/llm_text_to_owl/pizza_onto.ttl", "w", encoding="utf-8")
+    text_file = open("results/llm_text_to_owl/llm_owl_pizza_onto.ttl", "w", encoding="utf-8")
     text_file.write(llm_output)
     text_file.close()
 
