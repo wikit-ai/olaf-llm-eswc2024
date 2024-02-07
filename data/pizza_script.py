@@ -38,8 +38,10 @@ def pizza_prompt(pizza_labels: list[str]) -> list[dict[str, str]]:
 
 def main() -> None:
     """Create pizza textual description from pizza ontology labels with GPT-4."""
+
     with open('data/pizza_onto_labels.txt', 'r', encoding="utf-8") as file:
         pizza_labels = file.readlines()
+        
     pizza_labels = [label.rstrip("\n") for label in pizza_labels]
 
     client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
