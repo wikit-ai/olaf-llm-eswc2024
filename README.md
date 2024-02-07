@@ -12,6 +12,8 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+``OPENAI_API_KEY`` must be defined in a ``.env`` file.
+
 # Data
 
 The text used to learn the ontology is created based on the Pizza Ontology labels. 
@@ -27,3 +29,13 @@ python3 scripts/pizza_description_creation.py
 ```
 
 The text obtained is stored in the ``data/pizza_description.txt`` file.
+
+# Scripts
+
+## LLM : text to OWL
+
+Script to create an OWL ontology based on the pizza textual description with an LLM.
+
+```bash
+python3 scripts/llm_text_to_owl.py
+```

@@ -1,0 +1,276 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix : <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#> .
+
+### Classes ###
+:Pizza a owl:Class ;
+    rdfs:label "Pizza" .
+
+:Base a owl:Class ;
+    rdfs:label "Base" .
+
+:DeepPanBase a owl:Class ;
+    rdfs:label "Deep Pan Base" ;
+    rdfs:subClassOf :Base .
+
+:ThinAndCrispyBase a owl:Class ;
+    rdfs:label "Thin And Crispy Base" ;
+    rdfs:subClassOf :Base .
+
+:Topping a owl:Class ;
+    rdfs:label "Topping" .
+
+:CheeseTopping a owl:Class ;
+    rdfs:label "Cheese Topping" ;
+    rdfs:subClassOf :Topping .
+
+:MozzarellaTopping a owl:Class ;
+    rdfs:label "Mozzarella Topping" ;
+    rdfs:subClassOf :CheeseTopping .
+
+:FourCheesesTopping a owl:Class ;
+    rdfs:label "Four Cheeses Topping" ;
+    rdfs:subClassOf :CheeseTopping .
+
+:MeatTopping a owl:Class ;
+    rdfs:label "Meat Topping" ;
+    rdfs:subClassOf :Topping .
+
+:ChickenTopping a owl:Class ;
+    rdfs:label "Chicken Topping" ;
+    rdfs:subClassOf :MeatTopping .
+
+:ParmaHamTopping a owl:Class ;
+    rdfs:label "Parma Ham Topping" ;
+    rdfs:subClassOf :MeatTopping .
+
+:PeperoniSausageTopping a owl:Class ;
+    rdfs:label "Peperoni Sausage Topping" ;
+    rdfs:subClassOf :MeatTopping .
+
+:VegetableTopping a owl:Class ;
+    rdfs:label "Vegetable Topping" ;
+    rdfs:subClassOf :Topping .
+
+:ArtichokeTopping a owl:Class ;
+    rdfs:label "Artichoke Topping" ;
+    rdfs:subClassOf :VegetableTopping .
+
+:AsparagusTopping a owl:Class ;
+    rdfs:label "Asparagus Topping" ;
+    rdfs:subClassOf :VegetableTopping .
+
+:GreenPepperTopping a owl:Class ;
+    rdfs:label "Green Pepper Topping" ;
+    rdfs:subClassOf :VegetableTopping .
+
+:LeekTopping a owl:Class ;
+    rdfs:label "Leek Topping" ;
+    rdfs:subClassOf :VegetableTopping .
+
+:MushroomTopping a owl:Class ;
+    rdfs:label "Mushroom Topping" ;
+    rdfs:subClassOf :VegetableTopping .
+
+:OliveTopping a owl:Class ;
+    rdfs:label "Olive Topping" ;
+    rdfs:subClassOf :VegetableTopping .
+
+:OnionTopping a owl:Class ;
+    rdfs:label "Onion Topping" ;
+    rdfs:subClassOf :VegetableTopping .
+
+:SpinachTopping a owl:Class ;
+    rdfs:label "Spinach Topping" ;
+    rdfs:subClassOf :VegetableTopping .
+
+:SeafoodTopping a owl:Class ;
+    rdfs:label "Seafood Topping" ;
+    rdfs:subClassOf :Topping .
+
+:PrawnsTopping a owl:Class ;
+    rdfs:label "Prawns Topping" ;
+    rdfs:subClassOf :SeafoodTopping .
+
+:MixedSeafoodTopping a owl:Class ;
+    rdfs:label "Mixed Seafood Topping" ;
+    rdfs:subClassOf :SeafoodTopping .
+
+:SpicyTopping a owl:Class ;
+    rdfs:label "Spicy Topping" ;
+    rdfs:subClassOf :Topping .
+
+:HotGreenPepperTopping a owl:Class ;
+    rdfs:label "Hot Green Pepper Topping" ;
+    rdfs:subClassOf :SpicyTopping .
+
+:HotSpicedBeefTopping a owl:Class ;
+    rdfs:label "Hot Spiced Beef Topping" ;
+    rdfs:subClassOf :SpicyTopping .
+
+:JalapenoPepperTopping a owl:Class ;
+    rdfs:label "Jalapeno Pepper Topping" ;
+    rdfs:subClassOf :SpicyTopping .
+
+:CajunSpiceTopping a owl:Class ;
+    rdfs:label "Cajun Spice Topping" ;
+    rdfs:subClassOf :SpicyTopping .
+
+:UniqueTopping a owl:Class ;
+    rdfs:label "Unique Topping" ;
+    rdfs:subClassOf :Topping .
+
+:CapricciosaTopping a owl:Class ;
+    rdfs:label "Capricciosa Topping" ;
+    rdfs:subClassOf :UniqueTopping .
+
+:NapoletanaTopping a owl:Class ;
+    rdfs:label "Napoletana Topping" ;
+    rdfs:subClassOf :UniqueTopping .
+
+:MargheritaTopping a owl:Class ;
+    rdfs:label "Margherita Topping" ;
+    rdfs:subClassOf :UniqueTopping .
+
+:CombinationTopping a owl:Class ;
+    rdfs:label "Combination Topping" ;
+    rdfs:subClassOf :Topping .
+
+:PolloAdAstraTopping a owl:Class ;
+    rdfs:label "Pollo Ad Astra Topping" ;
+    rdfs:subClassOf :CombinationTopping .
+
+:SloppyGiuseppeTopping a owl:Class ;
+    rdfs:label "Sloppy Giuseppe Topping" ;
+    rdfs:subClassOf :CombinationTopping .
+
+### Properties ###
+:hasBase a owl:ObjectProperty ;
+    rdfs:label "has base" ;
+    rdfs:domain :Pizza ;
+    rdfs:range :Base .
+
+:hasTopping a owl:ObjectProperty ;
+    rdfs:label "has topping" ;
+    rdfs:domain :Pizza ;
+    rdfs:range :Topping .
+
+### Individuals ###
+:Pizza1 a :Pizza ;
+    rdfs:label "Pizza" .
+
+:DeepPanBase1 a :DeepPanBase ;
+    rdfs:label "Deep Pan Base" .
+
+:ThinAndCrispyBase1 a :ThinAndCrispyBase ;
+    rdfs:label "Thin And Crispy Base" .
+
+:MozzarellaTopping1 a :MozzarellaTopping ;
+    rdfs:label "Mozzarella Topping" .
+
+:FourCheesesTopping1 a :FourCheesesTopping ;
+    rdfs:label "Four Cheeses Topping" .
+
+:ChickenTopping1 a :ChickenTopping ;
+    rdfs:label "Chicken Topping" .
+
+:ParmaHamTopping1 a :ParmaHamTopping ;
+    rdfs:label "Parma Ham Topping" .
+
+:PeperoniSausageTopping1 a :PeperoniSausageTopping ;
+    rdfs:label "Peperoni Sausage Topping" .
+
+:ArtichokeTopping1 a :ArtichokeTopping ;
+    rdfs:label "Artichoke Topping" .
+
+:AsparagusTopping1 a :AsparagusTopping ;
+    rdfs:label "Asparagus Topping" .
+
+:GreenPepperTopping1 a :GreenPepperTopping ;
+    rdfs:label "Green Pepper Topping" .
+
+:LeekTopping1 a :LeekTopping ;
+    rdfs:label "Leek Topping" .
+
+:MushroomTopping1 a :MushroomTopping ;
+    rdfs:label "Mushroom Topping" .
+
+:OliveTopping1 a :OliveTopping ;
+    rdfs:label "Olive Topping" .
+
+:OnionTopping1 a :OnionTopping ;
+    rdfs:label "Onion Topping" .
+
+:SpinachTopping1 a :SpinachTopping ;
+    rdfs:label "Spinach Topping" .
+
+:PrawnsTopping1 a :PrawnsTopping ;
+    rdfs:label "Prawns Topping" .
+
+:MixedSeafoodTopping1 a :MixedSeafoodTopping ;
+    rdfs:label "Mixed Seafood Topping" .
+
+:HotGreenPepperTopping1 a :HotGreenPepperTopping ;
+    rdfs:label "Hot Green Pepper Topping" .
+
+:HotSpicedBeefTopping1 a :HotSpicedBeefTopping ;
+    rdfs:label "Hot Spiced Beef Topping" .
+
+:JalapenoPepperTopping1 a :JalapenoPepperTopping ;
+    rdfs:label "Jalapeno Pepper Topping" .
+
+:CajunSpiceTopping1 a :CajunSpiceTopping ;
+    rdfs:label "Cajun Spice Topping" .
+
+:CapricciosaTopping1 a :CapricciosaTopping ;
+    rdfs:label "Capricciosa Topping" .
+
+:NapoletanaTopping1 a :NapoletanaTopping ;
+    rdfs:label "Napoletana Topping" .
+
+:MargheritaTopping1 a :MargheritaTopping ;
+    rdfs:label "Margherita Topping" .
+
+:PolloAdAstraTopping1 a :PolloAdAstraTopping ;
+    rdfs:label "Pollo Ad Astra Topping" .
+
+:SloppyGiuseppeTopping1 a :SloppyGiuseppeTopping ;
+    rdfs:label "Sloppy Giuseppe Topping" .
+
+### Assertions ###
+:Pizza1 :hasBase :DeepPanBase1 ;
+    :hasTopping :MozzarellaTopping1 .
+
+:Pizza1 :hasBase :ThinAndCrispyBase1 ;
+    :hasTopping :FourCheesesTopping1 .
+
+:Pizza1 :hasTopping :ChickenTopping1 ;
+    :hasTopping :ParmaHamTopping1 ;
+    :hasTopping :PeperoniSausageTopping1 .
+
+:Pizza1 :hasTopping :ArtichokeTopping1 ;
+    :hasTopping :AsparagusTopping1 ;
+    :hasTopping :GreenPepperTopping1 ;
+    :hasTopping :LeekTopping1 ;
+    :hasTopping :MushroomTopping1 ;
+    :hasTopping :OliveTopping1 ;
+    :hasTopping :OnionTopping1 ;
+    :hasTopping :SpinachTopping1 .
+
+:Pizza1 :hasTopping :PrawnsTopping1 ;
+    :hasTopping :MixedSeafoodTopping1 .
+
+:Pizza1 :hasTopping :HotGreenPepperTopping1 ;
+    :hasTopping :HotSpicedBeefTopping1 ;
+    :hasTopping :JalapenoPepperTopping1 ;
+    :hasTopping :CajunSpiceTopping1 .
+
+:Pizza1 :hasTopping :CapricciosaTopping1 ;
+    :hasTopping :NapoletanaTopping1 ;
+    :hasTopping :MargheritaTopping1 .
+
+:Pizza1 :hasTopping :PolloAdAstraTopping1 .
+
+:Pizza1 :hasTopping :SloppyGiuseppeTopping1 .
