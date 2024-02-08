@@ -12,7 +12,15 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-``OPENAI_API_KEY`` must be defined in a ``.env`` file.
+Running the different scripts requires the followwing environment variables you can set in a `.env` file:
+
+```Bash
+OPENAI_API_KEY=you-openai-ai-key
+DATA_PATH=/path/to/your/local/data/folder/
+RESULTS_PATH=/path/to/your/local/results/folder/
+JAVA_EXE=/path/to/your/local/java/folder/java.exe
+ROBOT_JAR=C:/path/to/your/local/obo/robot/cli/tool/folder/robot.jar
+```
 
 # Data
 
