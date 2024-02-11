@@ -1,1131 +1,3768 @@
+@prefix ns1: <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#> .
+@prefix ns2: <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#%> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Ad> a owl:Class ;
+ns1:_ad a ns1:Ad ;
+    ns1:features ns1:_afters,
+        ns1:_chicken,
+        ns1:_confection,
+        ns1:_dessert,
+        ns1:_gallusGallus,
+        ns1:_greenPepper,
+        ns1:_greenPepperTopping,
+        ns1:_greenPeppers,
+        ns1:_hotGreenPepper,
+        ns1:_jalapeno,
+        ns1:_jalapenoPepper,
+        ns1:_jalapenoPepperTopping,
+        ns1:_pepper,
+        ns1:_pepperTopping,
+        ns1:_peppercorn,
+        ns1:_peppers,
+        ns1:_peppery,
+        ns1:_poulet,
+        ns1:_sweet,
+        ns1:_sweetPepper,
+        ns1:_sweetPeppers,
+        ns1:_sweetness,
+        ns1:_volaille .
+
+ns1:_adAstra a ns1:PolloAdAstra ;
+    ns1:features ns1:_afters,
+        ns1:_chicken,
+        ns1:_confection,
+        ns1:_dessert,
+        ns1:_gallusGallus,
+        ns1:_greenPepper,
+        ns1:_greenPepperTopping,
+        ns1:_greenPeppers,
+        ns1:_hotGreenPepper,
+        ns1:_jalapeno,
+        ns1:_jalapenoPepper,
+        ns1:_jalapenoPepperTopping,
+        ns1:_pepper,
+        ns1:_pepperTopping,
+        ns1:_peppercorn,
+        ns1:_peppers,
+        ns1:_peppery,
+        ns1:_poulet,
+        ns1:_sweet,
+        ns1:_sweetPepper,
+        ns1:_sweetPeppers,
+        ns1:_sweetness,
+        ns1:_volaille .
+
+ns1:_adAstraPizza a ns1:AdAstraPizza ;
+    ns1:features ns1:_afters,
+        ns1:_chicken,
+        ns1:_confection,
+        ns1:_dessert,
+        ns1:_gallusGallus,
+        ns1:_greenPepper,
+        ns1:_greenPepperTopping,
+        ns1:_greenPeppers,
+        ns1:_hotGreenPepper,
+        ns1:_jalapeno,
+        ns1:_jalapenoPepper,
+        ns1:_jalapenoPepperTopping,
+        ns1:_pepper,
+        ns1:_pepperTopping,
+        ns1:_peppercorn,
+        ns1:_peppers,
+        ns1:_peppery,
+        ns1:_poulet,
+        ns1:_sweet,
+        ns1:_sweetPepper,
+        ns1:_sweetPeppers,
+        ns1:_sweetness,
+        ns1:_volaille .
+
+ns1:_america a ns1:American .
+
+ns1:_american a ns1:American .
+
+ns1:_americanHot a ns1:AmericanHot .
+
+ns1:_americanHotPizza a ns1:AmericanHot .
+
+ns1:_astra a ns1:PolloAdAstra ;
+    ns1:features ns1:_afters,
+        ns1:_chicken,
+        ns1:_confection,
+        ns1:_dessert,
+        ns1:_gallusGallus,
+        ns1:_greenPepper,
+        ns1:_greenPepperTopping,
+        ns1:_greenPeppers,
+        ns1:_hotGreenPepper,
+        ns1:_jalapeno,
+        ns1:_jalapenoPepper,
+        ns1:_jalapenoPepperTopping,
+        ns1:_pepper,
+        ns1:_pepperTopping,
+        ns1:_peppercorn,
+        ns1:_peppers,
+        ns1:_peppery,
+        ns1:_poulet,
+        ns1:_sweet,
+        ns1:_sweetPepper,
+        ns1:_sweetPeppers,
+        ns1:_sweetness,
+        ns1:_volaille .
+
+ns1:_astraPizza a ns1:AdAstraPizza ;
+    ns1:features ns1:_afters,
+        ns1:_chicken,
+        ns1:_confection,
+        ns1:_dessert,
+        ns1:_gallusGallus,
+        ns1:_greenPepper,
+        ns1:_greenPepperTopping,
+        ns1:_greenPeppers,
+        ns1:_hotGreenPepper,
+        ns1:_jalapeno,
+        ns1:_jalapenoPepper,
+        ns1:_jalapenoPepperTopping,
+        ns1:_pepper,
+        ns1:_pepperTopping,
+        ns1:_peppercorn,
+        ns1:_peppers,
+        ns1:_peppery,
+        ns1:_poulet,
+        ns1:_sweet,
+        ns1:_sweetPepper,
+        ns1:_sweetPeppers,
+        ns1:_sweetness,
+        ns1:_volaille .
+
+ns1:_base a ns1:PizzaBases ;
+    ns1:alter ns1:_gustation,
+        ns1:_gustatorial,
+        ns1:_gustatory,
+        ns1:_gustatoryModality,
+        ns1:_gustatoryPerception,
+        ns1:_gustatorySensation,
+        ns1:_mouthful,
+        ns1:_overall,
+        ns1:_overallTaste,
+        ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzas,
+        ns1:_sample,
+        ns1:_sampler,
+        ns1:_savor,
+        ns1:_savour,
+        ns1:_senseOfTaste,
+        ns1:_smack,
+        ns1:_taste,
+        ns1:_tastePerception,
+        ns1:_tasteSensation,
+        ns1:_taster,
+        ns1:_tasting,
+        ns1:_tasty,
+        ns1:_texture,
+        ns1:_trial,
+        ns1:_trier,
+        ns1:_try,
+        ns1:_tryOut,
+        ns1:_tryout ;
+    ns1:based ns1:_dough,
+        ns1:_doughy,
+        ns1:_tomato,
+        ns1:_tomatoes ;
+    ns1:cater ns1:_palate ;
+    ns1:leavened ns1:_dough,
+        ns1:_doughy,
+        ns1:_wheat,
+        ns1:_wheatBerry ;
+    ns1:used ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzas,
+        ns1:_significantly .
+
+ns1:_bases a ns1:PizzaBases ;
+    ns1:alter ns1:_gustation,
+        ns1:_gustatorial,
+        ns1:_gustatory,
+        ns1:_gustatoryModality,
+        ns1:_gustatoryPerception,
+        ns1:_gustatorySensation,
+        ns1:_mouthful,
+        ns1:_overall,
+        ns1:_overallTaste,
+        ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzas,
+        ns1:_sample,
+        ns1:_sampler,
+        ns1:_savor,
+        ns1:_savour,
+        ns1:_senseOfTaste,
+        ns1:_smack,
+        ns1:_taste,
+        ns1:_tastePerception,
+        ns1:_tasteSensation,
+        ns1:_taster,
+        ns1:_tasting,
+        ns1:_tasty,
+        ns1:_texture,
+        ns1:_trial,
+        ns1:_trier,
+        ns1:_try,
+        ns1:_tryOut,
+        ns1:_tryout ;
+    ns1:based ns1:_dough,
+        ns1:_doughy,
+        ns1:_tomato,
+        ns1:_tomatoes ;
+    ns1:cater ns1:_palate ;
+    ns1:leavened ns1:_dough,
+        ns1:_doughy,
+        ns1:_wheat,
+        ns1:_wheatBerry ;
+    ns1:used ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzas,
+        ns1:_significantly .
+
+ns1:_basil a ns1:Basil .
+
+ns1:_beloved a ns1:Beloved ;
+    ns1:topped ns1:_gorgonzola,
+        ns1:_mozzarella,
+        ns1:_ricotta,
+        ns1:_tomato,
+        ns1:_tomatoes .
+
+ns1:_belovedPizza a ns1:BelovedPizza ;
+    ns1:topped ns1:_gorgonzola,
+        ns1:_mozzarella,
+        ns1:_ricotta,
+        ns1:_tomato,
+        ns1:_tomatoes .
+
+ns1:_broad a ns1:Wide .
+
+ns1:_broadness a ns1:Wide .
+
+ns1:_cajun a ns1:CajunSpice ;
+    ns1:feature ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesyVegetableTopping,
+        ns1:_green,
+        ns1:_greenPepper,
+        ns1:_greenPepperTopping,
+        ns1:_greenPeppers,
+        ns1:_greens,
+        ns1:_heat,
+        ns1:_highTemperature,
+        ns1:_hot,
+        ns1:_hotGreen,
+        ns1:_hotGreenPepper,
+        ns1:_hotness,
+        ns1:_jalapeno,
+        ns1:_jalapenoPepper,
+        ns1:_jalapenoPepperTopping,
+        ns1:_leafyVegetable,
+        ns1:_pepper,
+        ns1:_pepperTopping,
+        ns1:_peppercorn,
+        ns1:_peppers,
+        ns1:_peppery,
+        ns1:_pizzaToppings,
+        ns1:_sweetPepper,
+        ns1:_sweetPeppers,
+        ns1:_temperature,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_uniqueToppings,
+        ns1:_vegetableTopping .
+
+ns1:_cajunPizza a ns1:CajunPizza ;
+    ns1:feature ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesyVegetableTopping,
+        ns1:_green,
+        ns1:_greenPepper,
+        ns1:_greenPepperTopping,
+        ns1:_greenPeppers,
+        ns1:_greens,
+        ns1:_heat,
+        ns1:_highTemperature,
+        ns1:_hot,
+        ns1:_hotGreen,
+        ns1:_hotGreenPepper,
+        ns1:_hotness,
+        ns1:_jalapeno,
+        ns1:_jalapenoPepper,
+        ns1:_jalapenoPepperTopping,
+        ns1:_leafyVegetable,
+        ns1:_pepper,
+        ns1:_pepperTopping,
+        ns1:_peppercorn,
+        ns1:_peppers,
+        ns1:_peppery,
+        ns1:_pizzaToppings,
+        ns1:_sweetPepper,
+        ns1:_sweetPeppers,
+        ns1:_temperature,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_uniqueToppings,
+        ns1:_vegetableTopping .
+
+ns1:_cajunSpice a ns1:CajunSpice ;
+    ns1:feature ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesyVegetableTopping,
+        ns1:_green,
+        ns1:_greenPepper,
+        ns1:_greenPepperTopping,
+        ns1:_greenPeppers,
+        ns1:_greens,
+        ns1:_heat,
+        ns1:_highTemperature,
+        ns1:_hot,
+        ns1:_hotGreen,
+        ns1:_hotGreenPepper,
+        ns1:_hotness,
+        ns1:_jalapeno,
+        ns1:_jalapenoPepper,
+        ns1:_jalapenoPepperTopping,
+        ns1:_leafyVegetable,
+        ns1:_pepper,
+        ns1:_pepperTopping,
+        ns1:_peppercorn,
+        ns1:_peppers,
+        ns1:_peppery,
+        ns1:_pizzaToppings,
+        ns1:_sweetPepper,
+        ns1:_sweetPeppers,
+        ns1:_temperature,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_uniqueToppings,
+        ns1:_vegetableTopping .
+
+ns1:_capricciosa a ns1:CapricciosaPizza .
+
+ns1:_capricciosaPizza a ns1:CapricciosaPizza .
+
+ns1:_category a ns1:Category .
+
+ns1:_combinations a ns1:Combinations .
+
+ns1:_conclusion a ns1:Conclusion .
+
+ns1:_cookingPan a ns1:PanBase .
+
+ns1:_crispy a ns1:Crispy .
+
+ns1:_crispyBase a ns1:Crispy .
+
+ns1:_deep a ns1:Deep .
+
+ns1:_deepPan a ns1:PanBase .
+
+ns1:_deepPanBase a ns1:PanBase .
+
+ns1:_di a ns1:Di .
+
+ns1:_diMare a ns1:Mare .
+
+ns1:_diMarePizza a ns1:MarePizza .
+
+ns1:_dish a ns1:Dish ;
+    ns1:consisting ns1:_circle,
+        ns1:_circular,
+        ns1:_circularity,
+        ns1:_circularize,
+        ns1:_commonly,
+        ns1:_normally,
+        ns1:_ordinarily,
+        ns1:_round,
+        ns1:_roundOfDrinks,
+        ns1:_roundness,
+        ns1:_typically,
+        ns1:_unremarkably,
+        ns1:_usually,
+        ns1:_usuallyRound .
+
+ns1:_dishOut a ns1:Dish ;
+    ns1:consisting ns1:_circle,
+        ns1:_circular,
+        ns1:_circularity,
+        ns1:_circularize,
+        ns1:_commonly,
+        ns1:_normally,
+        ns1:_ordinarily,
+        ns1:_round,
+        ns1:_roundOfDrinks,
+        ns1:_roundness,
+        ns1:_typically,
+        ns1:_unremarkably,
+        ns1:_usually,
+        ns1:_usuallyRound .
+
+ns1:_dishUp a ns1:Dish ;
+    ns1:consisting ns1:_circle,
+        ns1:_circular,
+        ns1:_circularity,
+        ns1:_circularize,
+        ns1:_commonly,
+        ns1:_normally,
+        ns1:_ordinarily,
+        ns1:_round,
+        ns1:_roundOfDrinks,
+        ns1:_roundness,
+        ns1:_typically,
+        ns1:_unremarkably,
+        ns1:_usually,
+        ns1:_usuallyRound .
+
+ns1:_diverse a ns1:WideVariety ;
+    ns1:categorized ns1:_cheese,
+        ns1:_cheeseLike,
+        ns1:_cheeseLikeFontina,
+        ns1:_cheeses,
+        ns1:_mainTypes,
+        ns1:_type,
+        ns1:_types,
+        ns1:_typify .
+
+ns1:_example a ns1:Example ;
+    ns1:features ns1:_amalgam,
+        ns1:_amalgamate,
+        ns1:_amalgamative,
+        ns1:_amalgamator,
+        ns1:_blend,
+        ns1:_coalesce,
+        ns1:_coalescency,
+        ns1:_coalition,
+        ns1:_combination,
+        ns1:_combine,
+        ns1:_combining,
+        ns1:_commingle,
+        ns1:_commix,
+        ns1:_commixture,
+        ns1:_conflate,
+        ns1:_flux,
+        ns1:_fuse,
+        ns1:_fusible,
+        ns1:_fusion,
+        ns1:_gammon,
+        ns1:_ham,
+        ns1:_hamTopping,
+        ns1:_immix,
+        ns1:_jambon,
+        ns1:_meld,
+        ns1:_merge,
+        ns1:_mingle,
+        ns1:_mix,
+        ns1:_mixable,
+        ns1:_mixed,
+        ns1:_mixer,
+        ns1:_mixing,
+        ns1:_mixture,
+        ns1:_parmaHamTopping,
+        ns1:_premix,
+        ns1:_unify,
+        ns1:_unit .
+
+ns1:_favorite a ns1:Favorite .
+
+ns1:_fixings a ns1:Ingredients ;
+    ns1:baked ns1:_heat,
+        ns1:_high,
+        ns1:_highTemperature,
+        ns1:_hot,
+        ns1:_hotness,
+        ns1:_temperature .
+
+ns1:_flattened a ns1:Flattened ;
+    ns1:leavened ns1:_dough,
+        ns1:_doughy,
+        ns1:_wheat,
+        ns1:_wheatBerry .
+
+ns1:_flattenedBase a ns1:Flattened ;
+    ns1:leavened ns1:_dough,
+        ns1:_doughy,
+        ns1:_wheat,
+        ns1:_wheatBerry .
+
+ns1:_fontina a ns1:Fontina .
+
+ns1:_form a ns1:WideVariety ;
+    ns1:categorized ns1:_cheese,
+        ns1:_cheeseLike,
+        ns1:_cheeseLikeFontina,
+        ns1:_cheeses,
+        ns1:_mainTypes,
+        ns1:_type,
+        ns1:_types,
+        ns1:_typify .
+
+ns1:_fourth a ns1:Fourth .
+
+ns1:_fourthCheese a ns1:FourthCheeseLike .
+
+ns1:_fourthCheeseLike a ns1:FourthCheeseLike .
+
+ns1:_frutti a ns1:Frutti .
+
+ns1:_fruttiDi a ns1:Frutti .
+
+ns1:_fruttiDiMare a ns1:Frutti .
+
+ns1:_giardiniera a ns1:Giardiniera .
+
+ns1:_giardinieraPizza a ns1:GiardinieraPizza ;
+    ns1:topped ns1:_beef,
+        ns1:_beefCattle,
+        ns1:_beefTopping,
+        ns1:_boeuf,
+        ns1:_heat,
+        ns1:_highTemperature,
+        ns1:_hot,
+        ns1:_hotSpiced,
+        ns1:_hotSpicedBeef,
+        ns1:_hotness,
+        ns1:_spice,
+        ns1:_spiceUp,
+        ns1:_spiced,
+        ns1:_spicedBeef,
+        ns1:_spicedBeefTopping,
+        ns1:_spicery,
+        ns1:_spiciness,
+        ns1:_spicy,
+        ns1:_temperature,
+        ns1:_zest .
+
+ns1:_giuseppe a ns1:Giuseppe ;
+    ns1:topped ns1:_beef,
+        ns1:_beefCattle,
+        ns1:_beefTopping,
+        ns1:_boeuf,
+        ns1:_heat,
+        ns1:_highTemperature,
+        ns1:_hot,
+        ns1:_hotSpiced,
+        ns1:_hotSpicedBeef,
+        ns1:_hotness,
+        ns1:_spice,
+        ns1:_spiceUp,
+        ns1:_spiced,
+        ns1:_spicedBeef,
+        ns1:_spicedBeefTopping,
+        ns1:_spicery,
+        ns1:_spiciness,
+        ns1:_spicy,
+        ns1:_temperature,
+        ns1:_zest .
+
+ns1:_giuseppePizza a ns1:GiardinieraPizza ;
+    ns1:topped ns1:_beef,
+        ns1:_beefCattle,
+        ns1:_beefTopping,
+        ns1:_boeuf,
+        ns1:_heat,
+        ns1:_highTemperature,
+        ns1:_hot,
+        ns1:_hotSpiced,
+        ns1:_hotSpicedBeef,
+        ns1:_hotness,
+        ns1:_spice,
+        ns1:_spiceUp,
+        ns1:_spiced,
+        ns1:_spicedBeef,
+        ns1:_spicedBeefTopping,
+        ns1:_spicery,
+        ns1:_spiciness,
+        ns1:_spicy,
+        ns1:_temperature,
+        ns1:_zest .
+
+ns1:_hotPizza a ns1:HotPizza ;
+    ns2:27s ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzas .
+
+ns1:_incredibly a ns1:Incredibly ;
+    ns1:categorized ns1:_cheese,
+        ns1:_cheeseLike,
+        ns1:_cheeseLikeFontina,
+        ns1:_cheeses,
+        ns1:_mainTypes,
+        ns1:_type,
+        ns1:_types,
+        ns1:_typify .
+
+ns1:_incrediblyDiverse a ns1:WideVariety ;
+    ns1:categorized ns1:_cheese,
+        ns1:_cheeseLike,
+        ns1:_cheeseLikeFontina,
+        ns1:_cheeses,
+        ns1:_mainTypes,
+        ns1:_type,
+        ns1:_types,
+        ns1:_typify .
+
+ns1:_ingredient a ns1:Ingredients ;
+    ns1:baked ns1:_heat,
+        ns1:_high,
+        ns1:_highTemperature,
+        ns1:_hot,
+        ns1:_hotness,
+        ns1:_temperature .
+
+ns1:_ingredients a ns1:Ingredients ;
+    ns1:baked ns1:_heat,
+        ns1:_high,
+        ns1:_highTemperature,
+        ns1:_hot,
+        ns1:_hotness,
+        ns1:_temperature .
+
+ns1:_italian a ns1:Italian ;
+    ns1:consisting ns1:_circle,
+        ns1:_circular,
+        ns1:_circularity,
+        ns1:_circularize,
+        ns1:_commonly,
+        ns1:_normally,
+        ns1:_ordinarily,
+        ns1:_round,
+        ns1:_roundOfDrinks,
+        ns1:_roundness,
+        ns1:_typically,
+        ns1:_unremarkably,
+        ns1:_usually,
+        ns1:_usuallyRound .
+
+ns1:_italianOrigin a ns1:Italian ;
+    ns1:consisting ns1:_circle,
+        ns1:_circular,
+        ns1:_circularity,
+        ns1:_circularize,
+        ns1:_commonly,
+        ns1:_normally,
+        ns1:_ordinarily,
+        ns1:_round,
+        ns1:_roundOfDrinks,
+        ns1:_roundness,
+        ns1:_typically,
+        ns1:_unremarkably,
+        ns1:_usually,
+        ns1:_usuallyRound .
+
+ns1:_kind a ns1:WideVariety ;
+    ns1:categorized ns1:_cheese,
+        ns1:_cheeseLike,
+        ns1:_cheeseLikeFontina,
+        ns1:_cheeses,
+        ns1:_mainTypes,
+        ns1:_type,
+        ns1:_types,
+        ns1:_typify .
+
+ns1:_lean a ns1:Thin .
+
+ns1:_leanness a ns1:Thin .
+
+ns1:_leek a ns1:LeekTopping .
+
+ns1:_leekTopping a ns1:LeekTopping .
+
+ns1:_likeFontina a ns1:Fontina .
+
+ns1:_likePrawns a ns1:Prawns .
+
+ns1:_likePrawnsTopping a ns1:Prawns .
+
+ns1:_lovers a ns1:Lovers ;
+    ns1:loaded ns1:_meat,
+        ns1:_meats,
+        ns1:_meaty .
+
+ns1:_main a ns1:Main .
+
+ns1:_mare a ns1:Mare .
+
+ns1:_marePizza a ns1:MarePizza .
+
+ns1:_margherita a ns1:MargheritaPizza .
+
+ns1:_margheritaPizza a ns1:MargheritaPizza .
+
+ns1:_meatLovers a ns1:MeatLovers ;
+    ns1:loaded ns1:_meat,
+        ns1:_meats,
+        ns1:_meaty .
+
+ns1:_meatyPizza a ns1:MeatyPizza .
+
+ns1:_mushroom a ns1:MushroomTopping .
+
+ns1:_mushroomTopping a ns1:MushroomTopping .
+
+ns1:_mushrooms a ns1:MushroomTopping .
+
+ns1:_napoletana a ns1:Napoletana ;
+    ns1:topped ns1:_anchovies,
+        ns1:_anchovy,
+        ns1:_caper,
+        ns1:_capers .
+
+ns1:_napoletanaPizza a ns1:Napoletana ;
+    ns1:topped ns1:_anchovies,
+        ns1:_anchovy,
+        ns1:_caper,
+        ns1:_capers .
+
+ns1:_olive a ns1:Olives .
+
+ns1:_oliveTopping a ns1:Olives .
+
+ns1:_olives a ns1:Olives .
+
+ns1:_onion a ns1:Onion .
+
+ns1:_onionTopping a ns1:Onion .
+
+ns1:_onions a ns1:Onion .
+
+ns1:_options a ns1:Options ;
+    ns1:include ns1:_artichoke,
+        ns1:_artichokePlant,
+        ns1:_artichokeTopping,
+        ns1:_artichokes,
+        ns1:_asparagus,
+        ns1:_asparagusTopping,
+        ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesyVegetableTopping,
+        ns1:_cynaraScolymus,
+        ns1:_globeArtichoke,
+        ns1:_pizzaToppings,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_uniqueToppings,
+        ns1:_vegetableTopping ;
+    ns1:ranging ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesyVegetableTopping,
+        ns1:_chicken,
+        ns1:_gallusGallus,
+        ns1:_parma,
+        ns1:_parmaHam,
+        ns1:_parmesan,
+        ns1:_pizzaToppings,
+        ns1:_poulet,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_uniqueToppings,
+        ns1:_vegetableTopping,
+        ns1:_volaille ;
+    ns1:topping ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesyVegetableTopping,
+        ns1:_gammon,
+        ns1:_ham,
+        ns1:_hamTopping,
+        ns1:_jambon,
+        ns1:_parma,
+        ns1:_parmaHam,
+        ns1:_parmaHamTopping,
+        ns1:_parmesan,
+        ns1:_pizzaToppings,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_uniqueToppings,
+        ns1:_vegetableTopping .
+
+ns1:_optionsLike a ns1:Options ;
+    ns1:include ns1:_artichoke,
+        ns1:_artichokePlant,
+        ns1:_artichokeTopping,
+        ns1:_artichokes,
+        ns1:_asparagus,
+        ns1:_asparagusTopping,
+        ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesyVegetableTopping,
+        ns1:_cynaraScolymus,
+        ns1:_globeArtichoke,
+        ns1:_pizzaToppings,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_uniqueToppings,
+        ns1:_vegetableTopping ;
+    ns1:ranging ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesyVegetableTopping,
+        ns1:_chicken,
+        ns1:_gallusGallus,
+        ns1:_parma,
+        ns1:_parmaHam,
+        ns1:_parmesan,
+        ns1:_pizzaToppings,
+        ns1:_poulet,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_uniqueToppings,
+        ns1:_vegetableTopping,
+        ns1:_volaille ;
+    ns1:topping ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesyVegetableTopping,
+        ns1:_gammon,
+        ns1:_ham,
+        ns1:_hamTopping,
+        ns1:_jambon,
+        ns1:_parma,
+        ns1:_parmaHam,
+        ns1:_parmaHamTopping,
+        ns1:_parmesan,
+        ns1:_pizzaToppings,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_uniqueToppings,
+        ns1:_vegetableTopping .
+
+ns1:_optionsLikePrawns a ns1:OptionsLikePrawns .
+
+ns1:_origin a ns1:Origin ;
+    ns1:consisting ns1:_circle,
+        ns1:_circular,
+        ns1:_circularity,
+        ns1:_circularize,
+        ns1:_commonly,
+        ns1:_normally,
+        ns1:_ordinarily,
+        ns1:_round,
+        ns1:_roundOfDrinks,
+        ns1:_roundness,
+        ns1:_typically,
+        ns1:_unremarkably,
+        ns1:_usually,
+        ns1:_usuallyRound .
+
+ns1:_pan a ns1:PanBase .
+
+ns1:_panBase a ns1:PanBase .
+
+ns1:_peperoni a ns1:Peperoni .
+
+ns1:_peperoniSausage a ns1:PeperoniSausageTopping .
+
+ns1:_peperoniSausageTopping a ns1:PeperoniSausageTopping .
+
+ns1:_pizzaBases a ns1:PizzaBases ;
+    ns1:alter ns1:_gustation,
+        ns1:_gustatorial,
+        ns1:_gustatory,
+        ns1:_gustatoryModality,
+        ns1:_gustatoryPerception,
+        ns1:_gustatorySensation,
+        ns1:_mouthful,
+        ns1:_overall,
+        ns1:_overallTaste,
+        ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzas,
+        ns1:_sample,
+        ns1:_sampler,
+        ns1:_savor,
+        ns1:_savour,
+        ns1:_senseOfTaste,
+        ns1:_smack,
+        ns1:_taste,
+        ns1:_tastePerception,
+        ns1:_tasteSensation,
+        ns1:_taster,
+        ns1:_tasting,
+        ns1:_tasty,
+        ns1:_texture,
+        ns1:_trial,
+        ns1:_trier,
+        ns1:_try,
+        ns1:_tryOut,
+        ns1:_tryout ;
+    ns1:based ns1:_dough,
+        ns1:_doughy,
+        ns1:_tomato,
+        ns1:_tomatoes ;
+    ns1:cater ns1:_palate ;
+    ns1:leavened ns1:_dough,
+        ns1:_doughy,
+        ns1:_wheat,
+        ns1:_wheatBerry ;
+    ns1:used ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzas,
+        ns1:_significantly .
+
+ns1:_pollo a ns1:Pollo .
+
+ns1:_polloAd a ns1:Pollo .
+
+ns1:_polloAdAstra a ns1:PolloAdAstra ;
+    ns1:features ns1:_afters,
+        ns1:_chicken,
+        ns1:_confection,
+        ns1:_dessert,
+        ns1:_gallusGallus,
+        ns1:_greenPepper,
+        ns1:_greenPepperTopping,
+        ns1:_greenPeppers,
+        ns1:_hotGreenPepper,
+        ns1:_jalapeno,
+        ns1:_jalapenoPepper,
+        ns1:_jalapenoPepperTopping,
+        ns1:_pepper,
+        ns1:_pepperTopping,
+        ns1:_peppercorn,
+        ns1:_peppers,
+        ns1:_peppery,
+        ns1:_poulet,
+        ns1:_sweet,
+        ns1:_sweetPepper,
+        ns1:_sweetPeppers,
+        ns1:_sweetness,
+        ns1:_volaille .
+
+ns1:_popularDish a ns1:PopularDish .
+
+ns1:_prawn a ns1:Prawns .
+
+ns1:_prawns a ns1:Prawns .
+
+ns1:_prawnsTopping a ns1:Prawns .
+
+ns1:_prickly-seededSpinach a ns1:Spinach .
+
+ns1:_purpleOnion a ns1:Onion .
+
+ns1:_red a ns1:Red .
+
+ns1:_redOnion a ns1:Onion .
+
+ns1:_redOnions a ns1:Onion .
+
+ns1:_sausage a ns1:PeperoniSausageTopping .
+
+ns1:_sausageTopping a ns1:PeperoniSausageTopping .
+
+ns1:_serve a ns1:Dish ;
+    ns1:consisting ns1:_circle,
+        ns1:_circular,
+        ns1:_circularity,
+        ns1:_circularize,
+        ns1:_commonly,
+        ns1:_normally,
+        ns1:_ordinarily,
+        ns1:_round,
+        ns1:_roundOfDrinks,
+        ns1:_roundness,
+        ns1:_typically,
+        ns1:_unremarkably,
+        ns1:_usually,
+        ns1:_usuallyRound .
+
+ns1:_serveUp a ns1:Dish ;
+    ns1:consisting ns1:_circle,
+        ns1:_circular,
+        ns1:_circularity,
+        ns1:_circularize,
+        ns1:_commonly,
+        ns1:_normally,
+        ns1:_ordinarily,
+        ns1:_round,
+        ns1:_roundOfDrinks,
+        ns1:_roundness,
+        ns1:_typically,
+        ns1:_unremarkably,
+        ns1:_usually,
+        ns1:_usuallyRound .
+
+ns1:_shrimp a ns1:Prawns .
+
+ns1:_simple a ns1:Simple ;
+    ns1:topped ns1:_gorgonzola,
+        ns1:_mozzarella,
+        ns1:_ricotta,
+        ns1:_tomato,
+        ns1:_tomatoes .
+
+ns1:_sloppy a ns1:SloppyGiuseppePizza .
+
+ns1:_sloppyGiuseppe a ns1:SloppyGiuseppePizza .
+
+ns1:_sloppyGiuseppePizza a ns1:SloppyGiuseppePizza .
+
+ns1:_sort a ns1:WideVariety ;
+    ns1:categorized ns1:_cheese,
+        ns1:_cheeseLike,
+        ns1:_cheeseLikeFontina,
+        ns1:_cheeses,
+        ns1:_mainTypes,
+        ns1:_type,
+        ns1:_types,
+        ns1:_typify .
+
+ns1:_spicyPizza a ns1:HotPizza ;
+    ns2:27s ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzas .
+
+ns1:_spinach a ns1:Spinach .
+
+ns1:_spinachPlant a ns1:Spinach .
+
+ns1:_spinachTopping a ns1:Spinach .
+
+ns1:_spinaciaOleracea a ns1:Spinach .
+
+ns1:_staple a ns1:Staple .
+
+ns1:_sweetBasil a ns1:Basil .
+
+ns1:_thick a ns1:Thin .
+
+ns1:_thin a ns1:Thin .
+
+ns1:_thinness a ns1:Thin .
+
+ns1:_traditionally a ns1:Traditionally ;
+    ns1:fired ns1:_oven .
+
+ns1:_uniqueCombinations a ns1:Combinations .
+
+ns1:_variety a ns1:WideVariety ;
+    ns1:categorized ns1:_cheese,
+        ns1:_cheeseLike,
+        ns1:_cheeseLikeFontina,
+        ns1:_cheeses,
+        ns1:_mainTypes,
+        ns1:_type,
+        ns1:_types,
+        ns1:_typify .
+
+ns1:_versatile a ns1:VersatileDish .
+
+ns1:_versatileDish a ns1:VersatileDish .
+
+ns1:_wide a ns1:Wide .
+
+ns1:_wideVariety a ns1:WideVariety ;
+    ns1:categorized ns1:_cheese,
+        ns1:_cheeseLike,
+        ns1:_cheeseLikeFontina,
+        ns1:_cheeses,
+        ns1:_mainTypes,
+        ns1:_type,
+        ns1:_types,
+        ns1:_typify .
+
+ns1:_wideness a ns1:Wide .
+
+ns1:_wood a ns1:Wood ;
+    ns1:fired ns1:_oven .
+
+ns1:_woody a ns1:Wood ;
+    ns1:fired ns1:_oven .
+
+ns1:are a owl:ObjectProperty .
+
+ns1:suggests a owl:ObjectProperty .
+
+ns1:Ad a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#features> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Sweet> ],
+            owl:onProperty ns1:features ;
+            owl:someValuesFrom ns1:GreenPeppers ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#features> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Chicken> ],
+            owl:onProperty ns1:features ;
+            owl:someValuesFrom ns1:Sweet ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#features> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#GreenPeppers> ],
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#AdAstraPizza>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#BeefTopping>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Chicken>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Combinations>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#GiardinieraPizza>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#GreenPeppers>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Hot>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#HotGreen>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Like>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#OnionTopping>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pollo>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PolloAdAstra>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Red>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#SloppyGiuseppePizza>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Spiced>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Unique>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping> .
+            owl:onProperty ns1:features ;
+            owl:someValuesFrom ns1:Chicken ],
+        ns1:AdAstraPizza,
+        ns1:BeefTopping,
+        ns1:Chicken,
+        ns1:Combinations,
+        ns1:GiardinieraPizza,
+        ns1:GreenPeppers,
+        ns1:Hot,
+        ns1:HotGreen,
+        ns1:HotSpiced,
+        ns1:Like,
+        ns1:Onion,
+        ns1:Pizza,
+        ns1:Pollo,
+        ns1:PolloAdAstra,
+        ns1:Red,
+        ns1:SloppyGiuseppePizza,
+        ns1:Unique,
+        ns1:VegetableTopping .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#American> a owl:Class ;
-    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#AmericanHot>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#BeefTopping>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#CajunSpice>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#GreenPeppers>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Hot>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#HotGreen>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#HotPizza>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Like>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Spiced> .
-
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Basil> a owl:Class ;
-    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Gorgonzola>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Margherita>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Tomatoes> .
-
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Beloved> a owl:Class ;
+ns1:Beloved a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topped> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Tomatoes> ],
+            owl:onProperty ns1:topped ;
+            owl:someValuesFrom ns1:Gorgonzola ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topped> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Gorgonzola> ],
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Gorgonzola>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Margherita>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Tomatoes> .
+            owl:onProperty ns1:topped ;
+            owl:someValuesFrom ns1:Tomatoes ],
+        ns1:Gorgonzola,
+        ns1:MargheritaPizza,
+        ns1:Pizza,
+        ns1:Tomatoes .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#BelovedPizza> a owl:Class ;
+ns1:BelovedPizza a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topped> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Tomatoes> ],
+            owl:onProperty ns1:topped ;
+            owl:someValuesFrom ns1:Tomatoes ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topped> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Gorgonzola> ],
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Gorgonzola>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Margherita>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Tomatoes> .
+            owl:onProperty ns1:topped ;
+            owl:someValuesFrom ns1:Gorgonzola ],
+        ns1:Gorgonzola,
+        ns1:MargheritaPizza,
+        ns1:Pizza,
+        ns1:Tomatoes .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#CajunPizza> a owl:Class ;
+ns1:CajunPizza a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#feature> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#GreenPeppers> ],
+            owl:onProperty ns1:feature ;
+            owl:someValuesFrom ns1:GreenPeppers ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#feature> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#HotGreen> ],
+            owl:onProperty ns1:feature ;
+            owl:someValuesFrom ns1:HighTemperature ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#feature> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#HighTemperature> ],
+            owl:onProperty ns1:feature ;
+            owl:someValuesFrom ns1:HotGreen ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#feature> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping> ],
+            owl:onProperty ns1:feature ;
+            owl:someValuesFrom ns1:VegetableTopping ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#feature> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Hot> ],
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#AmericanHot>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#BeefTopping>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#CajunSpice>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#GreenPeppers>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Hot>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#HotGreen>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#HotPizza>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Like>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Spiced> .
+            owl:onProperty ns1:feature ;
+            owl:someValuesFrom ns1:Hot ],
+        ns1:AmericanHot,
+        ns1:BeefTopping,
+        ns1:CajunSpice,
+        ns1:GreenPeppers,
+        ns1:Hot,
+        ns1:HotGreen,
+        ns1:HotPizza,
+        ns1:HotSpiced,
+        ns1:Like,
+        ns1:Pizza .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Category> a owl:Class ;
-    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Like>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Mix>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#OptionsLike>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Prawns>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#SeafoodTopping> .
+ns1:Category a owl:Class ;
+    rdfs:subClassOf ns1:Like,
+        ns1:Mix,
+        ns1:Options,
+        ns1:Prawns,
+        ns1:SeafoodTopping .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Conclusion> a owl:Class ;
-    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Dish>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaBases>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Versatile>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#WideVariety> .
+ns1:Conclusion a owl:Class ;
+    rdfs:subClassOf ns1:Dish,
+        ns1:Pizza,
+        ns1:PizzaBases,
+        ns1:VegetableTopping,
+        ns1:VersatileDish,
+        ns1:WideVariety .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Deep> a owl:Class ;
-    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Crispy>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Dough>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PanBase>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaBases>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Thin>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Types> .
+ns1:Deep a owl:Class ;
+    rdfs:subClassOf ns1:Crispy,
+        ns1:Dough,
+        ns1:MainTypes,
+        ns1:PanBase,
+        ns1:Pizza,
+        ns1:PizzaBases,
+        ns1:Thin .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Di> a owl:Class ;
-    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Frutti>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Mare>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#MarePizza>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#SeafoodTopping> .
+ns1:Di a owl:Class ;
+    rdfs:subClassOf ns1:Frutti,
+        ns1:Mare,
+        ns1:MarePizza,
+        ns1:Pizza,
+        ns1:SeafoodTopping .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Example> a owl:Class ;
+ns1:Example a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#features> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Mix> ],
+            owl:onProperty ns1:features ;
+            owl:someValuesFrom ns1:Mix ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#features> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ParmaHamTopping> ],
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Artichokes>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#CapricciosaPizza>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Mix>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Mushrooms>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Olives>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ParmaHamTopping>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas> .
+            owl:onProperty ns1:features ;
+            owl:someValuesFrom ns1:ParmaHamTopping ],
+        ns1:Artichoke,
+        ns1:CapricciosaPizza,
+        ns1:Mix,
+        ns1:MushroomTopping,
+        ns1:Olives,
+        ns1:ParmaHamTopping,
+        ns1:Pizza .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Favorite> a owl:Class ;
-    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Meat>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas> .
+ns1:Favorite a owl:Class ;
+    rdfs:subClassOf ns1:Meat,
+        ns1:Pizza .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Fourth> a owl:Class ;
-    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Cheeses>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Fontina>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Formaggi>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#FourthCheeseLike>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Gorgonzola>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Like>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Parmesan>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Typically>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping> .
+ns1:Fourth a owl:Class ;
+    rdfs:subClassOf ns1:Cheeses,
+        ns1:Fontina,
+        ns1:Formaggi,
+        ns1:FourthCheeseLike,
+        ns1:Gorgonzola,
+        ns1:Like,
+        ns1:Parmesan,
+        ns1:Pizza,
+        ns1:Typically,
+        ns1:VegetableTopping .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Giardiniera> a owl:Class ;
-    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Cheesy>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#CheesyVegetable>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#GiardinieraPizza>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#NonVegetarianPizza>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Vegetarian> .
+ns1:Giardiniera a owl:Class ;
+    rdfs:subClassOf ns1:Cheesy,
+        ns1:GiardinieraPizza,
+        ns1:NonVegetarianPizza,
+        ns1:Pizza,
+        ns1:Vegetable,
+        ns1:VegetableTopping,
+        ns1:Vegetarian .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Giuseppe> a owl:Class ;
+ns1:Giuseppe a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topped> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#BeefTopping> ],
+            owl:onProperty ns1:topped ;
+            owl:someValuesFrom ns1:Hot ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topped> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#HighTemperature> ],
+            owl:onProperty ns1:topped ;
+            owl:someValuesFrom ns1:BeefTopping ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topped> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Spiced> ],
+            owl:onProperty ns1:topped ;
+            owl:someValuesFrom ns1:HighTemperature ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topped> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Hot> ],
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#AdAstraPizza>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#BeefTopping>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Chicken>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Combinations>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#GiardinieraPizza>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#GreenPeppers>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Hot>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#HotGreen>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Like>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#OnionTopping>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pollo>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PolloAdAstra>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Red>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#SloppyGiuseppePizza>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Spiced>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Unique>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping> .
+            owl:onProperty ns1:topped ;
+            owl:someValuesFrom ns1:HotSpiced ],
+        ns1:AdAstraPizza,
+        ns1:BeefTopping,
+        ns1:Chicken,
+        ns1:Combinations,
+        ns1:GiardinieraPizza,
+        ns1:GreenPeppers,
+        ns1:Hot,
+        ns1:HotGreen,
+        ns1:HotSpiced,
+        ns1:Like,
+        ns1:Onion,
+        ns1:Pizza,
+        ns1:Pollo,
+        ns1:PolloAdAstra,
+        ns1:Red,
+        ns1:SloppyGiuseppePizza,
+        ns1:Unique,
+        ns1:VegetableTopping .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Incredibly> a owl:Class ;
+ns1:Incredibly a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#categorized> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Types> ],
+            owl:onProperty ns1:categorized ;
+            owl:someValuesFrom ns1:Cheeses ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#categorized> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Cheeses> ],
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Types>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#WideVariety> .
+            owl:onProperty ns1:categorized ;
+            owl:someValuesFrom ns1:MainTypes ],
+        ns1:MainTypes,
+        ns1:Pizza,
+        ns1:VegetableTopping,
+        ns1:WideVariety .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Ingredients> a owl:Class ;
+ns1:Lovers a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#baked> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#High> ],
-        [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#baked> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#HighTemperature> ],
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Cheeses>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Dish>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Dough>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Flattened>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#HighTemperature>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Italian>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaBases>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Popular>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Round>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Tomatoes>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Typically> .
+            owl:onProperty ns1:loaded ;
+            owl:someValuesFrom ns1:Meat ],
+        ns1:Meat,
+        ns1:Pizza .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#LeekTopping> a owl:Class .
+ns1:Main a owl:Class ;
+    rdfs:subClassOf ns1:Crispy,
+        ns1:Dough,
+        ns1:MainTypes,
+        ns1:PanBase,
+        ns1:Pizza,
+        ns1:PizzaBases,
+        ns1:Thin .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Lovers> a owl:Class ;
+ns1:MeatLovers a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#loaded> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Meat> ],
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Meat>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas> .
+            owl:onProperty ns1:loaded ;
+            owl:someValuesFrom ns1:Meat ],
+        ns1:Meat,
+        ns1:Pizza .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Main> a owl:Class ;
-    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Crispy>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Dough>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PanBase>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaBases>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Thin>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Types> .
+ns1:MeatyPizza a owl:Class ;
+    rdfs:subClassOf ns1:Meat,
+        ns1:Pizza .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#MeatLovers> a owl:Class ;
+ns1:OptionsLikePrawns a owl:Class ;
+    rdfs:subClassOf ns1:Like,
+        ns1:Mix,
+        ns1:Options,
+        ns1:Prawns,
+        ns1:SeafoodTopping .
+
+ns1:Origin a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#loaded> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Meat> ],
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Meat>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas> .
+            owl:onProperty ns1:consisting ;
+            owl:someValuesFrom ns1:Typically ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:consisting ;
+            owl:someValuesFrom ns1:Round ],
+        ns1:Cheeses,
+        ns1:Dish,
+        ns1:Dough,
+        ns1:Flattened,
+        ns1:HighTemperature,
+        ns1:Italian,
+        ns1:Pizza,
+        ns1:PizzaBases,
+        ns1:Popular,
+        ns1:Round,
+        ns1:Tomatoes,
+        ns1:Typically .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#MeatyPizza> a owl:Class ;
-    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Meat>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas> .
+ns1:Peperoni a owl:Class ;
+    rdfs:subClassOf ns1:Chicken,
+        ns1:Meat,
+        ns1:NonVegetarianPizza,
+        ns1:Options,
+        ns1:ParmaHamTopping,
+        ns1:Parmesan,
+        ns1:PeperoniSausageTopping,
+        ns1:Pizza,
+        ns1:Popular,
+        ns1:Vegetarian .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#OptionsLikePrawns> a owl:Class ;
-    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Like>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Mix>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#OptionsLike>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Prawns>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#SeafoodTopping> .
+ns1:PopularDish a owl:Class ;
+    rdfs:subClassOf ns1:Cheeses,
+        ns1:Dish,
+        ns1:Dough,
+        ns1:Flattened,
+        ns1:HighTemperature,
+        ns1:Italian,
+        ns1:Pizza,
+        ns1:PizzaBases,
+        ns1:Popular,
+        ns1:Round,
+        ns1:Tomatoes,
+        ns1:Typically .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Origin> a owl:Class ;
+ns1:Simple a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#consisting> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Round> ],
+            owl:onProperty ns1:topped ;
+            owl:someValuesFrom ns1:Gorgonzola ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#consisting> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Typically> ],
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Cheeses>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Dish>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Dough>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Flattened>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#HighTemperature>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Italian>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaBases>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Popular>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Round>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Tomatoes>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Typically> .
+            owl:onProperty ns1:topped ;
+            owl:someValuesFrom ns1:Tomatoes ],
+        ns1:Gorgonzola,
+        ns1:MargheritaPizza,
+        ns1:Pizza,
+        ns1:Tomatoes .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Peperoni> a owl:Class ;
-    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Chicken>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Meat>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#NonVegetarianPizza>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#OptionsLike>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ParmaHamTopping>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Parmesan>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PeperoniSausageTopping>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Popular>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Vegetarian> .
-
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PopularDish> a owl:Class ;
-    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Cheeses>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Dish>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Dough>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Flattened>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#HighTemperature>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Italian>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaBases>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Popular>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Round>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Tomatoes>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Typically> .
-
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Simple> a owl:Class ;
+ns1:Traditionally a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topped> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Tomatoes> ],
-        [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topped> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Gorgonzola> ],
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Gorgonzola>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Margherita>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Tomatoes> .
+            owl:onProperty ns1:fired ;
+            owl:someValuesFrom ns1:Oven ],
+        ns1:Cheeses,
+        ns1:Dish,
+        ns1:Dough,
+        ns1:Flattened,
+        ns1:HighTemperature,
+        ns1:Italian,
+        ns1:Pizza,
+        ns1:PizzaBases,
+        ns1:Popular,
+        ns1:Round,
+        ns1:Tomatoes,
+        ns1:Typically .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Spinach> a owl:Class .
+ns1:American a owl:Class ;
+    rdfs:subClassOf ns1:AmericanHot,
+        ns1:BeefTopping,
+        ns1:CajunSpice,
+        ns1:GreenPeppers,
+        ns1:Hot,
+        ns1:HotGreen,
+        ns1:HotPizza,
+        ns1:HotSpiced,
+        ns1:Like,
+        ns1:Pizza .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Traditionally> a owl:Class ;
+ns1:Basil a owl:Class ;
+    rdfs:subClassOf ns1:Gorgonzola,
+        ns1:MargheritaPizza,
+        ns1:Pizza,
+        ns1:Tomatoes .
+
+ns1:High a owl:Class ;
+    rdfs:subClassOf ns1:Cheeses,
+        ns1:Dish,
+        ns1:Dough,
+        ns1:Flattened,
+        ns1:HighTemperature,
+        ns1:Italian,
+        ns1:Pizza,
+        ns1:PizzaBases,
+        ns1:Popular,
+        ns1:Round,
+        ns1:Tomatoes,
+        ns1:Typically .
+
+ns1:LeekTopping a owl:Class .
+
+ns1:SeafoodPizza a owl:Class ;
+    rdfs:subClassOf ns1:Frutti,
+        ns1:Mare,
+        ns1:MarePizza,
+        ns1:Pizza,
+        ns1:SeafoodTopping .
+
+ns1:Staple a owl:Class ;
+    rdfs:subClassOf ns1:Pizza,
+        ns1:VegetableTopping .
+
+ns1:Wood a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#fired> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Oven> ],
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Cheeses>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Dish>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Dough>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Flattened>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#HighTemperature>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Italian>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaBases>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Popular>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Round>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Tomatoes>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Typically> .
+            owl:onProperty ns1:fired ;
+            owl:someValuesFrom ns1:Oven ],
+        ns1:Cheeses,
+        ns1:Dish,
+        ns1:Dough,
+        ns1:Flattened,
+        ns1:HighTemperature,
+        ns1:Italian,
+        ns1:Pizza,
+        ns1:PizzaBases,
+        ns1:Popular,
+        ns1:Round,
+        ns1:Tomatoes,
+        ns1:Typically .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Wide> a owl:Class ;
-    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Dish>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaBases>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Versatile>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#WideVariety> .
+ns1:baked a owl:ObjectProperty .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Wood> a owl:Class ;
+ns1:cater a owl:ObjectProperty .
+
+ns1:fired a owl:ObjectProperty .
+
+ns1:prefer a owl:ObjectProperty .
+
+ns2:27s a owl:ObjectProperty .
+
+ns1:CapricciosaPizza a owl:Class .
+
+ns1:Common a owl:Class ;
+    rdfs:subClassOf ns1:Cheeses,
+        ns1:Gorgonzola,
+        ns1:Pizza,
+        ns1:Staple,
+        ns1:VegetableTopping .
+
+ns1:Ingredients a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#fired> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Oven> ],
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Cheeses>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Dish>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Dough>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Flattened>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#HighTemperature>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Italian>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaBases>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Popular>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Round>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Tomatoes>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Typically> .
+            owl:onProperty ns1:baked ;
+            owl:someValuesFrom ns1:HighTemperature ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:baked ;
+            owl:someValuesFrom ns1:High ],
+        ns1:Cheeses,
+        ns1:Dish,
+        ns1:Dough,
+        ns1:Flattened,
+        ns1:HighTemperature,
+        ns1:Italian,
+        ns1:Pizza,
+        ns1:PizzaBases,
+        ns1:Popular,
+        ns1:Round,
+        ns1:Tomatoes,
+        ns1:Typically .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#are> a owl:ObjectProperty .
+ns1:Non a owl:Class ;
+    rdfs:subClassOf ns1:Chicken,
+        ns1:Meat,
+        ns1:NonVegetarianPizza,
+        ns1:Options,
+        ns1:ParmaHamTopping,
+        ns1:Parmesan,
+        ns1:PeperoniSausageTopping,
+        ns1:Pizza,
+        ns1:Popular,
+        ns1:Vegetarian .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#suggests> a owl:ObjectProperty .
+ns1:Oven a owl:Class ;
+    rdfs:subClassOf ns1:Cheeses,
+        ns1:Dish,
+        ns1:Dough,
+        ns1:Flattened,
+        ns1:HighTemperature,
+        ns1:Italian,
+        ns1:Pizza,
+        ns1:PizzaBases,
+        ns1:Popular,
+        ns1:Round,
+        ns1:Tomatoes,
+        ns1:Typically .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#CapricciosaPizza> a owl:Class .
+ns1:Overall a owl:Class ;
+    rdfs:subClassOf ns1:MainTypes,
+        ns1:Pizza,
+        ns1:PizzaBases,
+        ns1:Texture .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#High> a owl:Class ;
-    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Cheeses>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Dish>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Dough>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Flattened>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#HighTemperature>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Italian>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaBases>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Popular>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Round>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Tomatoes>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Typically> .
+ns1:OverallTaste a owl:Class ;
+    rdfs:subClassOf ns1:MainTypes,
+        ns1:Pizza,
+        ns1:PizzaBases,
+        ns1:Texture .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Mushrooms> a owl:Class .
-
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Non> a owl:Class ;
-    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Chicken>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Meat>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#NonVegetarianPizza>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#OptionsLike>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ParmaHamTopping>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Parmesan>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PeperoniSausageTopping>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Popular>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Vegetarian> .
-
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#SeafoodPizza> a owl:Class ;
-    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Frutti>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Mare>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#MarePizza>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#SeafoodTopping> .
-
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Staple> a owl:Class ;
-    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping> .
-
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#AmericanHot> a owl:Class .
-
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Anchovies> a owl:Class ;
-    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#NapoletanaPizza>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Olives>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas> .
-
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#CajunSpice> a owl:Class ;
+ns1:Palate a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#feature> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#HotGreen> ],
+            owl:onProperty ns1:prefer ;
+            owl:someValuesFrom ns1:Cheesy ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#feature> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#HighTemperature> ],
-        [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#feature> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#GreenPeppers> ],
-        [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#feature> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Hot> ],
-        [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#feature> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping> ] .
+            owl:onProperty ns1:prefer ;
+            owl:someValuesFrom ns1:Meat ],
+        ns1:Dish,
+        ns1:Pizza,
+        ns1:PizzaBases,
+        ns1:VegetableTopping,
+        ns1:VersatileDish,
+        ns1:WideVariety .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Capers> a owl:Class ;
-    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#NapoletanaPizza>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Olives>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas> .
-
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Common> a owl:Class ;
-    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Cheeses>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Gorgonzola>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Staple>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping> .
-
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Crispy> a owl:Class .
-
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Fontina> a owl:Class .
-
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#FourthCheeseLike> a owl:Class .
-
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Frutti> a owl:Class .
-
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#HotPizza> a owl:Class ;
+ns1:Quattro a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#%27s> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas> ],
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Spiced> .
+            owl:onProperty ns1:includes ;
+            owl:someValuesFrom ns1:Parmesan ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:includes ;
+            owl:someValuesFrom ns1:Gorgonzola ],
+        ns1:Cheeses,
+        ns1:Fontina,
+        ns1:Formaggi,
+        ns1:FourthCheeseLike,
+        ns1:Gorgonzola,
+        ns1:Like,
+        ns1:Parmesan,
+        ns1:Pizza,
+        ns1:Typically,
+        ns1:VegetableTopping .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Mare> a owl:Class .
-
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#MarePizza> a owl:Class .
-
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#NapoletanaPizza> a owl:Class ;
+ns1:Significantly a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topped> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Anchovies> ],
+            owl:onProperty ns1:alter ;
+            owl:someValuesFrom ns1:OverallTaste ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topped> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Capers> ] .
+            owl:onProperty ns1:alter ;
+            owl:someValuesFrom ns1:Texture ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:alter ;
+            owl:someValuesFrom ns1:Overall ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:alter ;
+            owl:someValuesFrom ns1:Pizza ],
+        ns1:MainTypes,
+        ns1:Pizza,
+        ns1:PizzaBases,
+        ns1:Texture .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Oven> a owl:Class ;
-    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Cheeses>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Dish>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Dough>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Flattened>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#HighTemperature>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Italian>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaBases>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Popular>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Round>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Tomatoes>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Typically> .
+ns1:_high a ns1:High .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Overall> a owl:Class ;
-    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaBases>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Taste>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Types> .
+ns1:_like a ns1:Like .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#OverallTaste> a owl:Class ;
-    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaBases>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Taste>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Types> .
+ns1:_likeness a ns1:Like .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Palate> a owl:Class ;
+ns1:_mixedSeafood a ns1:SeafoodTopping .
+
+ns1:_mixedSeafoodTopping a ns1:SeafoodTopping .
+
+ns1:_non a ns1:Non .
+
+ns1:_nonVegetarianPizza a ns1:NonVegetarianPizza ;
+    ns1:include ns1:_artichoke,
+        ns1:_artichokePlant,
+        ns1:_artichokeTopping,
+        ns1:_artichokes,
+        ns1:_asparagus,
+        ns1:_asparagusTopping,
+        ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesyVegetableTopping,
+        ns1:_cynaraScolymus,
+        ns1:_globeArtichoke,
+        ns1:_pizzaToppings,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_uniqueToppings,
+        ns1:_vegetableTopping ;
+    ns1:loaded ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesy,
+        ns1:_cheesyVegetable,
+        ns1:_cheesyVegetableTopping,
+        ns1:_pizzaToppings,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_uniqueToppings,
+        ns1:_veg,
+        ns1:_vegetable,
+        ns1:_vegetableTopping,
+        ns1:_veggie ;
+    ns1:ranging ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesyVegetableTopping,
+        ns1:_chicken,
+        ns1:_gallusGallus,
+        ns1:_parma,
+        ns1:_parmaHam,
+        ns1:_parmesan,
+        ns1:_pizzaToppings,
+        ns1:_poulet,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_uniqueToppings,
+        ns1:_vegetableTopping,
+        ns1:_volaille .
+
+ns1:_not a ns1:Non .
+
+ns1:_oven a ns1:Oven .
+
+ns1:_popular a ns1:Popular .
+
+ns1:_seafood a ns1:SeafoodTopping .
+
+ns1:_seafoodPizza a ns1:SeafoodPizza .
+
+ns1:_seafoodTopping a ns1:SeafoodTopping .
+
+ns1:_similar a ns1:Like .
+
+ns1:_similarity a ns1:Like .
+
+ns1:_unique a ns1:Unique .
+
+ns1:_vegetarianPizza a ns1:NonVegetarianPizza ;
+    ns1:include ns1:_artichoke,
+        ns1:_artichokePlant,
+        ns1:_artichokeTopping,
+        ns1:_artichokes,
+        ns1:_asparagus,
+        ns1:_asparagusTopping,
+        ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesyVegetableTopping,
+        ns1:_cynaraScolymus,
+        ns1:_globeArtichoke,
+        ns1:_pizzaToppings,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_uniqueToppings,
+        ns1:_vegetableTopping ;
+    ns1:loaded ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesy,
+        ns1:_cheesyVegetable,
+        ns1:_cheesyVegetableTopping,
+        ns1:_pizzaToppings,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_uniqueToppings,
+        ns1:_veg,
+        ns1:_vegetable,
+        ns1:_vegetableTopping,
+        ns1:_veggie ;
+    ns1:ranging ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesyVegetableTopping,
+        ns1:_chicken,
+        ns1:_gallusGallus,
+        ns1:_parma,
+        ns1:_parmaHam,
+        ns1:_parmesan,
+        ns1:_pizzaToppings,
+        ns1:_poulet,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_uniqueToppings,
+        ns1:_vegetableTopping,
+        ns1:_volaille .
+
+ns1:AmericanHot a owl:Class .
+
+ns1:Anchovies a owl:Class ;
+    rdfs:subClassOf ns1:Napoletana,
+        ns1:Olives,
+        ns1:Pizza .
+
+ns1:CajunSpice a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#prefer> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Cheesy> ],
+            owl:onProperty ns1:feature ;
+            owl:someValuesFrom ns1:HotGreen ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#prefer> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Meat> ],
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Dish>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaBases>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Versatile>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#WideVariety> .
+            owl:onProperty ns1:feature ;
+            owl:someValuesFrom ns1:VegetableTopping ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:feature ;
+            owl:someValuesFrom ns1:Hot ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:feature ;
+            owl:someValuesFrom ns1:HighTemperature ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:feature ;
+            owl:someValuesFrom ns1:GreenPeppers ] .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PanBase> a owl:Class .
+ns1:Capers a owl:Class ;
+    rdfs:subClassOf ns1:Napoletana,
+        ns1:Olives,
+        ns1:Pizza .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PeperoniSausageTopping> a owl:Class .
+ns1:Crispy a owl:Class .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Prawns> a owl:Class .
+ns1:Fontina a owl:Class .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Quattro> a owl:Class ;
+ns1:FourthCheeseLike a owl:Class .
+
+ns1:HotPizza a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#includes> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Gorgonzola> ],
-        [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#includes> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Parmesan> ],
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Cheeses>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Fontina>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Formaggi>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#FourthCheeseLike>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Gorgonzola>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Like>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Parmesan>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Typically>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping> .
+            owl:onProperty ns2:27s ;
+            owl:someValuesFrom ns1:Pizza ],
+        ns1:HotSpiced,
+        ns1:Pizza .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Significantly> a owl:Class ;
+ns1:Mare a owl:Class .
+
+ns1:MarePizza a owl:Class .
+
+ns1:MushroomTopping a owl:Class .
+
+ns1:Napoletana a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#alter> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas> ],
+            owl:onProperty ns1:topped ;
+            owl:someValuesFrom ns1:Capers ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#alter> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Taste> ],
-        [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#alter> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Overall> ],
-        [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#alter> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#OverallTaste> ],
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaBases>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Taste>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Types> .
+            owl:onProperty ns1:topped ;
+            owl:someValuesFrom ns1:Anchovies ] .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Thin> a owl:Class .
+ns1:Red a owl:Class .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#baked> a owl:ObjectProperty .
+ns1:Wide a owl:Class ;
+    rdfs:subClassOf ns1:Dish,
+        ns1:Pizza,
+        ns1:PizzaBases,
+        ns1:VegetableTopping,
+        ns1:VersatileDish,
+        ns1:WideVariety .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#cater> a owl:ObjectProperty .
+ns1:_amalgam a ns1:Mix .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#fired> a owl:ObjectProperty .
+ns1:_amalgamate a ns1:Mix .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#prefer> a owl:ObjectProperty .
+ns1:_amalgamative a ns1:Mix .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#%27s> a owl:ObjectProperty .
+ns1:_amalgamator a ns1:Mix .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#AdAstraPizza> a owl:Class ;
+ns1:_blend a ns1:Mix .
+
+ns1:_coalesce a ns1:Mix .
+
+ns1:_coalescency a ns1:Mix .
+
+ns1:_coalition a ns1:Mix .
+
+ns1:_combination a ns1:Mix .
+
+ns1:_combine a ns1:Mix .
+
+ns1:_combining a ns1:Mix .
+
+ns1:_commingle a ns1:Mix .
+
+ns1:_commix a ns1:Mix .
+
+ns1:_commixture a ns1:Mix .
+
+ns1:_conflate a ns1:Mix .
+
+ns1:_flux a ns1:Mix .
+
+ns1:_fuse a ns1:Mix .
+
+ns1:_fusible a ns1:Mix .
+
+ns1:_fusion a ns1:Mix .
+
+ns1:_gustation a ns1:Texture .
+
+ns1:_gustatorial a ns1:Texture .
+
+ns1:_gustatory a ns1:Texture .
+
+ns1:_gustatoryModality a ns1:Texture .
+
+ns1:_gustatoryPerception a ns1:Texture .
+
+ns1:_gustatorySensation a ns1:Texture .
+
+ns1:_immix a ns1:Mix .
+
+ns1:_meld a ns1:Mix .
+
+ns1:_merge a ns1:Mix .
+
+ns1:_mingle a ns1:Mix .
+
+ns1:_mix a ns1:Mix .
+
+ns1:_mixable a ns1:Mix .
+
+ns1:_mixed a ns1:Mix .
+
+ns1:_mixer a ns1:Mix .
+
+ns1:_mixing a ns1:Mix .
+
+ns1:_mixture a ns1:Mix .
+
+ns1:_mouthful a ns1:Texture .
+
+ns1:_overall a ns1:Overall .
+
+ns1:_overallTaste a ns1:OverallTaste .
+
+ns1:_premix a ns1:Mix .
+
+ns1:_sample a ns1:Texture .
+
+ns1:_sampler a ns1:Texture .
+
+ns1:_savor a ns1:Texture .
+
+ns1:_savour a ns1:Texture .
+
+ns1:_senseOfTaste a ns1:Texture .
+
+ns1:_smack a ns1:Texture .
+
+ns1:_taste a ns1:Texture .
+
+ns1:_tastePerception a ns1:Texture .
+
+ns1:_tasteSensation a ns1:Texture .
+
+ns1:_taster a ns1:Texture .
+
+ns1:_tasting a ns1:Texture .
+
+ns1:_tasty a ns1:Texture .
+
+ns1:_texture a ns1:Texture .
+
+ns1:_trial a ns1:Texture .
+
+ns1:_trier a ns1:Texture .
+
+ns1:_try a ns1:Texture .
+
+ns1:_tryOut a ns1:Texture .
+
+ns1:_tryout a ns1:Texture .
+
+ns1:_unify a ns1:Mix .
+
+ns1:_unit a ns1:Mix .
+
+ns1:based a owl:ObjectProperty .
+
+ns1:categorized a owl:ObjectProperty .
+
+ns1:AdAstraPizza a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#features> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Chicken> ],
+            owl:onProperty ns1:features ;
+            owl:someValuesFrom ns1:Sweet ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#features> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Sweet> ],
+            owl:onProperty ns1:features ;
+            owl:someValuesFrom ns1:GreenPeppers ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#features> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#GreenPeppers> ] .
+            owl:onProperty ns1:features ;
+            owl:someValuesFrom ns1:Chicken ] .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Combinations> a owl:Class .
+ns1:Combinations a owl:Class .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Olives> a owl:Class .
+ns1:Frutti a owl:Class .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#OnionTopping> a owl:Class .
+ns1:Pollo a owl:Class .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pollo> a owl:Class .
+ns1:Spinach a owl:Class .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PolloAdAstra> a owl:Class ;
+ns1:Unique a owl:Class ;
+    rdfs:subClassOf ns1:Pizza,
+        ns1:VegetableTopping .
+
+ns1:VersatileDish a owl:Class .
+
+ns1:Wheat a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#features> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Sweet> ],
+            owl:onProperty ns1:based ;
+            owl:someValuesFrom ns1:Dough ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#features> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#GreenPeppers> ],
+            owl:onProperty ns1:based ;
+            owl:someValuesFrom ns1:Tomatoes ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#features> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Chicken> ] .
+            owl:onProperty ns1:topped ;
+            owl:someValuesFrom ns1:Tomatoes ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:topped ;
+            owl:someValuesFrom ns1:Cheeses ],
+        ns1:Cheeses,
+        ns1:Dish,
+        ns1:Dough,
+        ns1:Flattened,
+        ns1:HighTemperature,
+        ns1:Italian,
+        ns1:Pizza,
+        ns1:PizzaBases,
+        ns1:Popular,
+        ns1:Round,
+        ns1:Tomatoes,
+        ns1:Typically .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Red> a owl:Class .
+ns1:_anchovies a ns1:Anchovies .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#SloppyGiuseppePizza> a owl:Class .
+ns1:_anchovy a ns1:Anchovies .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Versatile> a owl:Class .
+ns1:_caper a ns1:Capers .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Wheat> a owl:Class ;
+ns1:_capers a ns1:Capers .
+
+ns1:AsparagusTopping a owl:Class .
+
+ns1:GiardinieraPizza a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topped> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Cheeses> ],
+            owl:onProperty ns1:topped ;
+            owl:someValuesFrom ns1:HighTemperature ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#based> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Dough> ],
+            owl:onProperty ns1:topped ;
+            owl:someValuesFrom ns1:BeefTopping ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topped> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Tomatoes> ],
+            owl:onProperty ns1:topped ;
+            owl:someValuesFrom ns1:HotSpiced ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#based> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Tomatoes> ],
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Cheeses>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Dish>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Dough>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Flattened>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#HighTemperature>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Italian>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaBases>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Popular>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Round>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Tomatoes>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Typically> .
+            owl:onProperty ns1:topped ;
+            owl:someValuesFrom ns1:Hot ],
+        ns1:Pizza,
+        ns1:VegetableTopping .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Asparagus> a owl:Class .
+ns1:MargheritaPizza a owl:Class .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#CheesyVegetable> a owl:Class .
-
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Formaggi> a owl:Class ;
+ns1:NonVegetarianPizza a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#includes> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Parmesan> ],
+            owl:onProperty ns1:ranging ;
+            owl:someValuesFrom ns1:VegetableTopping ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#includes> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Gorgonzola> ] .
+            owl:onProperty ns1:ranging ;
+            owl:someValuesFrom ns1:Chicken ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:ranging ;
+            owl:someValuesFrom ns1:Parmesan ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:include ;
+            owl:someValuesFrom ns1:VegetableTopping ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:loaded ;
+            owl:someValuesFrom ns1:Cheesy ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:loaded ;
+            owl:someValuesFrom ns1:VegetableTopping ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:include ;
+            owl:someValuesFrom ns1:Artichoke ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:loaded ;
+            owl:someValuesFrom ns1:Vegetable ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:include ;
+            owl:someValuesFrom ns1:AsparagusTopping ] .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#GiardinieraPizza> a owl:Class ;
+ns1:Olives a owl:Class .
+
+ns1:Options a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topped> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#HighTemperature> ],
+            owl:onProperty ns1:include ;
+            owl:someValuesFrom ns1:VegetableTopping ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topped> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Spiced> ],
+            owl:onProperty ns1:ranging ;
+            owl:someValuesFrom ns1:Parmesan ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topped> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Hot> ],
+            owl:onProperty ns1:topping ;
+            owl:someValuesFrom ns1:ParmaHamTopping ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topped> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#BeefTopping> ],
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping> .
+            owl:onProperty ns1:include ;
+            owl:someValuesFrom ns1:AsparagusTopping ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:ranging ;
+            owl:someValuesFrom ns1:Chicken ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:ranging ;
+            owl:someValuesFrom ns1:VegetableTopping ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:topping ;
+            owl:someValuesFrom ns1:VegetableTopping ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:include ;
+            owl:someValuesFrom ns1:Artichoke ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:topping ;
+            owl:someValuesFrom ns1:Parmesan ] .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Margherita> a owl:Class .
+ns1:PeperoniSausageTopping a owl:Class .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#NonVegetarianPizza> a owl:Class ;
+ns1:PolloAdAstra a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ranging> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Parmesan> ],
+            owl:onProperty ns1:features ;
+            owl:someValuesFrom ns1:Sweet ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#include> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Asparagus> ],
+            owl:onProperty ns1:features ;
+            owl:someValuesFrom ns1:Chicken ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ranging> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Chicken> ],
-        [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#loaded> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping> ],
-        [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#include> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Artichokes> ],
-        [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#loaded> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Cheesy> ],
-        [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ranging> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping> ],
-        [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#include> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping> ],
-        [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#loaded> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#CheesyVegetable> ] .
+            owl:onProperty ns1:features ;
+            owl:someValuesFrom ns1:GreenPeppers ] .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#OptionsLike> a owl:Class ;
+ns1:SloppyGiuseppePizza a owl:Class .
+
+ns1:_beef a ns1:BeefTopping .
+
+ns1:_beefCattle a ns1:BeefTopping .
+
+ns1:_beefTopping a ns1:BeefTopping .
+
+ns1:_boeuf a ns1:BeefTopping .
+
+ns1:_common a ns1:Common .
+
+ns1:_green a ns1:HotGreen .
+
+ns1:_greens a ns1:HotGreen .
+
+ns1:_hotGreen a ns1:HotGreen .
+
+ns1:_hotSpicedBeef a ns1:BeefTopping .
+
+ns1:_leafyVegetable a ns1:HotGreen .
+
+ns1:_meat a ns1:Meat ;
+    ns1:loaded ns1:_meat,
+        ns1:_meats,
+        ns1:_meaty ;
+    ns1:topping ns1:_non,
+        ns1:_nonVegetarian,
+        ns1:_not,
+        ns1:_popular,
+        ns1:_vegetarian .
+
+ns1:_meats a ns1:Meat ;
+    ns1:loaded ns1:_meat,
+        ns1:_meats,
+        ns1:_meaty ;
+    ns1:topping ns1:_non,
+        ns1:_nonVegetarian,
+        ns1:_not,
+        ns1:_popular,
+        ns1:_vegetarian .
+
+ns1:_meaty a ns1:Meat ;
+    ns1:loaded ns1:_meat,
+        ns1:_meats,
+        ns1:_meaty ;
+    ns1:topping ns1:_non,
+        ns1:_nonVegetarian,
+        ns1:_not,
+        ns1:_popular,
+        ns1:_vegetarian .
+
+ns1:_nonVegetarian a ns1:Vegetarian ;
+    ns1:include ns1:_artichoke,
+        ns1:_artichokePlant,
+        ns1:_artichokeTopping,
+        ns1:_artichokes,
+        ns1:_asparagus,
+        ns1:_asparagusTopping,
+        ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesyVegetableTopping,
+        ns1:_cynaraScolymus,
+        ns1:_globeArtichoke,
+        ns1:_pizzaToppings,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_uniqueToppings,
+        ns1:_vegetableTopping ;
+    ns1:loaded ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesy,
+        ns1:_cheesyVegetable,
+        ns1:_cheesyVegetableTopping,
+        ns1:_pizzaToppings,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_uniqueToppings,
+        ns1:_veg,
+        ns1:_vegetable,
+        ns1:_vegetableTopping,
+        ns1:_veggie ;
+    ns1:ranging ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesyVegetableTopping,
+        ns1:_chicken,
+        ns1:_gallusGallus,
+        ns1:_parma,
+        ns1:_parmaHam,
+        ns1:_parmesan,
+        ns1:_pizzaToppings,
+        ns1:_poulet,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_uniqueToppings,
+        ns1:_vegetableTopping,
+        ns1:_volaille .
+
+ns1:_spicedBeef a ns1:BeefTopping .
+
+ns1:_spicedBeefTopping a ns1:BeefTopping .
+
+ns1:_vegetarian a ns1:Vegetarian ;
+    ns1:include ns1:_artichoke,
+        ns1:_artichokePlant,
+        ns1:_artichokeTopping,
+        ns1:_artichokes,
+        ns1:_asparagus,
+        ns1:_asparagusTopping,
+        ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesyVegetableTopping,
+        ns1:_cynaraScolymus,
+        ns1:_globeArtichoke,
+        ns1:_pizzaToppings,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_uniqueToppings,
+        ns1:_vegetableTopping ;
+    ns1:loaded ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesy,
+        ns1:_cheesyVegetable,
+        ns1:_cheesyVegetableTopping,
+        ns1:_pizzaToppings,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_uniqueToppings,
+        ns1:_veg,
+        ns1:_vegetable,
+        ns1:_vegetableTopping,
+        ns1:_veggie ;
+    ns1:ranging ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesyVegetableTopping,
+        ns1:_chicken,
+        ns1:_gallusGallus,
+        ns1:_parma,
+        ns1:_parmaHam,
+        ns1:_parmesan,
+        ns1:_pizzaToppings,
+        ns1:_poulet,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_uniqueToppings,
+        ns1:_vegetableTopping,
+        ns1:_volaille .
+
+ns1:consisting a owl:ObjectProperty .
+
+ns1:leavened a owl:ObjectProperty .
+
+ns1:Cheesy a owl:Class ;
+    rdfs:subClassOf ns1:Pizza,
+        ns1:Vegetarian .
+
+ns1:PanBase a owl:Class .
+
+ns1:Thin a owl:Class .
+
+ns1:_cheesyVegetable a ns1:Vegetable .
+
+ns1:_significantly a ns1:Significantly ;
+    ns1:alter ns1:_gustation,
+        ns1:_gustatorial,
+        ns1:_gustatory,
+        ns1:_gustatoryModality,
+        ns1:_gustatoryPerception,
+        ns1:_gustatorySensation,
+        ns1:_mouthful,
+        ns1:_overall,
+        ns1:_overallTaste,
+        ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzas,
+        ns1:_sample,
+        ns1:_sampler,
+        ns1:_savor,
+        ns1:_savour,
+        ns1:_senseOfTaste,
+        ns1:_smack,
+        ns1:_taste,
+        ns1:_tastePerception,
+        ns1:_tasteSensation,
+        ns1:_taster,
+        ns1:_tasting,
+        ns1:_tasty,
+        ns1:_texture,
+        ns1:_trial,
+        ns1:_trier,
+        ns1:_try,
+        ns1:_tryOut,
+        ns1:_tryout .
+
+ns1:_veg a ns1:Vegetable .
+
+ns1:_vegetable a ns1:Vegetable .
+
+ns1:_veggie a ns1:Vegetable .
+
+ns1:Formaggi a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topping> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping> ],
+            owl:onProperty ns1:includes ;
+            owl:someValuesFrom ns1:Gorgonzola ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ranging> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping> ],
-        [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#include> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Artichokes> ],
-        [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topping> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ParmaHamTopping> ],
-        [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#include> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Asparagus> ],
-        [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ranging> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Chicken> ],
-        [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ranging> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Parmesan> ],
-        [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topping> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Parmesan> ],
-        [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#include> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping> ] .
+            owl:onProperty ns1:includes ;
+            owl:someValuesFrom ns1:Parmesan ] .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Sweet> a owl:Class ;
-    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#AdAstraPizza>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#BeefTopping>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Chicken>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Combinations>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#GiardinieraPizza>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#GreenPeppers>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Hot>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#HotGreen>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Like>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#OnionTopping>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pollo>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PolloAdAstra>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Red>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#SloppyGiuseppePizza>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Spiced>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Unique>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping> .
+ns1:Prawns a owl:Class .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Unique> a owl:Class ;
-    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping> .
+ns1:Vegetable a owl:Class .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#WideVariety> a owl:Class ;
+ns1:Vegetarian a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#categorized> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Cheeses> ],
+            owl:onProperty ns1:loaded ;
+            owl:someValuesFrom ns1:Vegetable ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#categorized> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Types> ] .
+            owl:onProperty ns1:ranging ;
+            owl:someValuesFrom ns1:VegetableTopping ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:include ;
+            owl:someValuesFrom ns1:AsparagusTopping ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:include ;
+            owl:someValuesFrom ns1:Artichoke ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:ranging ;
+            owl:someValuesFrom ns1:Chicken ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:include ;
+            owl:someValuesFrom ns1:VegetableTopping ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:loaded ;
+            owl:someValuesFrom ns1:VegetableTopping ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:ranging ;
+            owl:someValuesFrom ns1:Parmesan ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:loaded ;
+            owl:someValuesFrom ns1:Cheesy ] .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#based> a owl:ObjectProperty .
+ns1:_circle a ns1:Round ;
+    ns1:leavened ns1:_dough,
+        ns1:_doughy,
+        ns1:_wheat,
+        ns1:_wheatBerry .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#categorized> a owl:ObjectProperty .
+ns1:_circular a ns1:Round ;
+    ns1:leavened ns1:_dough,
+        ns1:_doughy,
+        ns1:_wheat,
+        ns1:_wheatBerry .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Artichokes> a owl:Class .
+ns1:_circularity a ns1:Round ;
+    ns1:leavened ns1:_dough,
+        ns1:_doughy,
+        ns1:_wheat,
+        ns1:_wheatBerry .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Mix> a owl:Class .
+ns1:_circularize a ns1:Round ;
+    ns1:leavened ns1:_dough,
+        ns1:_doughy,
+        ns1:_wheat,
+        ns1:_wheatBerry .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#SeafoodTopping> a owl:Class .
+ns1:_commonly a ns1:Typically ;
+    ns1:includes ns1:_gorgonzola,
+        ns1:_mozzarella,
+        ns1:_parma,
+        ns1:_parmaHam,
+        ns1:_parmesan,
+        ns1:_ricotta .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Taste> a owl:Class .
+ns1:_mainTypes a ns1:MainTypes ;
+    ns1:used ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzas,
+        ns1:_significantly .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Cheesy> a owl:Class ;
-    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Vegetarian> .
+ns1:_normally a ns1:Typically ;
+    ns1:includes ns1:_gorgonzola,
+        ns1:_mozzarella,
+        ns1:_parma,
+        ns1:_parmaHam,
+        ns1:_parmesan,
+        ns1:_ricotta .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Vegetarian> a owl:Class ;
+ns1:_ordinarily a ns1:Typically ;
+    ns1:includes ns1:_gorgonzola,
+        ns1:_mozzarella,
+        ns1:_parma,
+        ns1:_parmaHam,
+        ns1:_parmesan,
+        ns1:_ricotta .
+
+ns1:_round a ns1:Round ;
+    ns1:leavened ns1:_dough,
+        ns1:_doughy,
+        ns1:_wheat,
+        ns1:_wheatBerry .
+
+ns1:_roundOfDrinks a ns1:Round ;
+    ns1:leavened ns1:_dough,
+        ns1:_doughy,
+        ns1:_wheat,
+        ns1:_wheatBerry .
+
+ns1:_roundness a ns1:Round ;
+    ns1:leavened ns1:_dough,
+        ns1:_doughy,
+        ns1:_wheat,
+        ns1:_wheatBerry .
+
+ns1:_type a ns1:MainTypes ;
+    ns1:used ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzas,
+        ns1:_significantly .
+
+ns1:_types a ns1:MainTypes ;
+    ns1:used ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzas,
+        ns1:_significantly .
+
+ns1:_typically a ns1:Typically ;
+    ns1:includes ns1:_gorgonzola,
+        ns1:_mozzarella,
+        ns1:_parma,
+        ns1:_parmaHam,
+        ns1:_parmesan,
+        ns1:_ricotta .
+
+ns1:_typify a ns1:MainTypes ;
+    ns1:used ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzas,
+        ns1:_significantly .
+
+ns1:_unremarkably a ns1:Typically ;
+    ns1:includes ns1:_gorgonzola,
+        ns1:_mozzarella,
+        ns1:_parma,
+        ns1:_parmaHam,
+        ns1:_parmesan,
+        ns1:_ricotta .
+
+ns1:_usually a ns1:Typically ;
+    ns1:includes ns1:_gorgonzola,
+        ns1:_mozzarella,
+        ns1:_parma,
+        ns1:_parmaHam,
+        ns1:_parmesan,
+        ns1:_ricotta .
+
+ns1:_usuallyRound a ns1:Round ;
+    ns1:leavened ns1:_dough,
+        ns1:_doughy,
+        ns1:_wheat,
+        ns1:_wheatBerry .
+
+ns1:alter a owl:ObjectProperty .
+
+ns1:includes a owl:ObjectProperty .
+
+ns1:Onion a owl:Class .
+
+ns1:SeafoodTopping a owl:Class .
+
+ns1:Sweet a owl:Class ;
+    rdfs:subClassOf ns1:AdAstraPizza,
+        ns1:BeefTopping,
+        ns1:Chicken,
+        ns1:Combinations,
+        ns1:GiardinieraPizza,
+        ns1:GreenPeppers,
+        ns1:Hot,
+        ns1:HotGreen,
+        ns1:HotSpiced,
+        ns1:Like,
+        ns1:Onion,
+        ns1:Pizza,
+        ns1:Pollo,
+        ns1:PolloAdAstra,
+        ns1:Red,
+        ns1:SloppyGiuseppePizza,
+        ns1:Unique,
+        ns1:VegetableTopping .
+
+ns1:_afters a ns1:Sweet .
+
+ns1:_artichoke a ns1:Artichoke .
+
+ns1:_artichokePlant a ns1:Artichoke .
+
+ns1:_artichokeTopping a ns1:Artichoke .
+
+ns1:_artichokes a ns1:Artichoke .
+
+ns1:_asparagus a ns1:AsparagusTopping .
+
+ns1:_asparagusTopping a ns1:AsparagusTopping .
+
+ns1:_confection a ns1:Sweet .
+
+ns1:_cynaraScolymus a ns1:Artichoke .
+
+ns1:_dessert a ns1:Sweet .
+
+ns1:_globeArtichoke a ns1:Artichoke .
+
+ns1:_hotSpiced a ns1:HotSpiced ;
+    ns2:27s ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzas .
+
+ns1:_spice a ns1:HotSpiced ;
+    ns2:27s ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzas .
+
+ns1:_spiceUp a ns1:HotSpiced ;
+    ns2:27s ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzas .
+
+ns1:_spiced a ns1:HotSpiced ;
+    ns2:27s ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzas .
+
+ns1:_spicery a ns1:HotSpiced ;
+    ns2:27s ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzas .
+
+ns1:_spiciness a ns1:HotSpiced ;
+    ns2:27s ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzas .
+
+ns1:_spicy a ns1:HotSpiced ;
+    ns2:27s ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzas .
+
+ns1:_sweet a ns1:Sweet .
+
+ns1:_sweetness a ns1:Sweet .
+
+ns1:_zest a ns1:HotSpiced ;
+    ns2:27s ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzas .
+
+ns1:Flattened a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#include> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Asparagus> ],
+            owl:onProperty ns1:leavened ;
+            owl:someValuesFrom ns1:Dough ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ranging> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Chicken> ],
-        [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#loaded> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping> ],
-        [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#loaded> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#CheesyVegetable> ],
-        [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#include> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping> ],
-        [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ranging> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Parmesan> ],
-        [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ranging> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping> ],
-        [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#loaded> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Cheesy> ],
-        [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#include> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Artichokes> ] .
+            owl:onProperty ns1:leavened ;
+            owl:someValuesFrom ns1:Wheat ] .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#consisting> a owl:ObjectProperty .
-
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#leavened> a owl:ObjectProperty .
-
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ParmaHamTopping> a owl:Class .
-
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#BeefTopping> a owl:Class .
-
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Flattened> a owl:Class ;
+ns1:Italian a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#leavened> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Wheat> ],
+            owl:onProperty ns1:consisting ;
+            owl:someValuesFrom ns1:Round ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#leavened> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Dough> ] .
+            owl:onProperty ns1:consisting ;
+            owl:someValuesFrom ns1:Typically ] .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#HotGreen> a owl:Class .
+ns1:_gammon a ns1:ParmaHamTopping .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Italian> a owl:Class ;
+ns1:_ham a ns1:ParmaHamTopping .
+
+ns1:_hamTopping a ns1:ParmaHamTopping .
+
+ns1:_jambon a ns1:ParmaHamTopping .
+
+ns1:_parmaHamTopping a ns1:ParmaHamTopping .
+
+ns1:known a owl:ObjectProperty .
+
+ns1:used a owl:ObjectProperty .
+
+ns1:Artichoke a owl:Class .
+
+ns1:WideVariety a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#consisting> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Round> ],
+            owl:onProperty ns1:categorized ;
+            owl:someValuesFrom ns1:MainTypes ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#consisting> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Typically> ] .
+            owl:onProperty ns1:categorized ;
+            owl:someValuesFrom ns1:Cheeses ] .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Types> a owl:Class ;
+ns1:_cheesy a ns1:Cheesy .
+
+ns1:_palate a ns1:Palate ;
+    ns1:prefer ns1:_cheesy,
+        ns1:_meat,
+        ns1:_meats,
+        ns1:_meaty .
+
+ns1:topping a owl:ObjectProperty .
+
+ns1:Hot a owl:Class .
+
+ns1:HotGreen a owl:Class .
+
+ns1:MainTypes a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#used> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Significantly> ],
+            owl:onProperty ns1:used ;
+            owl:someValuesFrom ns1:Pizza ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#used> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas> ] .
+            owl:onProperty ns1:used ;
+            owl:someValuesFrom ns1:Significantly ] .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#alter> a owl:ObjectProperty .
+ns1:ParmaHamTopping a owl:Class .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#includes> a owl:ObjectProperty .
+ns1:Popular a owl:Class ;
+    rdfs:subClassOf ns1:Pizza .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Like> a owl:Class .
+ns1:_cheese a ns1:Cheeses ;
+    ns1:used ns1:_formaggi,
+        ns1:_formaggiPizza,
+        ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzas,
+        ns1:_quattro,
+        ns1:_quattroFormaggi,
+        ns1:_quattroFormaggiPizza .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Meat> a owl:Class ;
+ns1:_cheeseLike a ns1:Cheeses ;
+    ns1:used ns1:_formaggi,
+        ns1:_formaggiPizza,
+        ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzas,
+        ns1:_quattro,
+        ns1:_quattroFormaggi,
+        ns1:_quattroFormaggiPizza .
+
+ns1:_cheeseLikeFontina a ns1:Cheeses ;
+    ns1:used ns1:_formaggi,
+        ns1:_formaggiPizza,
+        ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzas,
+        ns1:_quattro,
+        ns1:_quattroFormaggi,
+        ns1:_quattroFormaggiPizza .
+
+ns1:_cheeses a ns1:Cheeses ;
+    ns1:used ns1:_formaggi,
+        ns1:_formaggiPizza,
+        ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzas,
+        ns1:_quattro,
+        ns1:_quattroFormaggi,
+        ns1:_quattroFormaggiPizza .
+
+ns1:_formaggi a ns1:Formaggi ;
+    ns1:includes ns1:_gorgonzola,
+        ns1:_mozzarella,
+        ns1:_parma,
+        ns1:_parmaHam,
+        ns1:_parmesan,
+        ns1:_ricotta .
+
+ns1:_formaggiPizza a ns1:Formaggi ;
+    ns1:includes ns1:_gorgonzola,
+        ns1:_mozzarella,
+        ns1:_parma,
+        ns1:_parmaHam,
+        ns1:_parmesan,
+        ns1:_ricotta .
+
+ns1:_greenPepper a ns1:GreenPeppers .
+
+ns1:_greenPepperTopping a ns1:GreenPeppers .
+
+ns1:_greenPeppers a ns1:GreenPeppers .
+
+ns1:_hotGreenPepper a ns1:GreenPeppers .
+
+ns1:_jalapeno a ns1:GreenPeppers .
+
+ns1:_jalapenoPepper a ns1:GreenPeppers .
+
+ns1:_jalapenoPepperTopping a ns1:GreenPeppers .
+
+ns1:_pepper a ns1:GreenPeppers .
+
+ns1:_pepperTopping a ns1:GreenPeppers .
+
+ns1:_peppercorn a ns1:GreenPeppers .
+
+ns1:_peppers a ns1:GreenPeppers .
+
+ns1:_peppery a ns1:GreenPeppers .
+
+ns1:_quattro a ns1:Quattro ;
+    ns1:includes ns1:_gorgonzola,
+        ns1:_mozzarella,
+        ns1:_parma,
+        ns1:_parmaHam,
+        ns1:_parmesan,
+        ns1:_ricotta .
+
+ns1:_quattroFormaggi a ns1:Formaggi ;
+    ns1:includes ns1:_gorgonzola,
+        ns1:_mozzarella,
+        ns1:_parma,
+        ns1:_parmaHam,
+        ns1:_parmesan,
+        ns1:_ricotta .
+
+ns1:_quattroFormaggiPizza a ns1:Formaggi ;
+    ns1:includes ns1:_gorgonzola,
+        ns1:_mozzarella,
+        ns1:_parma,
+        ns1:_parmaHam,
+        ns1:_parmesan,
+        ns1:_ricotta .
+
+ns1:_sweetPepper a ns1:GreenPeppers .
+
+ns1:_sweetPeppers a ns1:GreenPeppers .
+
+ns1:include a owl:ObjectProperty .
+
+ns1:loaded a owl:ObjectProperty .
+
+ns1:ranging a owl:ObjectProperty .
+
+ns1:Meat a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#loaded> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Meat> ],
+            owl:onProperty ns1:loaded ;
+            owl:someValuesFrom ns1:Meat ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topping> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Vegetarian> ],
+            owl:onProperty ns1:topping ;
+            owl:someValuesFrom ns1:Non ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topping> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Non> ],
+            owl:onProperty ns1:topping ;
+            owl:someValuesFrom ns1:Popular ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topping> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Popular> ] .
+            owl:onProperty ns1:topping ;
+            owl:someValuesFrom ns1:Vegetarian ] .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Spiced> a owl:Class ;
+ns1:_wheat a ns1:Wheat ;
+    ns1:based ns1:_dough,
+        ns1:_doughy,
+        ns1:_tomato,
+        ns1:_tomatoes ;
+    ns1:topped ns1:_cheese,
+        ns1:_cheeseLike,
+        ns1:_cheeseLikeFontina,
+        ns1:_cheeses,
+        ns1:_tomato,
+        ns1:_tomatoes .
+
+ns1:_wheatBerry a ns1:Wheat ;
+    ns1:based ns1:_dough,
+        ns1:_doughy,
+        ns1:_tomato,
+        ns1:_tomatoes ;
+    ns1:topped ns1:_cheese,
+        ns1:_cheeseLike,
+        ns1:_cheeseLikeFontina,
+        ns1:_cheeses,
+        ns1:_tomato,
+        ns1:_tomatoes .
+
+ns1:Like a owl:Class .
+
+ns1:feature a owl:ObjectProperty .
+
+ns1:BeefTopping a owl:Class .
+
+ns1:_heat a ns1:HighTemperature .
+
+ns1:_highTemperature a ns1:HighTemperature .
+
+ns1:_hot a ns1:HighTemperature,
+        ns1:Hot .
+
+ns1:_hotness a ns1:HighTemperature .
+
+ns1:_temperature a ns1:HighTemperature .
+
+ns1:_tomato a ns1:Tomatoes .
+
+ns1:_tomatoes a ns1:Tomatoes .
+
+ns1:Dish a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#%27s> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas> ] .
+            owl:onProperty ns1:consisting ;
+            owl:someValuesFrom ns1:Typically ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:consisting ;
+            owl:someValuesFrom ns1:Round ],
+        ns1:Pizza,
+        ns1:PizzaBases .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#known> a owl:ObjectProperty .
+ns1:features a owl:ObjectProperty .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#used> a owl:ObjectProperty .
-
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Dish> a owl:Class ;
+ns1:Chicken a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#consisting> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Round> ],
+            owl:onProperty ns1:topping ;
+            owl:someValuesFrom ns1:VegetableTopping ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#consisting> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Typically> ],
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaBases>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas> .
+            owl:onProperty ns1:topping ;
+            owl:someValuesFrom ns1:Parmesan ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:topping ;
+            owl:someValuesFrom ns1:ParmaHamTopping ],
+        ns1:Pizza .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#GreenPeppers> a owl:Class .
-
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Hot> a owl:Class .
-
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Popular> a owl:Class ;
-    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas> .
-
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Round> a owl:Class ;
+ns1:Dough a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#leavened> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Wheat> ],
+            owl:onProperty ns1:topped ;
+            owl:someValuesFrom ns1:Cheeses ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#leavened> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Dough> ] .
+            owl:onProperty ns1:topped ;
+            owl:someValuesFrom ns1:Tomatoes ],
+        ns1:Pizza,
+        ns1:PizzaBases .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topping> a owl:ObjectProperty .
+ns1:Parmesan a owl:Class .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#include> a owl:ObjectProperty .
-
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#loaded> a owl:ObjectProperty .
-
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ranging> a owl:ObjectProperty .
-
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Chicken> a owl:Class ;
+ns1:Gorgonzola a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topping> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ParmaHamTopping> ],
-        [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topping> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Parmesan> ],
-        [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topping> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping> ],
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas> .
+            owl:onProperty ns1:topping ;
+            owl:someValuesFrom ns1:Common ] .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Typically> a owl:Class ;
+ns1:HotSpiced a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#includes> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Gorgonzola> ],
-        [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#includes> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Parmesan> ],
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Cheeses>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas> .
+            owl:onProperty ns2:27s ;
+            owl:someValuesFrom ns1:Pizza ] .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Parmesan> a owl:Class .
+ns1:_chicken a ns1:Chicken ;
+    ns1:topping ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesyVegetableTopping,
+        ns1:_gammon,
+        ns1:_ham,
+        ns1:_hamTopping,
+        ns1:_jambon,
+        ns1:_parma,
+        ns1:_parmaHam,
+        ns1:_parmaHamTopping,
+        ns1:_parmesan,
+        ns1:_pizzaToppings,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_uniqueToppings,
+        ns1:_vegetableTopping .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Dough> a owl:Class ;
+ns1:_dough a ns1:Dough ;
+    ns1:topped ns1:_cheese,
+        ns1:_cheeseLike,
+        ns1:_cheeseLikeFontina,
+        ns1:_cheeses,
+        ns1:_tomato,
+        ns1:_tomatoes .
+
+ns1:_doughy a ns1:Dough ;
+    ns1:topped ns1:_cheese,
+        ns1:_cheeseLike,
+        ns1:_cheeseLikeFontina,
+        ns1:_cheeses,
+        ns1:_tomato,
+        ns1:_tomatoes .
+
+ns1:_gallusGallus a ns1:Chicken ;
+    ns1:topping ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesyVegetableTopping,
+        ns1:_gammon,
+        ns1:_ham,
+        ns1:_hamTopping,
+        ns1:_jambon,
+        ns1:_parma,
+        ns1:_parmaHam,
+        ns1:_parmaHamTopping,
+        ns1:_parmesan,
+        ns1:_pizzaToppings,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_uniqueToppings,
+        ns1:_vegetableTopping .
+
+ns1:_poulet a ns1:Chicken ;
+    ns1:topping ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesyVegetableTopping,
+        ns1:_gammon,
+        ns1:_ham,
+        ns1:_hamTopping,
+        ns1:_jambon,
+        ns1:_parma,
+        ns1:_parmaHam,
+        ns1:_parmaHamTopping,
+        ns1:_parmesan,
+        ns1:_pizzaToppings,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_uniqueToppings,
+        ns1:_vegetableTopping .
+
+ns1:_volaille a ns1:Chicken ;
+    ns1:topping ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesyVegetableTopping,
+        ns1:_gammon,
+        ns1:_ham,
+        ns1:_hamTopping,
+        ns1:_jambon,
+        ns1:_parma,
+        ns1:_parmaHam,
+        ns1:_parmaHamTopping,
+        ns1:_parmesan,
+        ns1:_pizzaToppings,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_uniqueToppings,
+        ns1:_vegetableTopping .
+
+ns1:Round a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topped> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Cheeses> ],
+            owl:onProperty ns1:leavened ;
+            owl:someValuesFrom ns1:Wheat ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topped> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Tomatoes> ],
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaBases>,
-        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas> .
+            owl:onProperty ns1:leavened ;
+            owl:someValuesFrom ns1:Dough ] .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Gorgonzola> a owl:Class ;
+ns1:Typically a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topping> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Common> ] .
+            owl:onProperty ns1:includes ;
+            owl:someValuesFrom ns1:Gorgonzola ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:includes ;
+            owl:someValuesFrom ns1:Parmesan ],
+        ns1:Cheeses,
+        ns1:Pizza .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#HighTemperature> a owl:Class .
-
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#feature> a owl:ObjectProperty .
-
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#features> a owl:ObjectProperty .
-
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Cheeses> a owl:Class ;
+ns1:Cheeses a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#used> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Quattro> ],
+            owl:onProperty ns1:used ;
+            owl:someValuesFrom ns1:Pizza ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#used> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas> ],
+            owl:onProperty ns1:used ;
+            owl:someValuesFrom ns1:Formaggi ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#used> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Formaggi> ] .
+            owl:onProperty ns1:used ;
+            owl:someValuesFrom ns1:Quattro ] .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaBases> a owl:Class ;
+ns1:HighTemperature a owl:Class .
+
+ns1:_gorgonzola a ns1:Gorgonzola ;
+    ns1:topping ns1:_common .
+
+ns1:_mozzarella a ns1:Gorgonzola ;
+    ns1:topping ns1:_common .
+
+ns1:_ricotta a ns1:Gorgonzola ;
+    ns1:topping ns1:_common .
+
+ns1:PizzaBases a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#alter> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas> ],
+            owl:onProperty ns1:based ;
+            owl:someValuesFrom ns1:Dough ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#leavened> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Wheat> ],
+            owl:onProperty ns1:cater ;
+            owl:someValuesFrom ns1:Palate ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#used> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Significantly> ],
+            owl:onProperty ns1:alter ;
+            owl:someValuesFrom ns1:Overall ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#alter> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Overall> ],
+            owl:onProperty ns1:based ;
+            owl:someValuesFrom ns1:Tomatoes ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#leavened> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Dough> ],
+            owl:onProperty ns1:used ;
+            owl:someValuesFrom ns1:Pizza ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#used> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas> ],
+            owl:onProperty ns1:alter ;
+            owl:someValuesFrom ns1:OverallTaste ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#alter> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#OverallTaste> ],
+            owl:onProperty ns1:leavened ;
+            owl:someValuesFrom ns1:Dough ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#based> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Tomatoes> ],
+            owl:onProperty ns1:used ;
+            owl:someValuesFrom ns1:Significantly ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#based> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Dough> ],
+            owl:onProperty ns1:alter ;
+            owl:someValuesFrom ns1:Texture ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#alter> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Taste> ],
+            owl:onProperty ns1:alter ;
+            owl:someValuesFrom ns1:Pizza ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#cater> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Palate> ] .
+            owl:onProperty ns1:leavened ;
+            owl:someValuesFrom ns1:Wheat ] .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Tomatoes> a owl:Class ;
-    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas> .
+ns1:Tomatoes a owl:Class ;
+    rdfs:subClassOf ns1:Pizza .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topped> a owl:ObjectProperty .
+ns1:GreenPeppers a owl:Class .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping> a owl:Class ;
+ns1:topped a owl:ObjectProperty .
+
+ns1:_parma a ns1:Parmesan .
+
+ns1:_parmaHam a ns1:Parmesan .
+
+ns1:_parmesan a ns1:Parmesan .
+
+ns1:Texture a owl:Class .
+
+ns1:Mix a owl:Class .
+
+ns1:VegetableTopping a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#used> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas> ],
+            owl:onProperty ns1:used ;
+            owl:someValuesFrom ns1:Quattro ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#cater> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Palate> ],
+            owl:onProperty ns1:cater ;
+            owl:someValuesFrom ns1:Palate ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#used> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Quattro> ],
+            owl:onProperty ns1:used ;
+            owl:someValuesFrom ns1:Pizza ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#used> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Formaggi> ] .
+            owl:onProperty ns1:used ;
+            owl:someValuesFrom ns1:Formaggi ] .
 
-<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas> a owl:Class ;
+ns1:_pizza a ns1:Pizza ;
+    ns2:27s ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzas ;
+    ns1:feature ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesyVegetableTopping,
+        ns1:_green,
+        ns1:_greens,
+        ns1:_heat,
+        ns1:_highTemperature,
+        ns1:_hot,
+        ns1:_hotGreen,
+        ns1:_hotness,
+        ns1:_leafyVegetable,
+        ns1:_pizzaToppings,
+        ns1:_temperature,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_uniqueToppings,
+        ns1:_vegetableTopping ;
+    ns1:features ns1:_afters,
+        ns1:_amalgam,
+        ns1:_amalgamate,
+        ns1:_amalgamative,
+        ns1:_amalgamator,
+        ns1:_blend,
+        ns1:_chicken,
+        ns1:_coalesce,
+        ns1:_coalescency,
+        ns1:_coalition,
+        ns1:_combination,
+        ns1:_combine,
+        ns1:_combining,
+        ns1:_commingle,
+        ns1:_commix,
+        ns1:_commixture,
+        ns1:_confection,
+        ns1:_conflate,
+        ns1:_dessert,
+        ns1:_flux,
+        ns1:_fuse,
+        ns1:_fusible,
+        ns1:_fusion,
+        ns1:_gallusGallus,
+        ns1:_gammon,
+        ns1:_greenPepper,
+        ns1:_greenPepperTopping,
+        ns1:_greenPeppers,
+        ns1:_ham,
+        ns1:_hamTopping,
+        ns1:_hotGreenPepper,
+        ns1:_immix,
+        ns1:_jalapeno,
+        ns1:_jalapenoPepper,
+        ns1:_jalapenoPepperTopping,
+        ns1:_jambon,
+        ns1:_meld,
+        ns1:_merge,
+        ns1:_mingle,
+        ns1:_mix,
+        ns1:_mixable,
+        ns1:_mixed,
+        ns1:_mixer,
+        ns1:_mixing,
+        ns1:_mixture,
+        ns1:_parmaHamTopping,
+        ns1:_pepper,
+        ns1:_pepperTopping,
+        ns1:_peppercorn,
+        ns1:_peppers,
+        ns1:_peppery,
+        ns1:_poulet,
+        ns1:_premix,
+        ns1:_sweet,
+        ns1:_sweetPepper,
+        ns1:_sweetPeppers,
+        ns1:_sweetness,
+        ns1:_unify,
+        ns1:_unit,
+        ns1:_volaille ;
+    ns1:include ns1:_artichoke,
+        ns1:_artichokePlant,
+        ns1:_artichokeTopping,
+        ns1:_artichokes,
+        ns1:_asparagus,
+        ns1:_asparagusTopping,
+        ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesyVegetableTopping,
+        ns1:_cynaraScolymus,
+        ns1:_globeArtichoke,
+        ns1:_pizzaToppings,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_uniqueToppings,
+        ns1:_vegetableTopping ;
+    ns1:includes ns1:_gorgonzola,
+        ns1:_mozzarella,
+        ns1:_parma,
+        ns1:_parmaHam,
+        ns1:_parmesan,
+        ns1:_ricotta ;
+    ns1:known ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesy,
+        ns1:_cheesyVegetableTopping,
+        ns1:_hotSpiced,
+        ns1:_like,
+        ns1:_likeness,
+        ns1:_mixedSeafood,
+        ns1:_mixedSeafoodTopping,
+        ns1:_nonVegetarian,
+        ns1:_nonVegetarianPizza,
+        ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzaToppings,
+        ns1:_pizzas,
+        ns1:_seafood,
+        ns1:_seafoodPizza,
+        ns1:_seafoodTopping,
+        ns1:_similar,
+        ns1:_similarity,
+        ns1:_spice,
+        ns1:_spiceUp,
+        ns1:_spiced,
+        ns1:_spicery,
+        ns1:_spiciness,
+        ns1:_spicy,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_unique,
+        ns1:_uniqueToppings,
+        ns1:_vegetableTopping,
+        ns1:_vegetarian,
+        ns1:_vegetarianPizza,
+        ns1:_zest ;
+    ns1:loaded ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesy,
+        ns1:_cheesyVegetable,
+        ns1:_cheesyVegetableTopping,
+        ns1:_pizzaToppings,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_uniqueToppings,
+        ns1:_veg,
+        ns1:_vegetable,
+        ns1:_vegetableTopping,
+        ns1:_veggie ;
+    ns1:ranging ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesyVegetableTopping,
+        ns1:_chicken,
+        ns1:_gallusGallus,
+        ns1:_parma,
+        ns1:_parmaHam,
+        ns1:_parmesan,
+        ns1:_pizzaToppings,
+        ns1:_poulet,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_uniqueToppings,
+        ns1:_vegetableTopping,
+        ns1:_volaille ;
+    ns1:topped ns1:_anchovies,
+        ns1:_anchovy,
+        ns1:_beef,
+        ns1:_beefCattle,
+        ns1:_beefTopping,
+        ns1:_boeuf,
+        ns1:_caper,
+        ns1:_capers,
+        ns1:_gorgonzola,
+        ns1:_heat,
+        ns1:_highTemperature,
+        ns1:_hot,
+        ns1:_hotSpiced,
+        ns1:_hotSpicedBeef,
+        ns1:_hotness,
+        ns1:_mozzarella,
+        ns1:_ricotta,
+        ns1:_spice,
+        ns1:_spiceUp,
+        ns1:_spiced,
+        ns1:_spicedBeef,
+        ns1:_spicedBeefTopping,
+        ns1:_spicery,
+        ns1:_spiciness,
+        ns1:_spicy,
+        ns1:_temperature,
+        ns1:_tomato,
+        ns1:_tomatoes,
+        ns1:_zest ;
+    ns1:topping ns1:_common .
+
+ns1:_pizzaPie a ns1:Pizza ;
+    ns2:27s ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzas ;
+    ns1:feature ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesyVegetableTopping,
+        ns1:_green,
+        ns1:_greens,
+        ns1:_heat,
+        ns1:_highTemperature,
+        ns1:_hot,
+        ns1:_hotGreen,
+        ns1:_hotness,
+        ns1:_leafyVegetable,
+        ns1:_pizzaToppings,
+        ns1:_temperature,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_uniqueToppings,
+        ns1:_vegetableTopping ;
+    ns1:features ns1:_afters,
+        ns1:_amalgam,
+        ns1:_amalgamate,
+        ns1:_amalgamative,
+        ns1:_amalgamator,
+        ns1:_blend,
+        ns1:_chicken,
+        ns1:_coalesce,
+        ns1:_coalescency,
+        ns1:_coalition,
+        ns1:_combination,
+        ns1:_combine,
+        ns1:_combining,
+        ns1:_commingle,
+        ns1:_commix,
+        ns1:_commixture,
+        ns1:_confection,
+        ns1:_conflate,
+        ns1:_dessert,
+        ns1:_flux,
+        ns1:_fuse,
+        ns1:_fusible,
+        ns1:_fusion,
+        ns1:_gallusGallus,
+        ns1:_gammon,
+        ns1:_greenPepper,
+        ns1:_greenPepperTopping,
+        ns1:_greenPeppers,
+        ns1:_ham,
+        ns1:_hamTopping,
+        ns1:_hotGreenPepper,
+        ns1:_immix,
+        ns1:_jalapeno,
+        ns1:_jalapenoPepper,
+        ns1:_jalapenoPepperTopping,
+        ns1:_jambon,
+        ns1:_meld,
+        ns1:_merge,
+        ns1:_mingle,
+        ns1:_mix,
+        ns1:_mixable,
+        ns1:_mixed,
+        ns1:_mixer,
+        ns1:_mixing,
+        ns1:_mixture,
+        ns1:_parmaHamTopping,
+        ns1:_pepper,
+        ns1:_pepperTopping,
+        ns1:_peppercorn,
+        ns1:_peppers,
+        ns1:_peppery,
+        ns1:_poulet,
+        ns1:_premix,
+        ns1:_sweet,
+        ns1:_sweetPepper,
+        ns1:_sweetPeppers,
+        ns1:_sweetness,
+        ns1:_unify,
+        ns1:_unit,
+        ns1:_volaille ;
+    ns1:include ns1:_artichoke,
+        ns1:_artichokePlant,
+        ns1:_artichokeTopping,
+        ns1:_artichokes,
+        ns1:_asparagus,
+        ns1:_asparagusTopping,
+        ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesyVegetableTopping,
+        ns1:_cynaraScolymus,
+        ns1:_globeArtichoke,
+        ns1:_pizzaToppings,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_uniqueToppings,
+        ns1:_vegetableTopping ;
+    ns1:includes ns1:_gorgonzola,
+        ns1:_mozzarella,
+        ns1:_parma,
+        ns1:_parmaHam,
+        ns1:_parmesan,
+        ns1:_ricotta ;
+    ns1:known ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesy,
+        ns1:_cheesyVegetableTopping,
+        ns1:_hotSpiced,
+        ns1:_like,
+        ns1:_likeness,
+        ns1:_mixedSeafood,
+        ns1:_mixedSeafoodTopping,
+        ns1:_nonVegetarian,
+        ns1:_nonVegetarianPizza,
+        ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzaToppings,
+        ns1:_pizzas,
+        ns1:_seafood,
+        ns1:_seafoodPizza,
+        ns1:_seafoodTopping,
+        ns1:_similar,
+        ns1:_similarity,
+        ns1:_spice,
+        ns1:_spiceUp,
+        ns1:_spiced,
+        ns1:_spicery,
+        ns1:_spiciness,
+        ns1:_spicy,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_unique,
+        ns1:_uniqueToppings,
+        ns1:_vegetableTopping,
+        ns1:_vegetarian,
+        ns1:_vegetarianPizza,
+        ns1:_zest ;
+    ns1:loaded ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesy,
+        ns1:_cheesyVegetable,
+        ns1:_cheesyVegetableTopping,
+        ns1:_pizzaToppings,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_uniqueToppings,
+        ns1:_veg,
+        ns1:_vegetable,
+        ns1:_vegetableTopping,
+        ns1:_veggie ;
+    ns1:ranging ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesyVegetableTopping,
+        ns1:_chicken,
+        ns1:_gallusGallus,
+        ns1:_parma,
+        ns1:_parmaHam,
+        ns1:_parmesan,
+        ns1:_pizzaToppings,
+        ns1:_poulet,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_uniqueToppings,
+        ns1:_vegetableTopping,
+        ns1:_volaille ;
+    ns1:topped ns1:_anchovies,
+        ns1:_anchovy,
+        ns1:_beef,
+        ns1:_beefCattle,
+        ns1:_beefTopping,
+        ns1:_boeuf,
+        ns1:_caper,
+        ns1:_capers,
+        ns1:_gorgonzola,
+        ns1:_heat,
+        ns1:_highTemperature,
+        ns1:_hot,
+        ns1:_hotSpiced,
+        ns1:_hotSpicedBeef,
+        ns1:_hotness,
+        ns1:_mozzarella,
+        ns1:_ricotta,
+        ns1:_spice,
+        ns1:_spiceUp,
+        ns1:_spiced,
+        ns1:_spicedBeef,
+        ns1:_spicedBeefTopping,
+        ns1:_spicery,
+        ns1:_spiciness,
+        ns1:_spicy,
+        ns1:_temperature,
+        ns1:_tomato,
+        ns1:_tomatoes,
+        ns1:_zest ;
+    ns1:topping ns1:_common .
+
+ns1:_pizzas a ns1:Pizza ;
+    ns2:27s ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzas ;
+    ns1:feature ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesyVegetableTopping,
+        ns1:_green,
+        ns1:_greens,
+        ns1:_heat,
+        ns1:_highTemperature,
+        ns1:_hot,
+        ns1:_hotGreen,
+        ns1:_hotness,
+        ns1:_leafyVegetable,
+        ns1:_pizzaToppings,
+        ns1:_temperature,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_uniqueToppings,
+        ns1:_vegetableTopping ;
+    ns1:features ns1:_afters,
+        ns1:_amalgam,
+        ns1:_amalgamate,
+        ns1:_amalgamative,
+        ns1:_amalgamator,
+        ns1:_blend,
+        ns1:_chicken,
+        ns1:_coalesce,
+        ns1:_coalescency,
+        ns1:_coalition,
+        ns1:_combination,
+        ns1:_combine,
+        ns1:_combining,
+        ns1:_commingle,
+        ns1:_commix,
+        ns1:_commixture,
+        ns1:_confection,
+        ns1:_conflate,
+        ns1:_dessert,
+        ns1:_flux,
+        ns1:_fuse,
+        ns1:_fusible,
+        ns1:_fusion,
+        ns1:_gallusGallus,
+        ns1:_gammon,
+        ns1:_greenPepper,
+        ns1:_greenPepperTopping,
+        ns1:_greenPeppers,
+        ns1:_ham,
+        ns1:_hamTopping,
+        ns1:_hotGreenPepper,
+        ns1:_immix,
+        ns1:_jalapeno,
+        ns1:_jalapenoPepper,
+        ns1:_jalapenoPepperTopping,
+        ns1:_jambon,
+        ns1:_meld,
+        ns1:_merge,
+        ns1:_mingle,
+        ns1:_mix,
+        ns1:_mixable,
+        ns1:_mixed,
+        ns1:_mixer,
+        ns1:_mixing,
+        ns1:_mixture,
+        ns1:_parmaHamTopping,
+        ns1:_pepper,
+        ns1:_pepperTopping,
+        ns1:_peppercorn,
+        ns1:_peppers,
+        ns1:_peppery,
+        ns1:_poulet,
+        ns1:_premix,
+        ns1:_sweet,
+        ns1:_sweetPepper,
+        ns1:_sweetPeppers,
+        ns1:_sweetness,
+        ns1:_unify,
+        ns1:_unit,
+        ns1:_volaille ;
+    ns1:include ns1:_artichoke,
+        ns1:_artichokePlant,
+        ns1:_artichokeTopping,
+        ns1:_artichokes,
+        ns1:_asparagus,
+        ns1:_asparagusTopping,
+        ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesyVegetableTopping,
+        ns1:_cynaraScolymus,
+        ns1:_globeArtichoke,
+        ns1:_pizzaToppings,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_uniqueToppings,
+        ns1:_vegetableTopping ;
+    ns1:includes ns1:_gorgonzola,
+        ns1:_mozzarella,
+        ns1:_parma,
+        ns1:_parmaHam,
+        ns1:_parmesan,
+        ns1:_ricotta ;
+    ns1:known ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesy,
+        ns1:_cheesyVegetableTopping,
+        ns1:_hotSpiced,
+        ns1:_like,
+        ns1:_likeness,
+        ns1:_mixedSeafood,
+        ns1:_mixedSeafoodTopping,
+        ns1:_nonVegetarian,
+        ns1:_nonVegetarianPizza,
+        ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzaToppings,
+        ns1:_pizzas,
+        ns1:_seafood,
+        ns1:_seafoodPizza,
+        ns1:_seafoodTopping,
+        ns1:_similar,
+        ns1:_similarity,
+        ns1:_spice,
+        ns1:_spiceUp,
+        ns1:_spiced,
+        ns1:_spicery,
+        ns1:_spiciness,
+        ns1:_spicy,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_unique,
+        ns1:_uniqueToppings,
+        ns1:_vegetableTopping,
+        ns1:_vegetarian,
+        ns1:_vegetarianPizza,
+        ns1:_zest ;
+    ns1:loaded ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesy,
+        ns1:_cheesyVegetable,
+        ns1:_cheesyVegetableTopping,
+        ns1:_pizzaToppings,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_uniqueToppings,
+        ns1:_veg,
+        ns1:_vegetable,
+        ns1:_vegetableTopping,
+        ns1:_veggie ;
+    ns1:ranging ns1:_cheeseTopping,
+        ns1:_cheesesTopping,
+        ns1:_cheesyVegetableTopping,
+        ns1:_chicken,
+        ns1:_gallusGallus,
+        ns1:_parma,
+        ns1:_parmaHam,
+        ns1:_parmesan,
+        ns1:_pizzaToppings,
+        ns1:_poulet,
+        ns1:_topping,
+        ns1:_toppings,
+        ns1:_uniqueToppings,
+        ns1:_vegetableTopping,
+        ns1:_volaille ;
+    ns1:topped ns1:_anchovies,
+        ns1:_anchovy,
+        ns1:_beef,
+        ns1:_beefCattle,
+        ns1:_beefTopping,
+        ns1:_boeuf,
+        ns1:_caper,
+        ns1:_capers,
+        ns1:_gorgonzola,
+        ns1:_heat,
+        ns1:_highTemperature,
+        ns1:_hot,
+        ns1:_hotSpiced,
+        ns1:_hotSpicedBeef,
+        ns1:_hotness,
+        ns1:_mozzarella,
+        ns1:_ricotta,
+        ns1:_spice,
+        ns1:_spiceUp,
+        ns1:_spiced,
+        ns1:_spicedBeef,
+        ns1:_spicedBeefTopping,
+        ns1:_spicery,
+        ns1:_spiciness,
+        ns1:_spicy,
+        ns1:_temperature,
+        ns1:_tomato,
+        ns1:_tomatoes,
+        ns1:_zest ;
+    ns1:topping ns1:_common .
+
+ns1:_cheeseTopping a ns1:VegetableTopping ;
+    ns1:cater ns1:_palate ;
+    ns1:used ns1:_formaggi,
+        ns1:_formaggiPizza,
+        ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzas,
+        ns1:_quattro,
+        ns1:_quattroFormaggi,
+        ns1:_quattroFormaggiPizza .
+
+ns1:_cheesesTopping a ns1:VegetableTopping ;
+    ns1:cater ns1:_palate ;
+    ns1:used ns1:_formaggi,
+        ns1:_formaggiPizza,
+        ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzas,
+        ns1:_quattro,
+        ns1:_quattroFormaggi,
+        ns1:_quattroFormaggiPizza .
+
+ns1:_cheesyVegetableTopping a ns1:VegetableTopping ;
+    ns1:cater ns1:_palate ;
+    ns1:used ns1:_formaggi,
+        ns1:_formaggiPizza,
+        ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzas,
+        ns1:_quattro,
+        ns1:_quattroFormaggi,
+        ns1:_quattroFormaggiPizza .
+
+ns1:_pizzaToppings a ns1:VegetableTopping ;
+    ns1:cater ns1:_palate ;
+    ns1:used ns1:_formaggi,
+        ns1:_formaggiPizza,
+        ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzas,
+        ns1:_quattro,
+        ns1:_quattroFormaggi,
+        ns1:_quattroFormaggiPizza .
+
+ns1:_topping a ns1:VegetableTopping ;
+    ns1:cater ns1:_palate ;
+    ns1:used ns1:_formaggi,
+        ns1:_formaggiPizza,
+        ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzas,
+        ns1:_quattro,
+        ns1:_quattroFormaggi,
+        ns1:_quattroFormaggiPizza .
+
+ns1:_toppings a ns1:VegetableTopping ;
+    ns1:cater ns1:_palate ;
+    ns1:used ns1:_formaggi,
+        ns1:_formaggiPizza,
+        ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzas,
+        ns1:_quattro,
+        ns1:_quattroFormaggi,
+        ns1:_quattroFormaggiPizza .
+
+ns1:_uniqueToppings a ns1:VegetableTopping ;
+    ns1:cater ns1:_palate ;
+    ns1:used ns1:_formaggi,
+        ns1:_formaggiPizza,
+        ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzas,
+        ns1:_quattro,
+        ns1:_quattroFormaggi,
+        ns1:_quattroFormaggiPizza .
+
+ns1:_vegetableTopping a ns1:VegetableTopping ;
+    ns1:cater ns1:_palate ;
+    ns1:used ns1:_formaggi,
+        ns1:_formaggiPizza,
+        ns1:_pizza,
+        ns1:_pizzaPie,
+        ns1:_pizzas,
+        ns1:_quattro,
+        ns1:_quattroFormaggi,
+        ns1:_quattroFormaggiPizza .
+
+ns1:Pizza a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topped> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Spiced> ],
+            owl:onProperty ns1:feature ;
+            owl:someValuesFrom ns1:HotGreen ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#include> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping> ],
+            owl:onProperty ns1:feature ;
+            owl:someValuesFrom ns1:Hot ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topping> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Common> ],
+            owl:onProperty ns2:27s ;
+            owl:someValuesFrom ns1:Pizza ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#feature> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#HighTemperature> ],
+            owl:onProperty ns1:features ;
+            owl:someValuesFrom ns1:Sweet ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#known> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping> ],
+            owl:onProperty ns1:known ;
+            owl:someValuesFrom ns1:Pizza ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topped> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Capers> ],
+            owl:onProperty ns1:includes ;
+            owl:someValuesFrom ns1:Parmesan ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topped> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#BeefTopping> ],
+            owl:onProperty ns1:known ;
+            owl:someValuesFrom ns1:Cheesy ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topped> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Tomatoes> ],
+            owl:onProperty ns1:ranging ;
+            owl:someValuesFrom ns1:Chicken ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#includes> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Parmesan> ],
+            owl:onProperty ns1:include ;
+            owl:someValuesFrom ns1:Artichoke ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topped> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#HighTemperature> ],
+            owl:onProperty ns1:includes ;
+            owl:someValuesFrom ns1:Gorgonzola ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topped> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Anchovies> ],
+            owl:onProperty ns1:features ;
+            owl:someValuesFrom ns1:Mix ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#include> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Artichokes> ],
+            owl:onProperty ns1:include ;
+            owl:someValuesFrom ns1:VegetableTopping ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#includes> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Gorgonzola> ],
+            owl:onProperty ns1:loaded ;
+            owl:someValuesFrom ns1:VegetableTopping ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#known> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Vegetarian> ],
+            owl:onProperty ns1:known ;
+            owl:someValuesFrom ns1:Like ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#features> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ParmaHamTopping> ],
+            owl:onProperty ns1:ranging ;
+            owl:someValuesFrom ns1:Parmesan ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#known> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#SeafoodTopping> ],
+            owl:onProperty ns1:topping ;
+            owl:someValuesFrom ns1:Common ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#feature> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Hot> ],
+            owl:onProperty ns1:features ;
+            owl:someValuesFrom ns1:GreenPeppers ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#known> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Spiced> ],
+            owl:onProperty ns1:known ;
+            owl:someValuesFrom ns1:VegetableTopping ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#known> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#SeafoodPizza> ],
+            owl:onProperty ns1:topped ;
+            owl:someValuesFrom ns1:BeefTopping ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#known> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Like> ],
+            owl:onProperty ns1:topped ;
+            owl:someValuesFrom ns1:Anchovies ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#feature> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#HotGreen> ],
+            owl:onProperty ns1:topped ;
+            owl:someValuesFrom ns1:HotSpiced ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#known> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Cheesy> ],
+            owl:onProperty ns1:known ;
+            owl:someValuesFrom ns1:SeafoodPizza ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#loaded> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#CheesyVegetable> ],
+            owl:onProperty ns1:features ;
+            owl:someValuesFrom ns1:ParmaHamTopping ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#known> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Unique> ],
+            owl:onProperty ns1:features ;
+            owl:someValuesFrom ns1:Chicken ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#include> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Asparagus> ],
+            owl:onProperty ns1:known ;
+            owl:someValuesFrom ns1:Vegetarian ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#features> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Sweet> ],
+            owl:onProperty ns1:feature ;
+            owl:someValuesFrom ns1:HighTemperature ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#%27s> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas> ],
+            owl:onProperty ns1:known ;
+            owl:someValuesFrom ns1:Unique ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#features> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Mix> ],
+            owl:onProperty ns1:feature ;
+            owl:someValuesFrom ns1:VegetableTopping ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ranging> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Chicken> ],
+            owl:onProperty ns1:loaded ;
+            owl:someValuesFrom ns1:Cheesy ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#feature> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#GreenPeppers> ],
+            owl:onProperty ns1:topped ;
+            owl:someValuesFrom ns1:HighTemperature ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#loaded> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping> ],
+            owl:onProperty ns1:include ;
+            owl:someValuesFrom ns1:AsparagusTopping ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ranging> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping> ],
+            owl:onProperty ns1:known ;
+            owl:someValuesFrom ns1:NonVegetarianPizza ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topped> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Hot> ],
+            owl:onProperty ns1:ranging ;
+            owl:someValuesFrom ns1:VegetableTopping ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#known> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#NonVegetarianPizza> ],
+            owl:onProperty ns1:topped ;
+            owl:someValuesFrom ns1:Hot ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#features> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Chicken> ],
+            owl:onProperty ns1:topped ;
+            owl:someValuesFrom ns1:Gorgonzola ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#loaded> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Cheesy> ],
+            owl:onProperty ns1:known ;
+            owl:someValuesFrom ns1:HotSpiced ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ranging> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Parmesan> ],
+            owl:onProperty ns1:topped ;
+            owl:someValuesFrom ns1:Capers ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#known> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizzas> ],
+            owl:onProperty ns1:known ;
+            owl:someValuesFrom ns1:SeafoodTopping ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topped> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Gorgonzola> ],
+            owl:onProperty ns1:loaded ;
+            owl:someValuesFrom ns1:Vegetable ],
         [ a owl:Restriction ;
-            owl:onProperty <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#feature> ;
-            owl:someValuesFrom <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping> ] .
+            owl:onProperty ns1:topped ;
+            owl:someValuesFrom ns1:Tomatoes ] .
 

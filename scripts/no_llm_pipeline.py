@@ -103,7 +103,7 @@ def add_pipeline_components(pipeline: Pipeline) -> Pipeline:
             kr_relations_to_owl_obj_props,
             kr_metarelations_to_owl,
             kr_relations_to_anonymous_some_parent,
-            # concept_lrs_to_owl_individuals
+            concept_lrs_to_owl_individuals
         }
     owl_axiom_extraction = OWLAxiomExtraction(
         owl_axiom_generators=axiom_generators,
