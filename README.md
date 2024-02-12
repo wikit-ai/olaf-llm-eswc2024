@@ -39,3 +39,23 @@ Script to create an OWL ontology based on the pizza textual description with an 
 ```bash
 python scripts/llm_text_to_owl.py
 ```
+
+Results are stored in `results/llm_text_to_owl/llm_owl_pizza_onto_eswc2024.ttl`
+
+## LLM pipeline
+
+Script to create an OWL ontology based ont the pizza textual description with a pipeline made up with LLM components.
+
+```bash
+python scripts/llm_pipeline.py
+```
+Results are stored in `results/llm_pipeline/llm_pipeline_kr_rgf_graph_eswc2024.ttl` and `results/llm_pipeline/llm_pipeline_kr_eswc2024.json`.
+
+## No LLM pipeline 
+
+Script to create an OWL ontology based ont the pizza textual description with a pipeline made up without LLM components.
+
+```bash
+python scripts/no_llm_pipeline.py
+```
+Results are stored in `results/no_llm_pipeline/no_llm_pipeline_kr_rgf_graph_eswc2024.ttl` and `results/no_llm_pipeline/no_llm_pipeline_kr_eswc2024.json`.
