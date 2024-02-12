@@ -39,9 +39,8 @@ def text_to_llm_prompt(pizza_description: str) -> list[dict[str, str]]:
 def main() -> None:
     """Create OWL ontology from pizza textual description with OpenAI GPT-3.5 turbo 16k model."""
 
-    text_file = open("data/pizza_description.txt", "r")
-    pizza_description = text_file.read()
-    text_file.close()
+    with open(os.path.join(os.getenv("DATA_PATH"), "pizza_description.txt"), "r", encoding="utf8") as text_file:
+        pizza_description = text_file.read()
 
     client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
     response = client.chat.completions.create(
@@ -52,10 +51,8 @@ def main() -> None:
             )
     llm_output = response.choices[0].message.content
 
-    text_file = open("results/llm_text_to_owl/llm_owl_pizza_onto.ttl", "w", encoding="utf-8")
-    text_file.write(llm_output)
-    text_file.close()
-
+    with open(os.path.join(os.getenv("RESULTS_PATH"), "llm_text_to_owl/llm_owl_pizza_onto.ttl"), "w", encoding="utf-8") as text_file:
+        text_file.write(llm_output)
 
 if __name__ == "__main__":
     main()
