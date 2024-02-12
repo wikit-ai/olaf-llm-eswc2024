@@ -1,5 +1,4 @@
 @prefix ns1: <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#> .
-@prefix ns2: <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#%> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
@@ -585,7 +584,7 @@ ns1:_giuseppePizza a ns1:GiardinieraPizza ;
         ns1:_zest .
 
 ns1:_hotPizza a ns1:HotPizza ;
-    ns2:27s ns1:_pizza,
+    ns1:27s ns1:_pizza,
         ns1:_pizzaPie,
         ns1:_pizzas .
 
@@ -1013,7 +1012,7 @@ ns1:_sort a ns1:WideVariety ;
         ns1:_typify .
 
 ns1:_spicyPizza a ns1:HotPizza ;
-    ns2:27s ns1:_pizza,
+    ns1:27s ns1:_pizza,
         ns1:_pizzaPie,
         ns1:_pizzas .
 
@@ -1452,7 +1451,7 @@ ns1:fired a owl:ObjectProperty .
 
 ns1:prefer a owl:ObjectProperty .
 
-ns2:27s a owl:ObjectProperty .
+ns1:27s a owl:ObjectProperty .
 
 ns1:CapricciosaPizza a owl:Class .
 
@@ -1730,7 +1729,7 @@ ns1:FourthCheeseLike a owl:Class .
 
 ns1:HotPizza a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty ns2:27s ;
+            owl:onProperty ns1:27s ;
             owl:someValuesFrom ns1:Pizza ],
         ns1:HotSpiced,
         ns1:Pizza .
@@ -2445,37 +2444,37 @@ ns1:_dessert a ns1:Sweet .
 ns1:_globeArtichoke a ns1:Artichoke .
 
 ns1:_hotSpiced a ns1:HotSpiced ;
-    ns2:27s ns1:_pizza,
+    ns1:27s ns1:_pizza,
         ns1:_pizzaPie,
         ns1:_pizzas .
 
 ns1:_spice a ns1:HotSpiced ;
-    ns2:27s ns1:_pizza,
+    ns1:27s ns1:_pizza,
         ns1:_pizzaPie,
         ns1:_pizzas .
 
 ns1:_spiceUp a ns1:HotSpiced ;
-    ns2:27s ns1:_pizza,
+    ns1:27s ns1:_pizza,
         ns1:_pizzaPie,
         ns1:_pizzas .
 
 ns1:_spiced a ns1:HotSpiced ;
-    ns2:27s ns1:_pizza,
+    ns1:27s ns1:_pizza,
         ns1:_pizzaPie,
         ns1:_pizzas .
 
 ns1:_spicery a ns1:HotSpiced ;
-    ns2:27s ns1:_pizza,
+    ns1:27s ns1:_pizza,
         ns1:_pizzaPie,
         ns1:_pizzas .
 
 ns1:_spiciness a ns1:HotSpiced ;
-    ns2:27s ns1:_pizza,
+    ns1:27s ns1:_pizza,
         ns1:_pizzaPie,
         ns1:_pizzas .
 
 ns1:_spicy a ns1:HotSpiced ;
-    ns2:27s ns1:_pizza,
+    ns1:27s ns1:_pizza,
         ns1:_pizzaPie,
         ns1:_pizzas .
 
@@ -2484,7 +2483,7 @@ ns1:_sweet a ns1:Sweet .
 ns1:_sweetness a ns1:Sweet .
 
 ns1:_zest a ns1:HotSpiced ;
-    ns2:27s ns1:_pizza,
+    ns1:27s ns1:_pizza,
         ns1:_pizzaPie,
         ns1:_pizzas .
 
@@ -2771,7 +2770,7 @@ ns1:Gorgonzola a owl:Class ;
 
 ns1:HotSpiced a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty ns2:27s ;
+            owl:onProperty ns1:27s ;
             owl:someValuesFrom ns1:Pizza ] .
 
 ns1:_chicken a ns1:Chicken ;
@@ -2969,7 +2968,7 @@ ns1:VegetableTopping a owl:Class ;
             owl:someValuesFrom ns1:Formaggi ] .
 
 ns1:_pizza a ns1:Pizza ;
-    ns2:27s ns1:_pizza,
+    ns1:27s ns1:_pizza,
         ns1:_pizzaPie,
         ns1:_pizzas ;
     ns1:feature ns1:_cheeseTopping,
@@ -3165,7 +3164,7 @@ ns1:_pizza a ns1:Pizza ;
     ns1:topping ns1:_common .
 
 ns1:_pizzaPie a ns1:Pizza ;
-    ns2:27s ns1:_pizza,
+    ns1:27s ns1:_pizza,
         ns1:_pizzaPie,
         ns1:_pizzas ;
     ns1:feature ns1:_cheeseTopping,
@@ -3361,7 +3360,7 @@ ns1:_pizzaPie a ns1:Pizza ;
     ns1:topping ns1:_common .
 
 ns1:_pizzas a ns1:Pizza ;
-    ns2:27s ns1:_pizza,
+    ns1:27s ns1:_pizza,
         ns1:_pizzaPie,
         ns1:_pizzas ;
     ns1:feature ns1:_cheeseTopping,
@@ -3652,7 +3651,7 @@ ns1:Pizza a owl:Class ;
             owl:onProperty ns1:feature ;
             owl:someValuesFrom ns1:Hot ],
         [ a owl:Restriction ;
-            owl:onProperty ns2:27s ;
+            owl:onProperty ns1:27s ;
             owl:someValuesFrom ns1:Pizza ],
         [ a owl:Restriction ;
             owl:onProperty ns1:features ;
