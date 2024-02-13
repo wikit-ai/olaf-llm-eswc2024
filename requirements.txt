@@ -2,3 +2,4 @@ openai==1.11.1
 python-dotenv==1.0.1
 olaf @ git+https://gitlab.insa-rouen.fr/msesboue/ontology-learning.git
 en-core-web-lg @ https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.7.1/en_core_web_lg-3.7.1-py3-none-any.whl#sha256=ab70aeb6172cde82508f7739f35ebc9918a3d07debeed637403c8f794ba3d3dc
+rapidfuzz==3.6.1
