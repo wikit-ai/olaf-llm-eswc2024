@@ -1,0 +1,664 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#are> a owl:ObjectProperty ;
+    rdfs:domain <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#> ;
+    rdfs:range <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#bakedAt> a owl:ObjectProperty ;
+    rdfs:domain <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ingredients> ;
+    rdfs:range <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#highTemperature> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#categorizedInto> a owl:ObjectProperty ;
+    rdfs:domain <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#diverse> ;
+    rdfs:range <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#MeatTopping> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#consistingOf> a owl:ObjectProperty ;
+    rdfs:domain <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#dish> ;
+    rdfs:range <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#round> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#features> a owl:ObjectProperty ;
+    rdfs:domain <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizza> ;
+    rdfs:range <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ChickenTopping> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasArtichoke> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaIngredient> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasBasil> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaIngredient> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasBeef> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaIngredient> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasCaper> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaIngredient> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasCheeseTopping> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaTopping> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasChicken> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaIngredient> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasDough> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaBase> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasFontina> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasCheese> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasGorgonzola> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasCheese> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasHam> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaIngredient> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasLeek> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaIngredient> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasMainType> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaTopping> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasMeat> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaIngredient> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasMeatTopping> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaTopping> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasMushroom> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaIngredient> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasOlive> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaIngredient> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasOnion> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaIngredient> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasParmesan> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasCheese> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPeperoni> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaIngredient> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPepper> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaIngredient> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizza> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasDish> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPrawn> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaIngredient> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasRicotta> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasCheese> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasSeafood> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaIngredient> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasSeafoodTopping> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaTopping> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasSpinach> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaIngredient> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasSweetPepper> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaIngredient> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasTomato> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaIngredient> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasTopping> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaTopping> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasVegetable> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaIngredient> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasVegetableTopping> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaTopping> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#include> a owl:ObjectProperty ;
+    rdfs:domain <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetarianPizza> ;
+    rdfs:range <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#MeatTopping> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#includes> a owl:ObjectProperty ;
+    rdfs:domain <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#pizza> ;
+    rdfs:range <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#MargheritaPizza> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#is> a owl:ObjectProperty ;
+    rdfs:domain <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#SeafoodTopping> ;
+    rdfs:range <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#wellKnown> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#isAFavoriteAmong> a owl:ObjectProperty ;
+    rdfs:domain <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#pizza> ;
+    rdfs:range <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#meatLovers> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#knownFor> a owl:ObjectProperty ;
+    rdfs:domain <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#pizzas> ;
+    rdfs:range <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#spiciness> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#like> a owl:ObjectProperty ;
+    rdfs:domain <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Options> ;
+    rdfs:range <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#SeafoodTopping> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#loadedWith> a owl:ObjectProperty ;
+    rdfs:domain <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#vegetarian> ;
+    rdfs:range <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#cheesy> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#name> a owl:ObjectProperty ;
+    rdfs:domain <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#> ;
+    rdfs:range <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#on> a owl:ObjectProperty ;
+    rdfs:domain <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PrawnsTopping> ;
+    rdfs:range <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetarianPizza> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#overall> a owl:ObjectProperty ;
+    rdfs:domain <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizza> ;
+    rdfs:range <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#texture> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#overallTasteIndividualsIndividuals> a owl:Class .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#popularOn> a owl:ObjectProperty ;
+    rdfs:domain <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#cheesy> ;
+    rdfs:range <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#HotGreenPepperTopping> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#prefer> a owl:ObjectProperty ;
+    rdfs:domain <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#> ;
+    rdfs:range <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#rangingFrom> a owl:ObjectProperty ;
+    rdfs:domain <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizza> ;
+    rdfs:range <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PrawnsTopping> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#taste> a owl:ObjectProperty ;
+    rdfs:domain <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#overallTasteIndividuals> ;
+    rdfs:range <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#texture> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#traditionallyIn> a owl:ObjectProperty ;
+    rdfs:domain <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#highTemperature> ;
+    rdfs:range <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#woodFiredOven> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#usedIn> a owl:ObjectProperty ;
+    rdfs:domain <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#FourCheesesTopping> ;
+    rdfs:range <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#QuattroFormaggiPizza> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ArtichokeTopping> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ArtichokeTopping> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#CheesyVegetableTopping>,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#GiardinieraPizza>,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaToppings>,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#AsparagusTopping> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#AsparagusTopping> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#CapricciosaPizza> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#CapricciosaPizza> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizza> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#DeepPanBase> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#DeepPanBase> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#pizzaBases> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#GreenPepperTopping> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#GreenPepperTopping> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaToppings>,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#greenPeppers> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ItalianOrigin> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ItalianOrigin> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaToppings> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#LeekTopping> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#LeekTopping> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#MushroomTopping> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#MushroomTopping> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#NapoletanaPizza> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#NapoletanaPizza> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizza> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#OliveTopping> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#OliveTopping> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaToppings> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#SpinachTopping> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#SpinachTopping> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ThinAndCrispyBase> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ThinAndCrispyBase> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#pizzaBases> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#alter> a owl:Class,
+        owl:ObjectProperty,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#alter> ;
+    rdfs:domain <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#> ;
+    rdfs:range <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#artichokes> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#artichokes> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#baked> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#baked> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaToppings> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#bases> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#bases> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#pizzaBases> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#capers> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#capers> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaToppings> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#category> a owl:Class,
+        owl:ObjectProperty,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#category> ;
+    rdfs:domain <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#SeafoodTopping> ;
+    rdfs:range <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#options> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaToppings> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#cater> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#cater> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaToppings> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#crispy> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#crispy> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#pizzaBases> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#doughy> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#doughy> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#pizzaBases> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#flattenedBase> a owl:Class,
+        owl:ObjectProperty,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#flattenedBase> ;
+    rdfs:domain <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizza> ;
+    rdfs:range <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#CheeseTopping> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#leavenedWheatBasedDough>,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#pizzaBases>,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#woodFiredOven> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#fourthCheese> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#fourthCheese> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#CheeseTopping> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#gorgonzola> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#gorgonzola> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#CheeseTopping> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ham> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ham> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#MeatTopping> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasBase> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaBase> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasCategory> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaCategory> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasIngredient> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaIngredient> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasOptions> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaOptions> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasOrigin> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaOrigin> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaCategory> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasCategory> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaOptions> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasOptions> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaOrigin> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasOrigin> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaSpiciness> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasSpiciness> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaTemperature> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasTemperature> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaTexture> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasTexture> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasSpiciness> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaSpiciness> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasTemperature> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaTemperature> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasTexture> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaTexture> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hotSpicedBeef> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hotSpicedBeef> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#MeatTopping> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#meaty> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#meaty> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#mushrooms> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#mushrooms> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaToppings> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#olives> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#olives> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaToppings> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#overallTaste> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#overallTaste> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaToppings> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#overallTasteIndividuals> a owl:Class .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#parmesan> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#parmesan> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#CheeseTopping> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#redOnions> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#redOnions> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#OnionTopping>,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ricotta> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ricotta> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#CheeseTopping>,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#FourCheesesTopping>,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#fontina> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#seafoodPizza> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#seafoodPizza> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizza> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#sweetPeppers> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#sweetPeppers> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaToppings> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#thick> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#thick> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#pizzaBases> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#thin> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#thin> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#pizzaBases> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topped> a owl:Class,
+        owl:ObjectProperty,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#topped> ;
+    rdfs:domain <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizza> ;
+    rdfs:range <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#CheeseTopping> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaToppings> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#types> a owl:Class,
+        owl:ObjectProperty,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#types> ;
+    rdfs:domain <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#mainTypes> ;
+    rdfs:range <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#pizza> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#uniqueCombinations> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#uniqueCombinations> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#wideVariety> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#wideVariety> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaToppings> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#AmericanHotPizza> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#AmericanHotPizza> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizza> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#CajunPizza> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#CajunPizza> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizza> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#CheesyVegetableTopping> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#CheesyVegetableTopping> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaToppings> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ChickenTopping> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ChickenTopping> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#MeatTopping>,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#chicken> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#FruttiDiMarePizza> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#FruttiDiMarePizza> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizza> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#GiardinieraPizza> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#GiardinieraPizza> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizza> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#HotGreenPepperTopping> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#HotGreenPepperTopping> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#AmericanHotPizza>,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#CajunPizza>,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#HotSpicedBeefTopping>,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#JalapenoPepperTopping>,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaToppings> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#HotSpicedBeefTopping> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#HotSpicedBeefTopping> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#MeatTopping> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#JalapenoPepperTopping> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#JalapenoPepperTopping> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaToppings> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#MargheritaPizza> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#MargheritaPizza> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizza>,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#basil>,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#mozzarella>,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#tomatoes> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#MeatyPizza> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#MeatyPizza> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizza> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#MixedSeafoodTopping> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#MixedSeafoodTopping> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#SeafoodTopping> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#MozzarellaTopping> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#MozzarellaTopping> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#CheeseTopping> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#NonVegetarianPizza> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#NonVegetarianPizza> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizza> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#OnionTopping> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#OnionTopping> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Options> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Options> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ParmaHamTopping> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ParmaHamTopping> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#MeatTopping> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PeperoniSausageTopping> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PeperoniSausageTopping> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#MeatTopping> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PolloAdAstraPizza> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PolloAdAstraPizza> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizza>,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PolloAdAstraPizza> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#basil> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#basil> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#diverse> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#diverse> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaToppings> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#fontina> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#fontina> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#CheeseTopping> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#greenPeppers> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#greenPeppers> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaToppings> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaBase> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasBase> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ingredients> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ingredients> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#leavenedWheatBasedDough> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#leavenedWheatBasedDough> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#pizzaBases> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#mainTypes> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#mainTypes> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaToppings> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#meatLovers> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#meatLovers> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#mozzarella> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#mozzarella> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#CheeseTopping> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#options> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#options> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaToppings> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#pizzas> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#pizzas> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizza> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#round> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#round> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#pizzaBases> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#spiciness> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#spiciness> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaToppings> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#tomatoes> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#tomatoes> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#variousMeats> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#variousMeats> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#vegetarian> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#vegetarian> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaToppings> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#versatileDish> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#versatileDish> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaToppings>,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#versatileDish> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#wellKnown> a owl:Class,
+        owl:ObjectProperty,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#wellKnown> ;
+    rdfs:domain <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#pizza> ;
+    rdfs:range <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#SeafoodTopping> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaToppings> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#FourCheesesTopping> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#FourCheesesTopping> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#CheeseTopping>,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#MozzarellaTopping>,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#QuattroFormaggiPizza>,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#cheese> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PrawnsTopping> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PrawnsTopping> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#FruttiDiMarePizza>,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#MixedSeafoodTopping>,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaToppings>,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#SeafoodTopping> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#QuattroFormaggiPizza> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#QuattroFormaggiPizza> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizza> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#cheese> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#cheese> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaToppings> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#cheesy> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#cheesy> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaToppings> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#chicken> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#chicken> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#dish> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#dish> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizza> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#highTemperature> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#highTemperature> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaToppings> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#texture> a owl:Class,
+        owl:ObjectProperty,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#texture> ;
+    rdfs:domain <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#> ;
+    rdfs:range <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaToppings> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#woodFiredOven> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#woodFiredOven> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#pizzaBases> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetarianPizza> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetarianPizza> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizza> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasCheese> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaIngredient> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#pizza> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#pizza> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaTopping> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaIngredient> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#SeafoodTopping> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#SeafoodTopping> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaToppings> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetableTopping> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaToppings>,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#VegetarianPizza> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#MeatTopping> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#MeatTopping> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#MeatyPizza>,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#NonVegetarianPizza>,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#ParmaHamTopping>,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PeperoniSausageTopping>,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaToppings>,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#chicken>,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#variousMeats> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#CheeseTopping> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#CheeseTopping> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaToppings>,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#cheese> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#pizzaBases> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#pizzaBases> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizza> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#Pizza> ;
+    rdfs:subClassOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#dish> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasPizzaIngredient> a owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#hasIngredient> .
+
+<https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaToppings> a owl:Class,
+        <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#PizzaToppings> .
+
