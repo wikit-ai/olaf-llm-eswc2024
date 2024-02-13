@@ -29,9 +29,16 @@ from olaf.repository.serialiser import KRJSONSerialiser
 
 
 def create_pipeline() -> Pipeline:
+    """Initialise a pipeline.
+
+    Returns
+    -------
+    Pipeline
+        The new pipeline created.
+    """
     spacy_model = spacy.load("en_core_web_lg")
     corpus_loader = TextCorpusLoader(
-        corpus_path=f"{os.getenv('DATA_PATH')}/pizza_description.txt"
+        corpus_path=os.path.join(os.getenv('DATA_PATH'), "pizza_description.txt")
     )
     pipeline = Pipeline(
         spacy_model=spacy_model,
@@ -41,6 +48,19 @@ def create_pipeline() -> Pipeline:
 
 
 def cts_post_processing(cts: set[CandidateTerm]) -> set[CandidateTerm]:
+    """Post processing on candidate terms.
+    Candidate terms with punctuation, stop words or verbs are removed.
+
+    Parameters
+    ----------
+    cts: set[CandidateTerm]
+        Set of candidate terms to filter.
+
+    Returns
+    -------
+    set[CandidateTerm]
+        The candidate terms validated.    
+    """
     existing_cts = []
     new_cts = set()
     for ct in cts:
@@ -60,7 +80,18 @@ def cts_post_processing(cts: set[CandidateTerm]) -> set[CandidateTerm]:
 
 
 def add_pipeline_components(pipeline: Pipeline) -> Pipeline:
+    """Create pipeline without LLM components.
 
+    Parameters
+    ----------
+    pipeline: Pipeline
+        The pipeline into which the components are to be added. 
+
+    Returns
+    -------
+    Pipeline
+        The pipeline updated with new components.
+    """
     tfidf_option = {"max_term_token_length": 3, "threshold": 0.05}
     tfidf_term_extraction = TFIDFTermExtraction(
         cts_post_processing_functions=[cts_post_processing],
@@ -114,7 +145,8 @@ def add_pipeline_components(pipeline: Pipeline) -> Pipeline:
     return pipeline
 
 
-def main() -> Pipeline:
+def main() -> None:
+    """LLM pipeline execution."""
     pipeline = create_pipeline()
     pipeline = add_pipeline_components(pipeline)
     pipeline.run()
@@ -125,7 +157,7 @@ def main() -> Pipeline:
 
     kr_rdf_graph_path = os.path.join(os.getenv("RESULTS_PATH"), "no_llm_pipeline", "no_llm_pipeline_kr_rdf_graph.ttl")
     pipeline.kr.rdf_graph.serialize(kr_rdf_graph_path, format="ttl")
-    
+
     print(f"Nb concepts: {len(pipeline.kr.concepts)}")
     print(f"Nb relations: {len(pipeline.kr.relations)}")
     print(f"Nb metarelations: {len(pipeline.kr.metarelations)}")
