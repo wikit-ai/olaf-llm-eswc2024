@@ -1,8 +1,11 @@
 @prefix ns1: <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#> .
+@prefix ns2: <https://github.com/wikit-ai/olaf-llm-eswc2024/o/example#%> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-ns1:_ad a ns1:Ad ;
+ns1:_ad a owl:NamedIndividual,
+        ns1:Ad ;
+    rdfs:label "ad" ;
     ns1:features ns1:_afters,
         ns1:_chicken,
         ns1:_confection,
@@ -27,7 +30,9 @@ ns1:_ad a ns1:Ad ;
         ns1:_sweetness,
         ns1:_volaille .
 
-ns1:_adAstra a ns1:PolloAdAstra ;
+ns1:_adAstra a owl:NamedIndividual,
+        ns1:AdAstra ;
+    rdfs:label "ad astra" ;
     ns1:features ns1:_afters,
         ns1:_chicken,
         ns1:_confection,
@@ -52,7 +57,9 @@ ns1:_adAstra a ns1:PolloAdAstra ;
         ns1:_sweetness,
         ns1:_volaille .
 
-ns1:_adAstraPizza a ns1:AdAstraPizza ;
+ns1:_adAstraPizza a owl:NamedIndividual,
+        ns1:AstraPizza ;
+    rdfs:label "ad astra pizza" ;
     ns1:features ns1:_afters,
         ns1:_chicken,
         ns1:_confection,
@@ -77,15 +84,26 @@ ns1:_adAstraPizza a ns1:AdAstraPizza ;
         ns1:_sweetness,
         ns1:_volaille .
 
-ns1:_america a ns1:American .
+ns1:_america a owl:NamedIndividual,
+        ns1:American ;
+    rdfs:label "America" .
 
-ns1:_american a ns1:American .
+ns1:_american a owl:NamedIndividual,
+        ns1:American ;
+    rdfs:label "American",
+        "american" .
 
-ns1:_americanHot a ns1:AmericanHot .
+ns1:_americanHot a owl:NamedIndividual,
+        ns1:AmericanHot ;
+    rdfs:label "american hot" .
 
-ns1:_americanHotPizza a ns1:AmericanHot .
+ns1:_americanHotPizza a owl:NamedIndividual,
+        ns1:AmericanHot ;
+    rdfs:label "american hot pizza" .
 
-ns1:_astra a ns1:PolloAdAstra ;
+ns1:_astra a owl:NamedIndividual,
+        ns1:AdAstra ;
+    rdfs:label "astra" ;
     ns1:features ns1:_afters,
         ns1:_chicken,
         ns1:_confection,
@@ -110,7 +128,9 @@ ns1:_astra a ns1:PolloAdAstra ;
         ns1:_sweetness,
         ns1:_volaille .
 
-ns1:_astraPizza a ns1:AdAstraPizza ;
+ns1:_astraPizza a owl:NamedIndividual,
+        ns1:AstraPizza ;
+    rdfs:label "astra pizza" ;
     ns1:features ns1:_afters,
         ns1:_chicken,
         ns1:_confection,
@@ -135,7 +155,9 @@ ns1:_astraPizza a ns1:AdAstraPizza ;
         ns1:_sweetness,
         ns1:_volaille .
 
-ns1:_base a ns1:PizzaBases ;
+ns1:_base a owl:NamedIndividual,
+        ns1:Base ;
+    rdfs:label "base" ;
     ns1:alter ns1:_gustation,
         ns1:_gustatorial,
         ns1:_gustatory,
@@ -180,7 +202,9 @@ ns1:_base a ns1:PizzaBases ;
         ns1:_pizzas,
         ns1:_significantly .
 
-ns1:_bases a ns1:PizzaBases ;
+ns1:_bases a owl:NamedIndividual,
+        ns1:Base ;
+    rdfs:label "bases" ;
     ns1:alter ns1:_gustation,
         ns1:_gustatorial,
         ns1:_gustatory,
@@ -225,27 +249,39 @@ ns1:_bases a ns1:PizzaBases ;
         ns1:_pizzas,
         ns1:_significantly .
 
-ns1:_basil a ns1:Basil .
+ns1:_basil a owl:NamedIndividual,
+        ns1:Basil ;
+    rdfs:label "basil" .
 
-ns1:_beloved a ns1:Beloved ;
+ns1:_beloved a owl:NamedIndividual,
+        ns1:Beloved ;
+    rdfs:label "beloved" ;
     ns1:topped ns1:_gorgonzola,
         ns1:_mozzarella,
         ns1:_ricotta,
         ns1:_tomato,
         ns1:_tomatoes .
 
-ns1:_belovedPizza a ns1:BelovedPizza ;
+ns1:_belovedPizza a owl:NamedIndividual,
+        ns1:BelovedPizza ;
+    rdfs:label "beloved pizza" ;
     ns1:topped ns1:_gorgonzola,
         ns1:_mozzarella,
         ns1:_ricotta,
         ns1:_tomato,
         ns1:_tomatoes .
 
-ns1:_broad a ns1:Wide .
+ns1:_broad a owl:NamedIndividual,
+        ns1:Wide ;
+    rdfs:label "broad" .
 
-ns1:_broadness a ns1:Wide .
+ns1:_broadness a owl:NamedIndividual,
+        ns1:Wide ;
+    rdfs:label "broadness" .
 
-ns1:_cajun a ns1:CajunSpice ;
+ns1:_cajun a owl:NamedIndividual,
+        ns1:CajunSpice ;
+    rdfs:label "cajun" ;
     ns1:feature ns1:_cheeseTopping,
         ns1:_cheesesTopping,
         ns1:_cheesyVegetableTopping,
@@ -278,7 +314,9 @@ ns1:_cajun a ns1:CajunSpice ;
         ns1:_uniqueToppings,
         ns1:_vegetableTopping .
 
-ns1:_cajunPizza a ns1:CajunPizza ;
+ns1:_cajunPizza a owl:NamedIndividual,
+        ns1:CajunPizza ;
+    rdfs:label "cajun pizza" ;
     ns1:feature ns1:_cheeseTopping,
         ns1:_cheesesTopping,
         ns1:_cheesyVegetableTopping,
@@ -311,7 +349,9 @@ ns1:_cajunPizza a ns1:CajunPizza ;
         ns1:_uniqueToppings,
         ns1:_vegetableTopping .
 
-ns1:_cajunSpice a ns1:CajunSpice ;
+ns1:_cajunSpice a owl:NamedIndividual,
+        ns1:CajunSpice ;
+    rdfs:label "cajun spice" ;
     ns1:feature ns1:_cheeseTopping,
         ns1:_cheesesTopping,
         ns1:_cheesyVegetableTopping,
@@ -344,35 +384,65 @@ ns1:_cajunSpice a ns1:CajunSpice ;
         ns1:_uniqueToppings,
         ns1:_vegetableTopping .
 
-ns1:_capricciosa a ns1:CapricciosaPizza .
+ns1:_capricciosa a owl:NamedIndividual,
+        ns1:CapricciosaPizza ;
+    rdfs:label "capricciosa" .
 
-ns1:_capricciosaPizza a ns1:CapricciosaPizza .
+ns1:_capricciosaPizza a owl:NamedIndividual,
+        ns1:CapricciosaPizza ;
+    rdfs:label "capricciosa pizza" .
 
-ns1:_category a ns1:Category .
+ns1:_category a owl:NamedIndividual,
+        ns1:Category ;
+    rdfs:label "category" .
 
-ns1:_combinations a ns1:Combinations .
+ns1:_combinations a owl:NamedIndividual,
+        ns1:UniqueCombinations ;
+    rdfs:label "combinations" .
 
-ns1:_conclusion a ns1:Conclusion .
+ns1:_conclusion a owl:NamedIndividual,
+        ns1:Conclusion ;
+    rdfs:label "conclusion" .
 
-ns1:_cookingPan a ns1:PanBase .
+ns1:_cookingPan a owl:NamedIndividual,
+        ns1:Pan ;
+    rdfs:label "cooking pan" .
 
-ns1:_crispy a ns1:Crispy .
+ns1:_crispy a owl:NamedIndividual,
+        ns1:Crispy ;
+    rdfs:label "crispy" .
 
-ns1:_crispyBase a ns1:Crispy .
+ns1:_crispyBase a owl:NamedIndividual,
+        ns1:Crispy ;
+    rdfs:label "crispy base" .
 
-ns1:_deep a ns1:Deep .
+ns1:_deep a owl:NamedIndividual,
+        ns1:Deep ;
+    rdfs:label "deep" .
 
-ns1:_deepPan a ns1:PanBase .
+ns1:_deepPan a owl:NamedIndividual,
+        ns1:Pan ;
+    rdfs:label "deep pan" .
 
-ns1:_deepPanBase a ns1:PanBase .
+ns1:_deepPanBase a owl:NamedIndividual,
+        ns1:Pan ;
+    rdfs:label "deep pan base" .
 
-ns1:_di a ns1:Di .
+ns1:_di a owl:NamedIndividual,
+        ns1:Di ;
+    rdfs:label "di" .
 
-ns1:_diMare a ns1:Mare .
+ns1:_diMare a owl:NamedIndividual,
+        ns1:Mare ;
+    rdfs:label "di mare" .
 
-ns1:_diMarePizza a ns1:MarePizza .
+ns1:_diMarePizza a owl:NamedIndividual,
+        ns1:DiMarePizza ;
+    rdfs:label "di mare pizza" .
 
-ns1:_dish a ns1:Dish ;
+ns1:_dish a owl:NamedIndividual,
+        ns1:Dish ;
+    rdfs:label "dish" ;
     ns1:consisting ns1:_circle,
         ns1:_circular,
         ns1:_circularity,
@@ -388,7 +458,9 @@ ns1:_dish a ns1:Dish ;
         ns1:_usually,
         ns1:_usuallyRound .
 
-ns1:_dishOut a ns1:Dish ;
+ns1:_dishOut a owl:NamedIndividual,
+        ns1:Dish ;
+    rdfs:label "dish out" ;
     ns1:consisting ns1:_circle,
         ns1:_circular,
         ns1:_circularity,
@@ -404,7 +476,9 @@ ns1:_dishOut a ns1:Dish ;
         ns1:_usually,
         ns1:_usuallyRound .
 
-ns1:_dishUp a ns1:Dish ;
+ns1:_dishUp a owl:NamedIndividual,
+        ns1:Dish ;
+    rdfs:label "dish up" ;
     ns1:consisting ns1:_circle,
         ns1:_circular,
         ns1:_circularity,
@@ -420,7 +494,9 @@ ns1:_dishUp a ns1:Dish ;
         ns1:_usually,
         ns1:_usuallyRound .
 
-ns1:_diverse a ns1:WideVariety ;
+ns1:_diverse a owl:NamedIndividual,
+        ns1:Variety ;
+    rdfs:label "diverse" ;
     ns1:categorized ns1:_cheese,
         ns1:_cheeseLike,
         ns1:_cheeseLikeFontina,
@@ -430,7 +506,9 @@ ns1:_diverse a ns1:WideVariety ;
         ns1:_types,
         ns1:_typify .
 
-ns1:_example a ns1:Example ;
+ns1:_example a owl:NamedIndividual,
+        ns1:Example ;
+    rdfs:label "example" ;
     ns1:features ns1:_amalgam,
         ns1:_amalgamate,
         ns1:_amalgamative,
@@ -469,9 +547,13 @@ ns1:_example a ns1:Example ;
         ns1:_unify,
         ns1:_unit .
 
-ns1:_favorite a ns1:Favorite .
+ns1:_favorite a owl:NamedIndividual,
+        ns1:Favorite ;
+    rdfs:label "favorite" .
 
-ns1:_fixings a ns1:Ingredients ;
+ns1:_fixings a owl:NamedIndividual,
+        ns1:Ingredients ;
+    rdfs:label "fixings" ;
     ns1:baked ns1:_heat,
         ns1:_high,
         ns1:_highTemperature,
@@ -479,21 +561,29 @@ ns1:_fixings a ns1:Ingredients ;
         ns1:_hotness,
         ns1:_temperature .
 
-ns1:_flattened a ns1:Flattened ;
+ns1:_flattened a owl:NamedIndividual,
+        ns1:FlattenedBase ;
+    rdfs:label "flattened" ;
     ns1:leavened ns1:_dough,
         ns1:_doughy,
         ns1:_wheat,
         ns1:_wheatBerry .
 
-ns1:_flattenedBase a ns1:Flattened ;
+ns1:_flattenedBase a owl:NamedIndividual,
+        ns1:FlattenedBase ;
+    rdfs:label "flattened base" ;
     ns1:leavened ns1:_dough,
         ns1:_doughy,
         ns1:_wheat,
         ns1:_wheatBerry .
 
-ns1:_fontina a ns1:Fontina .
+ns1:_fontina a owl:NamedIndividual,
+        ns1:LikeFontina ;
+    rdfs:label "fontina" .
 
-ns1:_form a ns1:WideVariety ;
+ns1:_form a owl:NamedIndividual,
+        ns1:Variety ;
+    rdfs:label "form" ;
     ns1:categorized ns1:_cheese,
         ns1:_cheeseLike,
         ns1:_cheeseLikeFontina,
@@ -503,21 +593,37 @@ ns1:_form a ns1:WideVariety ;
         ns1:_types,
         ns1:_typify .
 
-ns1:_fourth a ns1:Fourth .
+ns1:_fourth a owl:NamedIndividual,
+        ns1:Fourth ;
+    rdfs:label "fourth" .
 
-ns1:_fourthCheese a ns1:FourthCheeseLike .
+ns1:_fourthCheese a owl:NamedIndividual,
+        ns1:FourthCheese ;
+    rdfs:label "fourth cheese" .
 
-ns1:_fourthCheeseLike a ns1:FourthCheeseLike .
+ns1:_fourthCheeseLike a owl:NamedIndividual,
+        ns1:FourthCheese ;
+    rdfs:label "fourth cheese like" .
 
-ns1:_frutti a ns1:Frutti .
+ns1:_frutti a owl:NamedIndividual,
+        ns1:FruttiDiMare ;
+    rdfs:label "frutti" .
 
-ns1:_fruttiDi a ns1:Frutti .
+ns1:_fruttiDi a owl:NamedIndividual,
+        ns1:FruttiDiMare ;
+    rdfs:label "frutti di" .
 
-ns1:_fruttiDiMare a ns1:Frutti .
+ns1:_fruttiDiMare a owl:NamedIndividual,
+        ns1:FruttiDiMare ;
+    rdfs:label "frutti di mare" .
 
-ns1:_giardiniera a ns1:Giardiniera .
+ns1:_giardiniera a owl:NamedIndividual,
+        ns1:Giardiniera ;
+    rdfs:label "giardiniera" .
 
-ns1:_giardinieraPizza a ns1:GiardinieraPizza ;
+ns1:_giardinieraPizza a owl:NamedIndividual,
+        ns1:GiuseppePizza ;
+    rdfs:label "giardiniera pizza" ;
     ns1:topped ns1:_beef,
         ns1:_beefCattle,
         ns1:_beefTopping,
@@ -539,7 +645,9 @@ ns1:_giardinieraPizza a ns1:GiardinieraPizza ;
         ns1:_temperature,
         ns1:_zest .
 
-ns1:_giuseppe a ns1:Giuseppe ;
+ns1:_giuseppe a owl:NamedIndividual,
+        ns1:Giuseppe ;
+    rdfs:label "giuseppe" ;
     ns1:topped ns1:_beef,
         ns1:_beefCattle,
         ns1:_beefTopping,
@@ -561,7 +669,9 @@ ns1:_giuseppe a ns1:Giuseppe ;
         ns1:_temperature,
         ns1:_zest .
 
-ns1:_giuseppePizza a ns1:GiardinieraPizza ;
+ns1:_giuseppePizza a owl:NamedIndividual,
+        ns1:GiuseppePizza ;
+    rdfs:label "giuseppe pizza" ;
     ns1:topped ns1:_beef,
         ns1:_beefCattle,
         ns1:_beefTopping,
@@ -583,12 +693,16 @@ ns1:_giuseppePizza a ns1:GiardinieraPizza ;
         ns1:_temperature,
         ns1:_zest .
 
-ns1:_hotPizza a ns1:HotPizza ;
-    ns1:27s ns1:_pizza,
+ns1:_hotPizza a owl:NamedIndividual,
+        ns1:HotPizza ;
+    rdfs:label "hot pizza" ;
+    ns2:27s ns1:_pizza,
         ns1:_pizzaPie,
         ns1:_pizzas .
 
-ns1:_incredibly a ns1:Incredibly ;
+ns1:_incredibly a owl:NamedIndividual,
+        ns1:Incredibly ;
+    rdfs:label "incredibly" ;
     ns1:categorized ns1:_cheese,
         ns1:_cheeseLike,
         ns1:_cheeseLikeFontina,
@@ -598,7 +712,9 @@ ns1:_incredibly a ns1:Incredibly ;
         ns1:_types,
         ns1:_typify .
 
-ns1:_incrediblyDiverse a ns1:WideVariety ;
+ns1:_incrediblyDiverse a owl:NamedIndividual,
+        ns1:Variety ;
+    rdfs:label "incredibly diverse" ;
     ns1:categorized ns1:_cheese,
         ns1:_cheeseLike,
         ns1:_cheeseLikeFontina,
@@ -608,7 +724,9 @@ ns1:_incrediblyDiverse a ns1:WideVariety ;
         ns1:_types,
         ns1:_typify .
 
-ns1:_ingredient a ns1:Ingredients ;
+ns1:_ingredient a owl:NamedIndividual,
+        ns1:Ingredients ;
+    rdfs:label "ingredient" ;
     ns1:baked ns1:_heat,
         ns1:_high,
         ns1:_highTemperature,
@@ -616,7 +734,9 @@ ns1:_ingredient a ns1:Ingredients ;
         ns1:_hotness,
         ns1:_temperature .
 
-ns1:_ingredients a ns1:Ingredients ;
+ns1:_ingredients a owl:NamedIndividual,
+        ns1:Ingredients ;
+    rdfs:label "ingredients" ;
     ns1:baked ns1:_heat,
         ns1:_high,
         ns1:_highTemperature,
@@ -624,7 +744,9 @@ ns1:_ingredients a ns1:Ingredients ;
         ns1:_hotness,
         ns1:_temperature .
 
-ns1:_italian a ns1:Italian ;
+ns1:_italian a owl:NamedIndividual,
+        ns1:Italian ;
+    rdfs:label "italian" ;
     ns1:consisting ns1:_circle,
         ns1:_circular,
         ns1:_circularity,
@@ -640,7 +762,9 @@ ns1:_italian a ns1:Italian ;
         ns1:_usually,
         ns1:_usuallyRound .
 
-ns1:_italianOrigin a ns1:Italian ;
+ns1:_italianOrigin a owl:NamedIndividual,
+        ns1:Italian ;
+    rdfs:label "italian origin" ;
     ns1:consisting ns1:_circle,
         ns1:_circular,
         ns1:_circularity,
@@ -656,7 +780,9 @@ ns1:_italianOrigin a ns1:Italian ;
         ns1:_usually,
         ns1:_usuallyRound .
 
-ns1:_kind a ns1:WideVariety ;
+ns1:_kind a owl:NamedIndividual,
+        ns1:Variety ;
+    rdfs:label "kind" ;
     ns1:categorized ns1:_cheese,
         ns1:_cheeseLike,
         ns1:_cheeseLikeFontina,
@@ -666,73 +792,127 @@ ns1:_kind a ns1:WideVariety ;
         ns1:_types,
         ns1:_typify .
 
-ns1:_lean a ns1:Thin .
+ns1:_lean a owl:NamedIndividual,
+        ns1:Thick ;
+    rdfs:label "lean" .
 
-ns1:_leanness a ns1:Thin .
+ns1:_leanness a owl:NamedIndividual,
+        ns1:Thick ;
+    rdfs:label "leanness" .
 
-ns1:_leek a ns1:LeekTopping .
+ns1:_leek a owl:NamedIndividual,
+        ns1:LeekTopping ;
+    rdfs:label "leek" .
 
-ns1:_leekTopping a ns1:LeekTopping .
+ns1:_leekTopping a owl:NamedIndividual,
+        ns1:LeekTopping ;
+    rdfs:label "leek topping" .
 
-ns1:_likeFontina a ns1:Fontina .
+ns1:_likeFontina a owl:NamedIndividual,
+        ns1:LikeFontina ;
+    rdfs:label "like fontina" .
 
-ns1:_likePrawns a ns1:Prawns .
+ns1:_likePrawns a owl:NamedIndividual,
+        ns1:LikePrawnsTopping ;
+    rdfs:label "like prawns" .
 
-ns1:_likePrawnsTopping a ns1:Prawns .
+ns1:_likePrawnsTopping a owl:NamedIndividual,
+        ns1:LikePrawnsTopping ;
+    rdfs:label "like prawns topping" .
 
-ns1:_lovers a ns1:Lovers ;
+ns1:_lovers a owl:NamedIndividual,
+        ns1:Lovers ;
+    rdfs:label "lovers" ;
     ns1:loaded ns1:_meat,
         ns1:_meats,
         ns1:_meaty .
 
-ns1:_main a ns1:Main .
+ns1:_main a owl:NamedIndividual,
+        ns1:Main ;
+    rdfs:label "main" .
 
-ns1:_mare a ns1:Mare .
+ns1:_mare a owl:NamedIndividual,
+        ns1:Mare ;
+    rdfs:label "mare" .
 
-ns1:_marePizza a ns1:MarePizza .
+ns1:_marePizza a owl:NamedIndividual,
+        ns1:DiMarePizza ;
+    rdfs:label "mare pizza" .
 
-ns1:_margherita a ns1:MargheritaPizza .
+ns1:_margherita a owl:NamedIndividual,
+        ns1:MargheritaPizza ;
+    rdfs:label "margherita" .
 
-ns1:_margheritaPizza a ns1:MargheritaPizza .
+ns1:_margheritaPizza a owl:NamedIndividual,
+        ns1:MargheritaPizza ;
+    rdfs:label "margherita pizza" .
 
-ns1:_meatLovers a ns1:MeatLovers ;
+ns1:_meatLovers a owl:NamedIndividual,
+        ns1:MeatLovers ;
+    rdfs:label "meat lovers" ;
     ns1:loaded ns1:_meat,
         ns1:_meats,
         ns1:_meaty .
 
-ns1:_meatyPizza a ns1:MeatyPizza .
+ns1:_meatyPizza a owl:NamedIndividual,
+        ns1:MeatyPizza ;
+    rdfs:label "meaty pizza" .
 
-ns1:_mushroom a ns1:MushroomTopping .
+ns1:_mushroom a owl:NamedIndividual,
+        ns1:MushroomTopping ;
+    rdfs:label "mushroom" .
 
-ns1:_mushroomTopping a ns1:MushroomTopping .
+ns1:_mushroomTopping a owl:NamedIndividual,
+        ns1:MushroomTopping ;
+    rdfs:label "mushroom topping" .
 
-ns1:_mushrooms a ns1:MushroomTopping .
+ns1:_mushrooms a owl:NamedIndividual,
+        ns1:MushroomTopping ;
+    rdfs:label "mushrooms" .
 
-ns1:_napoletana a ns1:Napoletana ;
+ns1:_napoletana a owl:NamedIndividual,
+        ns1:Napoletana ;
+    rdfs:label "napoletana" ;
     ns1:topped ns1:_anchovies,
         ns1:_anchovy,
         ns1:_caper,
         ns1:_capers .
 
-ns1:_napoletanaPizza a ns1:Napoletana ;
+ns1:_napoletanaPizza a owl:NamedIndividual,
+        ns1:Napoletana ;
+    rdfs:label "napoletana pizza" ;
     ns1:topped ns1:_anchovies,
         ns1:_anchovy,
         ns1:_caper,
         ns1:_capers .
 
-ns1:_olive a ns1:Olives .
+ns1:_olive a owl:NamedIndividual,
+        ns1:Olives ;
+    rdfs:label "olive" .
 
-ns1:_oliveTopping a ns1:Olives .
+ns1:_oliveTopping a owl:NamedIndividual,
+        ns1:Olives ;
+    rdfs:label "olive topping" .
 
-ns1:_olives a ns1:Olives .
+ns1:_olives a owl:NamedIndividual,
+        ns1:Olives ;
+    rdfs:label "olives" .
 
-ns1:_onion a ns1:Onion .
+ns1:_onion a owl:NamedIndividual,
+        ns1:Onions ;
+    rdfs:label "onion" .
 
-ns1:_onionTopping a ns1:Onion .
+ns1:_onionTopping a owl:NamedIndividual,
+        ns1:Onions ;
+    rdfs:label "onion topping" .
 
-ns1:_onions a ns1:Onion .
+ns1:_onions a owl:NamedIndividual,
+        ns1:Onions ;
+    rdfs:label "onions" .
 
-ns1:_options a ns1:Options ;
+ns1:_options a owl:NamedIndividual,
+        ns1:Options ;
+    rdfs:label "options" ;
     ns1:include ns1:_artichoke,
         ns1:_artichokePlant,
         ns1:_artichokeTopping,
@@ -781,7 +961,9 @@ ns1:_options a ns1:Options ;
         ns1:_uniqueToppings,
         ns1:_vegetableTopping .
 
-ns1:_optionsLike a ns1:Options ;
+ns1:_optionsLike a owl:NamedIndividual,
+        ns1:Options ;
+    rdfs:label "options like" ;
     ns1:include ns1:_artichoke,
         ns1:_artichokePlant,
         ns1:_artichokeTopping,
@@ -830,9 +1012,13 @@ ns1:_optionsLike a ns1:Options ;
         ns1:_uniqueToppings,
         ns1:_vegetableTopping .
 
-ns1:_optionsLikePrawns a ns1:OptionsLikePrawns .
+ns1:_optionsLikePrawns a owl:NamedIndividual,
+        ns1:OptionsLikePrawns ;
+    rdfs:label "options like prawns" .
 
-ns1:_origin a ns1:Origin ;
+ns1:_origin a owl:NamedIndividual,
+        ns1:Origin ;
+    rdfs:label "origin" ;
     ns1:consisting ns1:_circle,
         ns1:_circular,
         ns1:_circularity,
@@ -848,17 +1034,29 @@ ns1:_origin a ns1:Origin ;
         ns1:_usually,
         ns1:_usuallyRound .
 
-ns1:_pan a ns1:PanBase .
+ns1:_pan a owl:NamedIndividual,
+        ns1:Pan ;
+    rdfs:label "pan" .
 
-ns1:_panBase a ns1:PanBase .
+ns1:_panBase a owl:NamedIndividual,
+        ns1:Pan ;
+    rdfs:label "pan base" .
 
-ns1:_peperoni a ns1:Peperoni .
+ns1:_peperoni a owl:NamedIndividual,
+        ns1:Peperoni ;
+    rdfs:label "peperoni" .
 
-ns1:_peperoniSausage a ns1:PeperoniSausageTopping .
+ns1:_peperoniSausage a owl:NamedIndividual,
+        ns1:PeperoniSausage ;
+    rdfs:label "peperoni sausage" .
 
-ns1:_peperoniSausageTopping a ns1:PeperoniSausageTopping .
+ns1:_peperoniSausageTopping a owl:NamedIndividual,
+        ns1:PeperoniSausage ;
+    rdfs:label "peperoni sausage topping" .
 
-ns1:_pizzaBases a ns1:PizzaBases ;
+ns1:_pizzaBases a owl:NamedIndividual,
+        ns1:Base ;
+    rdfs:label "pizza bases" ;
     ns1:alter ns1:_gustation,
         ns1:_gustatorial,
         ns1:_gustatory,
@@ -903,11 +1101,17 @@ ns1:_pizzaBases a ns1:PizzaBases ;
         ns1:_pizzas,
         ns1:_significantly .
 
-ns1:_pollo a ns1:Pollo .
+ns1:_pollo a owl:NamedIndividual,
+        ns1:PolloAd ;
+    rdfs:label "pollo" .
 
-ns1:_polloAd a ns1:Pollo .
+ns1:_polloAd a owl:NamedIndividual,
+        ns1:PolloAd ;
+    rdfs:label "pollo ad" .
 
-ns1:_polloAdAstra a ns1:PolloAdAstra ;
+ns1:_polloAdAstra a owl:NamedIndividual,
+        ns1:AdAstra ;
+    rdfs:label "pollo ad astra" ;
     ns1:features ns1:_afters,
         ns1:_chicken,
         ns1:_confection,
@@ -932,29 +1136,53 @@ ns1:_polloAdAstra a ns1:PolloAdAstra ;
         ns1:_sweetness,
         ns1:_volaille .
 
-ns1:_popularDish a ns1:PopularDish .
+ns1:_popularDish a owl:NamedIndividual,
+        ns1:PopularDish ;
+    rdfs:label "popular dish" .
 
-ns1:_prawn a ns1:Prawns .
+ns1:_prawn a owl:NamedIndividual,
+        ns1:LikePrawnsTopping ;
+    rdfs:label "prawn" .
 
-ns1:_prawns a ns1:Prawns .
+ns1:_prawns a owl:NamedIndividual,
+        ns1:LikePrawnsTopping ;
+    rdfs:label "prawns" .
 
-ns1:_prawnsTopping a ns1:Prawns .
+ns1:_prawnsTopping a owl:NamedIndividual,
+        ns1:LikePrawnsTopping ;
+    rdfs:label "prawns topping" .
 
-ns1:_prickly-seededSpinach a ns1:Spinach .
+ns1:_prickly-seededSpinach a owl:NamedIndividual,
+        ns1:Spinach ;
+    rdfs:label "prickly-seeded spinach" .
 
-ns1:_purpleOnion a ns1:Onion .
+ns1:_purpleOnion a owl:NamedIndividual,
+        ns1:Onions ;
+    rdfs:label "purple onion" .
 
-ns1:_red a ns1:Red .
+ns1:_red a owl:NamedIndividual,
+        ns1:Red ;
+    rdfs:label "red" .
 
-ns1:_redOnion a ns1:Onion .
+ns1:_redOnion a owl:NamedIndividual,
+        ns1:Onions ;
+    rdfs:label "red onion" .
 
-ns1:_redOnions a ns1:Onion .
+ns1:_redOnions a owl:NamedIndividual,
+        ns1:Onions ;
+    rdfs:label "red onions" .
 
-ns1:_sausage a ns1:PeperoniSausageTopping .
+ns1:_sausage a owl:NamedIndividual,
+        ns1:PeperoniSausage ;
+    rdfs:label "sausage" .
 
-ns1:_sausageTopping a ns1:PeperoniSausageTopping .
+ns1:_sausageTopping a owl:NamedIndividual,
+        ns1:PeperoniSausage ;
+    rdfs:label "sausage topping" .
 
-ns1:_serve a ns1:Dish ;
+ns1:_serve a owl:NamedIndividual,
+        ns1:Dish ;
+    rdfs:label "serve" ;
     ns1:consisting ns1:_circle,
         ns1:_circular,
         ns1:_circularity,
@@ -970,7 +1198,9 @@ ns1:_serve a ns1:Dish ;
         ns1:_usually,
         ns1:_usuallyRound .
 
-ns1:_serveUp a ns1:Dish ;
+ns1:_serveUp a owl:NamedIndividual,
+        ns1:Dish ;
+    rdfs:label "serve up" ;
     ns1:consisting ns1:_circle,
         ns1:_circular,
         ns1:_circularity,
@@ -986,22 +1216,34 @@ ns1:_serveUp a ns1:Dish ;
         ns1:_usually,
         ns1:_usuallyRound .
 
-ns1:_shrimp a ns1:Prawns .
+ns1:_shrimp a owl:NamedIndividual,
+        ns1:LikePrawnsTopping ;
+    rdfs:label "shrimp" .
 
-ns1:_simple a ns1:Simple ;
+ns1:_simple a owl:NamedIndividual,
+        ns1:Simple ;
+    rdfs:label "simple" ;
     ns1:topped ns1:_gorgonzola,
         ns1:_mozzarella,
         ns1:_ricotta,
         ns1:_tomato,
         ns1:_tomatoes .
 
-ns1:_sloppy a ns1:SloppyGiuseppePizza .
+ns1:_sloppy a owl:NamedIndividual,
+        ns1:SloppyGiuseppe ;
+    rdfs:label "sloppy" .
 
-ns1:_sloppyGiuseppe a ns1:SloppyGiuseppePizza .
+ns1:_sloppyGiuseppe a owl:NamedIndividual,
+        ns1:SloppyGiuseppe ;
+    rdfs:label "sloppy giuseppe" .
 
-ns1:_sloppyGiuseppePizza a ns1:SloppyGiuseppePizza .
+ns1:_sloppyGiuseppePizza a owl:NamedIndividual,
+        ns1:SloppyGiuseppe ;
+    rdfs:label "sloppy giuseppe pizza" .
 
-ns1:_sort a ns1:WideVariety ;
+ns1:_sort a owl:NamedIndividual,
+        ns1:Variety ;
+    rdfs:label "sort" ;
     ns1:categorized ns1:_cheese,
         ns1:_cheeseLike,
         ns1:_cheeseLikeFontina,
@@ -1011,35 +1253,61 @@ ns1:_sort a ns1:WideVariety ;
         ns1:_types,
         ns1:_typify .
 
-ns1:_spicyPizza a ns1:HotPizza ;
-    ns1:27s ns1:_pizza,
+ns1:_spicyPizza a owl:NamedIndividual,
+        ns1:HotPizza ;
+    rdfs:label "spicy pizza" ;
+    ns2:27s ns1:_pizza,
         ns1:_pizzaPie,
         ns1:_pizzas .
 
-ns1:_spinach a ns1:Spinach .
+ns1:_spinach a owl:NamedIndividual,
+        ns1:Spinach ;
+    rdfs:label "spinach" .
 
-ns1:_spinachPlant a ns1:Spinach .
+ns1:_spinachPlant a owl:NamedIndividual,
+        ns1:Spinach ;
+    rdfs:label "spinach plant" .
 
-ns1:_spinachTopping a ns1:Spinach .
+ns1:_spinachTopping a owl:NamedIndividual,
+        ns1:Spinach ;
+    rdfs:label "spinach topping" .
 
-ns1:_spinaciaOleracea a ns1:Spinach .
+ns1:_spinaciaOleracea a owl:NamedIndividual,
+        ns1:Spinach ;
+    rdfs:label "Spinacia oleracea" .
 
-ns1:_staple a ns1:Staple .
+ns1:_staple a owl:NamedIndividual,
+        ns1:Staple ;
+    rdfs:label "staple" .
 
-ns1:_sweetBasil a ns1:Basil .
+ns1:_sweetBasil a owl:NamedIndividual,
+        ns1:Basil ;
+    rdfs:label "sweet basil" .
 
-ns1:_thick a ns1:Thin .
+ns1:_thick a owl:NamedIndividual,
+        ns1:Thick ;
+    rdfs:label "thick" .
 
-ns1:_thin a ns1:Thin .
+ns1:_thin a owl:NamedIndividual,
+        ns1:Thick ;
+    rdfs:label "thin" .
 
-ns1:_thinness a ns1:Thin .
+ns1:_thinness a owl:NamedIndividual,
+        ns1:Thick ;
+    rdfs:label "thinness" .
 
-ns1:_traditionally a ns1:Traditionally ;
+ns1:_traditionally a owl:NamedIndividual,
+        ns1:Traditionally ;
+    rdfs:label "traditionally" ;
     ns1:fired ns1:_oven .
 
-ns1:_uniqueCombinations a ns1:Combinations .
+ns1:_uniqueCombinations a owl:NamedIndividual,
+        ns1:UniqueCombinations ;
+    rdfs:label "unique combinations" .
 
-ns1:_variety a ns1:WideVariety ;
+ns1:_variety a owl:NamedIndividual,
+        ns1:Variety ;
+    rdfs:label "variety" ;
     ns1:categorized ns1:_cheese,
         ns1:_cheeseLike,
         ns1:_cheeseLikeFontina,
@@ -1049,13 +1317,21 @@ ns1:_variety a ns1:WideVariety ;
         ns1:_types,
         ns1:_typify .
 
-ns1:_versatile a ns1:VersatileDish .
+ns1:_versatile a owl:NamedIndividual,
+        ns1:Versatile ;
+    rdfs:label "versatile" .
 
-ns1:_versatileDish a ns1:VersatileDish .
+ns1:_versatileDish a owl:NamedIndividual,
+        ns1:Versatile ;
+    rdfs:label "versatile dish" .
 
-ns1:_wide a ns1:Wide .
+ns1:_wide a owl:NamedIndividual,
+        ns1:Wide ;
+    rdfs:label "wide" .
 
-ns1:_wideVariety a ns1:WideVariety ;
+ns1:_wideVariety a owl:NamedIndividual,
+        ns1:Variety ;
+    rdfs:label "wide variety" ;
     ns1:categorized ns1:_cheese,
         ns1:_cheeseLike,
         ns1:_cheeseLikeFontina,
@@ -1065,48 +1341,58 @@ ns1:_wideVariety a ns1:WideVariety ;
         ns1:_types,
         ns1:_typify .
 
-ns1:_wideness a ns1:Wide .
+ns1:_wideness a owl:NamedIndividual,
+        ns1:Wide ;
+    rdfs:label "wideness" .
 
-ns1:_wood a ns1:Wood ;
+ns1:_wood a owl:NamedIndividual,
+        ns1:Wood ;
+    rdfs:label "wood" ;
     ns1:fired ns1:_oven .
 
-ns1:_woody a ns1:Wood ;
+ns1:_woody a owl:NamedIndividual,
+        ns1:Wood ;
+    rdfs:label "woody" ;
     ns1:fired ns1:_oven .
 
-ns1:are a owl:ObjectProperty .
+ns1:are a owl:ObjectProperty ;
+    rdfs:label "are" .
 
-ns1:suggests a owl:ObjectProperty .
+ns1:suggests a owl:ObjectProperty ;
+    rdfs:label "suggests" .
 
 ns1:Ad a owl:Class ;
+    rdfs:label "ad" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:features ;
-            owl:someValuesFrom ns1:GreenPeppers ],
+            owl:someValuesFrom ns1:GreenPepperTopping ],
         [ a owl:Restriction ;
             owl:onProperty ns1:features ;
             owl:someValuesFrom ns1:Sweet ],
         [ a owl:Restriction ;
             owl:onProperty ns1:features ;
             owl:someValuesFrom ns1:Chicken ],
-        ns1:AdAstraPizza,
-        ns1:BeefTopping,
+        ns1:AdAstra,
+        ns1:AstraPizza,
         ns1:Chicken,
-        ns1:Combinations,
-        ns1:GiardinieraPizza,
-        ns1:GreenPeppers,
+        ns1:GiuseppePizza,
+        ns1:Green,
+        ns1:GreenPepperTopping,
         ns1:Hot,
-        ns1:HotGreen,
-        ns1:HotSpiced,
         ns1:Like,
-        ns1:Onion,
+        ns1:Onions,
         ns1:Pizza,
-        ns1:Pollo,
-        ns1:PolloAdAstra,
+        ns1:PolloAd,
         ns1:Red,
-        ns1:SloppyGiuseppePizza,
+        ns1:SloppyGiuseppe,
+        ns1:SpicedBeef,
+        ns1:Spiciness,
         ns1:Unique,
-        ns1:VegetableTopping .
+        ns1:UniqueCombinations,
+        ns1:UniqueToppings .
 
 ns1:Beloved a owl:Class ;
+    rdfs:label "beloved" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:topped ;
             owl:someValuesFrom ns1:Gorgonzola ],
@@ -1119,6 +1405,7 @@ ns1:Beloved a owl:Class ;
         ns1:Tomatoes .
 
 ns1:BelovedPizza a owl:Class ;
+    rdfs:label "beloved pizza" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:topped ;
             owl:someValuesFrom ns1:Tomatoes ],
@@ -1131,148 +1418,160 @@ ns1:BelovedPizza a owl:Class ;
         ns1:Tomatoes .
 
 ns1:CajunPizza a owl:Class ;
+    rdfs:label "cajun pizza" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:feature ;
-            owl:someValuesFrom ns1:GreenPeppers ],
+            owl:someValuesFrom ns1:UniqueToppings ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:feature ;
+            owl:someValuesFrom ns1:Green ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:feature ;
+            owl:someValuesFrom ns1:Hot ],
         [ a owl:Restriction ;
             owl:onProperty ns1:feature ;
             owl:someValuesFrom ns1:HighTemperature ],
         [ a owl:Restriction ;
             owl:onProperty ns1:feature ;
-            owl:someValuesFrom ns1:HotGreen ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:feature ;
-            owl:someValuesFrom ns1:VegetableTopping ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:feature ;
-            owl:someValuesFrom ns1:Hot ],
+            owl:someValuesFrom ns1:GreenPepperTopping ],
         ns1:AmericanHot,
-        ns1:BeefTopping,
         ns1:CajunSpice,
-        ns1:GreenPeppers,
+        ns1:Green,
+        ns1:GreenPepperTopping,
         ns1:Hot,
-        ns1:HotGreen,
         ns1:HotPizza,
-        ns1:HotSpiced,
         ns1:Like,
-        ns1:Pizza .
+        ns1:Pizza,
+        ns1:SpicedBeef,
+        ns1:Spiciness .
 
 ns1:Category a owl:Class ;
+    rdfs:label "category" ;
     rdfs:subClassOf ns1:Like,
-        ns1:Mix,
-        ns1:Options,
-        ns1:Prawns,
-        ns1:SeafoodTopping .
+        ns1:LikePrawnsTopping,
+        ns1:Mixed,
+        ns1:MixedSeafoodTopping,
+        ns1:Options .
 
 ns1:Conclusion a owl:Class ;
-    rdfs:subClassOf ns1:Dish,
+    rdfs:label "conclusion" ;
+    rdfs:subClassOf ns1:Base,
+        ns1:Dish,
         ns1:Pizza,
-        ns1:PizzaBases,
-        ns1:VegetableTopping,
-        ns1:VersatileDish,
-        ns1:WideVariety .
+        ns1:UniqueToppings,
+        ns1:Variety,
+        ns1:Versatile .
 
 ns1:Deep a owl:Class ;
-    rdfs:subClassOf ns1:Crispy,
-        ns1:Dough,
-        ns1:MainTypes,
-        ns1:PanBase,
+    rdfs:label "deep" ;
+    rdfs:subClassOf ns1:Base,
+        ns1:Crispy,
+        ns1:Doughy,
+        ns1:Pan,
         ns1:Pizza,
-        ns1:PizzaBases,
-        ns1:Thin .
+        ns1:Thick,
+        ns1:Type .
 
 ns1:Di a owl:Class ;
-    rdfs:subClassOf ns1:Frutti,
+    rdfs:label "di" ;
+    rdfs:subClassOf ns1:DiMarePizza,
+        ns1:FruttiDiMare,
         ns1:Mare,
-        ns1:MarePizza,
-        ns1:Pizza,
-        ns1:SeafoodTopping .
+        ns1:MixedSeafoodTopping,
+        ns1:Pizza .
 
 ns1:Example a owl:Class ;
+    rdfs:label "example" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:features ;
-            owl:someValuesFrom ns1:Mix ],
+            owl:someValuesFrom ns1:HamTopping ],
         [ a owl:Restriction ;
             owl:onProperty ns1:features ;
-            owl:someValuesFrom ns1:ParmaHamTopping ],
-        ns1:Artichoke,
+            owl:someValuesFrom ns1:Mixed ],
+        ns1:ArtichokeTopping,
         ns1:CapricciosaPizza,
-        ns1:Mix,
+        ns1:HamTopping,
+        ns1:Mixed,
         ns1:MushroomTopping,
         ns1:Olives,
-        ns1:ParmaHamTopping,
         ns1:Pizza .
 
 ns1:Favorite a owl:Class ;
+    rdfs:label "favorite" ;
     rdfs:subClassOf ns1:Meat,
         ns1:Pizza .
 
 ns1:Fourth a owl:Class ;
-    rdfs:subClassOf ns1:Cheeses,
-        ns1:Fontina,
+    rdfs:label "fourth" ;
+    rdfs:subClassOf ns1:CheeseLike,
         ns1:Formaggi,
-        ns1:FourthCheeseLike,
+        ns1:FourthCheese,
         ns1:Gorgonzola,
         ns1:Like,
+        ns1:LikeFontina,
         ns1:Parmesan,
         ns1:Pizza,
         ns1:Typically,
-        ns1:VegetableTopping .
+        ns1:UniqueToppings .
 
 ns1:Giardiniera a owl:Class ;
+    rdfs:label "giardiniera" ;
     rdfs:subClassOf ns1:Cheesy,
-        ns1:GiardinieraPizza,
+        ns1:CheesyVegetable,
+        ns1:GiuseppePizza,
         ns1:NonVegetarianPizza,
         ns1:Pizza,
-        ns1:Vegetable,
-        ns1:VegetableTopping,
+        ns1:UniqueToppings,
         ns1:Vegetarian .
 
 ns1:Giuseppe a owl:Class ;
+    rdfs:label "giuseppe" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:topped ;
-            owl:someValuesFrom ns1:Hot ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:topped ;
-            owl:someValuesFrom ns1:BeefTopping ],
+            owl:someValuesFrom ns1:SpicedBeef ],
         [ a owl:Restriction ;
             owl:onProperty ns1:topped ;
             owl:someValuesFrom ns1:HighTemperature ],
         [ a owl:Restriction ;
             owl:onProperty ns1:topped ;
-            owl:someValuesFrom ns1:HotSpiced ],
-        ns1:AdAstraPizza,
-        ns1:BeefTopping,
+            owl:someValuesFrom ns1:Hot ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:topped ;
+            owl:someValuesFrom ns1:Spiciness ],
+        ns1:AdAstra,
+        ns1:AstraPizza,
         ns1:Chicken,
-        ns1:Combinations,
-        ns1:GiardinieraPizza,
-        ns1:GreenPeppers,
+        ns1:GiuseppePizza,
+        ns1:Green,
+        ns1:GreenPepperTopping,
         ns1:Hot,
-        ns1:HotGreen,
-        ns1:HotSpiced,
         ns1:Like,
-        ns1:Onion,
+        ns1:Onions,
         ns1:Pizza,
-        ns1:Pollo,
-        ns1:PolloAdAstra,
+        ns1:PolloAd,
         ns1:Red,
-        ns1:SloppyGiuseppePizza,
+        ns1:SloppyGiuseppe,
+        ns1:SpicedBeef,
+        ns1:Spiciness,
         ns1:Unique,
-        ns1:VegetableTopping .
+        ns1:UniqueCombinations,
+        ns1:UniqueToppings .
 
 ns1:Incredibly a owl:Class ;
+    rdfs:label "incredibly" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:categorized ;
-            owl:someValuesFrom ns1:Cheeses ],
+            owl:someValuesFrom ns1:CheeseLike ],
         [ a owl:Restriction ;
             owl:onProperty ns1:categorized ;
-            owl:someValuesFrom ns1:MainTypes ],
-        ns1:MainTypes,
+            owl:someValuesFrom ns1:Type ],
         ns1:Pizza,
-        ns1:VegetableTopping,
-        ns1:WideVariety .
+        ns1:Type,
+        ns1:UniqueToppings,
+        ns1:Variety .
 
 ns1:Lovers a owl:Class ;
+    rdfs:label "lovers" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:loaded ;
             owl:someValuesFrom ns1:Meat ],
@@ -1280,15 +1579,17 @@ ns1:Lovers a owl:Class ;
         ns1:Pizza .
 
 ns1:Main a owl:Class ;
-    rdfs:subClassOf ns1:Crispy,
-        ns1:Dough,
-        ns1:MainTypes,
-        ns1:PanBase,
+    rdfs:label "main" ;
+    rdfs:subClassOf ns1:Base,
+        ns1:Crispy,
+        ns1:Doughy,
+        ns1:Pan,
         ns1:Pizza,
-        ns1:PizzaBases,
-        ns1:Thin .
+        ns1:Thick,
+        ns1:Type .
 
 ns1:MeatLovers a owl:Class ;
+    rdfs:label "meat lovers" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:loaded ;
             owl:someValuesFrom ns1:Meat ],
@@ -1296,293 +1597,336 @@ ns1:MeatLovers a owl:Class ;
         ns1:Pizza .
 
 ns1:MeatyPizza a owl:Class ;
+    rdfs:label "meaty pizza" ;
     rdfs:subClassOf ns1:Meat,
         ns1:Pizza .
 
 ns1:OptionsLikePrawns a owl:Class ;
+    rdfs:label "options like prawns" ;
     rdfs:subClassOf ns1:Like,
-        ns1:Mix,
-        ns1:Options,
-        ns1:Prawns,
-        ns1:SeafoodTopping .
+        ns1:LikePrawnsTopping,
+        ns1:Mixed,
+        ns1:MixedSeafoodTopping,
+        ns1:Options .
 
 ns1:Origin a owl:Class ;
+    rdfs:label "origin" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:consisting ;
             owl:someValuesFrom ns1:Typically ],
         [ a owl:Restriction ;
             owl:onProperty ns1:consisting ;
-            owl:someValuesFrom ns1:Round ],
-        ns1:Cheeses,
+            owl:someValuesFrom ns1:UsuallyRound ],
+        ns1:Base,
+        ns1:CheeseLike,
         ns1:Dish,
-        ns1:Dough,
-        ns1:Flattened,
+        ns1:Doughy,
+        ns1:FlattenedBase,
         ns1:HighTemperature,
         ns1:Italian,
         ns1:Pizza,
-        ns1:PizzaBases,
         ns1:Popular,
-        ns1:Round,
         ns1:Tomatoes,
-        ns1:Typically .
+        ns1:Typically,
+        ns1:UsuallyRound .
 
 ns1:Peperoni a owl:Class ;
+    rdfs:label "peperoni" ;
     rdfs:subClassOf ns1:Chicken,
+        ns1:HamTopping,
         ns1:Meat,
         ns1:NonVegetarianPizza,
         ns1:Options,
-        ns1:ParmaHamTopping,
         ns1:Parmesan,
-        ns1:PeperoniSausageTopping,
+        ns1:PeperoniSausage,
         ns1:Pizza,
         ns1:Popular,
         ns1:Vegetarian .
 
 ns1:PopularDish a owl:Class ;
-    rdfs:subClassOf ns1:Cheeses,
+    rdfs:label "popular dish" ;
+    rdfs:subClassOf ns1:Base,
+        ns1:CheeseLike,
         ns1:Dish,
-        ns1:Dough,
-        ns1:Flattened,
+        ns1:Doughy,
+        ns1:FlattenedBase,
         ns1:HighTemperature,
         ns1:Italian,
         ns1:Pizza,
-        ns1:PizzaBases,
         ns1:Popular,
-        ns1:Round,
         ns1:Tomatoes,
-        ns1:Typically .
+        ns1:Typically,
+        ns1:UsuallyRound .
 
 ns1:Simple a owl:Class ;
+    rdfs:label "simple" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:topped ;
-            owl:someValuesFrom ns1:Gorgonzola ],
+            owl:someValuesFrom ns1:Tomatoes ],
         [ a owl:Restriction ;
             owl:onProperty ns1:topped ;
-            owl:someValuesFrom ns1:Tomatoes ],
+            owl:someValuesFrom ns1:Gorgonzola ],
         ns1:Gorgonzola,
         ns1:MargheritaPizza,
         ns1:Pizza,
         ns1:Tomatoes .
 
 ns1:Traditionally a owl:Class ;
+    rdfs:label "traditionally" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:fired ;
             owl:someValuesFrom ns1:Oven ],
-        ns1:Cheeses,
+        ns1:Base,
+        ns1:CheeseLike,
         ns1:Dish,
-        ns1:Dough,
-        ns1:Flattened,
+        ns1:Doughy,
+        ns1:FlattenedBase,
         ns1:HighTemperature,
         ns1:Italian,
         ns1:Pizza,
-        ns1:PizzaBases,
         ns1:Popular,
-        ns1:Round,
         ns1:Tomatoes,
-        ns1:Typically .
+        ns1:Typically,
+        ns1:UsuallyRound .
 
 ns1:American a owl:Class ;
+    rdfs:label "american" ;
     rdfs:subClassOf ns1:AmericanHot,
-        ns1:BeefTopping,
         ns1:CajunSpice,
-        ns1:GreenPeppers,
+        ns1:Green,
+        ns1:GreenPepperTopping,
         ns1:Hot,
-        ns1:HotGreen,
         ns1:HotPizza,
-        ns1:HotSpiced,
         ns1:Like,
-        ns1:Pizza .
+        ns1:Pizza,
+        ns1:SpicedBeef,
+        ns1:Spiciness .
 
 ns1:Basil a owl:Class ;
+    rdfs:label "basil" ;
     rdfs:subClassOf ns1:Gorgonzola,
         ns1:MargheritaPizza,
         ns1:Pizza,
         ns1:Tomatoes .
 
 ns1:High a owl:Class ;
-    rdfs:subClassOf ns1:Cheeses,
+    rdfs:label "high" ;
+    rdfs:subClassOf ns1:Base,
+        ns1:CheeseLike,
         ns1:Dish,
-        ns1:Dough,
-        ns1:Flattened,
+        ns1:Doughy,
+        ns1:FlattenedBase,
         ns1:HighTemperature,
         ns1:Italian,
         ns1:Pizza,
-        ns1:PizzaBases,
         ns1:Popular,
-        ns1:Round,
         ns1:Tomatoes,
-        ns1:Typically .
+        ns1:Typically,
+        ns1:UsuallyRound .
 
-ns1:LeekTopping a owl:Class .
+ns1:LeekTopping a owl:Class ;
+    rdfs:label "leek topping" .
 
 ns1:SeafoodPizza a owl:Class ;
-    rdfs:subClassOf ns1:Frutti,
+    rdfs:label "seafood pizza" ;
+    rdfs:subClassOf ns1:DiMarePizza,
+        ns1:FruttiDiMare,
         ns1:Mare,
-        ns1:MarePizza,
-        ns1:Pizza,
-        ns1:SeafoodTopping .
+        ns1:MixedSeafoodTopping,
+        ns1:Pizza .
 
 ns1:Staple a owl:Class ;
+    rdfs:label "staple" ;
     rdfs:subClassOf ns1:Pizza,
-        ns1:VegetableTopping .
+        ns1:UniqueToppings .
 
 ns1:Wood a owl:Class ;
+    rdfs:label "wood" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:fired ;
             owl:someValuesFrom ns1:Oven ],
-        ns1:Cheeses,
+        ns1:Base,
+        ns1:CheeseLike,
         ns1:Dish,
-        ns1:Dough,
-        ns1:Flattened,
+        ns1:Doughy,
+        ns1:FlattenedBase,
         ns1:HighTemperature,
         ns1:Italian,
         ns1:Pizza,
-        ns1:PizzaBases,
         ns1:Popular,
-        ns1:Round,
         ns1:Tomatoes,
-        ns1:Typically .
+        ns1:Typically,
+        ns1:UsuallyRound .
 
-ns1:baked a owl:ObjectProperty .
+ns1:baked a owl:ObjectProperty ;
+    rdfs:label "baked" .
 
-ns1:cater a owl:ObjectProperty .
+ns1:cater a owl:ObjectProperty ;
+    rdfs:label "cater" .
 
-ns1:fired a owl:ObjectProperty .
+ns1:fired a owl:ObjectProperty ;
+    rdfs:label "fired" .
 
-ns1:prefer a owl:ObjectProperty .
+ns1:prefer a owl:ObjectProperty ;
+    rdfs:label "prefer" .
 
-ns1:27s a owl:ObjectProperty .
+ns2:27s a owl:ObjectProperty ;
+    rdfs:label "'s" .
 
-ns1:CapricciosaPizza a owl:Class .
+ns1:CapricciosaPizza a owl:Class ;
+    rdfs:label "capricciosa pizza" .
 
 ns1:Common a owl:Class ;
-    rdfs:subClassOf ns1:Cheeses,
+    rdfs:label "common" ;
+    rdfs:subClassOf ns1:CheeseLike,
         ns1:Gorgonzola,
         ns1:Pizza,
         ns1:Staple,
-        ns1:VegetableTopping .
+        ns1:UniqueToppings .
 
 ns1:Ingredients a owl:Class ;
+    rdfs:label "ingredients" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:baked ;
             owl:someValuesFrom ns1:HighTemperature ],
         [ a owl:Restriction ;
             owl:onProperty ns1:baked ;
             owl:someValuesFrom ns1:High ],
-        ns1:Cheeses,
+        ns1:Base,
+        ns1:CheeseLike,
         ns1:Dish,
-        ns1:Dough,
-        ns1:Flattened,
+        ns1:Doughy,
+        ns1:FlattenedBase,
         ns1:HighTemperature,
         ns1:Italian,
         ns1:Pizza,
-        ns1:PizzaBases,
         ns1:Popular,
-        ns1:Round,
         ns1:Tomatoes,
-        ns1:Typically .
+        ns1:Typically,
+        ns1:UsuallyRound .
 
 ns1:Non a owl:Class ;
+    rdfs:label "non" ;
     rdfs:subClassOf ns1:Chicken,
+        ns1:HamTopping,
         ns1:Meat,
         ns1:NonVegetarianPizza,
         ns1:Options,
-        ns1:ParmaHamTopping,
         ns1:Parmesan,
-        ns1:PeperoniSausageTopping,
+        ns1:PeperoniSausage,
         ns1:Pizza,
         ns1:Popular,
         ns1:Vegetarian .
 
 ns1:Oven a owl:Class ;
-    rdfs:subClassOf ns1:Cheeses,
+    rdfs:label "oven" ;
+    rdfs:subClassOf ns1:Base,
+        ns1:CheeseLike,
         ns1:Dish,
-        ns1:Dough,
-        ns1:Flattened,
+        ns1:Doughy,
+        ns1:FlattenedBase,
         ns1:HighTemperature,
         ns1:Italian,
         ns1:Pizza,
-        ns1:PizzaBases,
         ns1:Popular,
-        ns1:Round,
         ns1:Tomatoes,
-        ns1:Typically .
+        ns1:Typically,
+        ns1:UsuallyRound .
 
 ns1:Overall a owl:Class ;
-    rdfs:subClassOf ns1:MainTypes,
+    rdfs:label "overall" ;
+    rdfs:subClassOf ns1:Base,
         ns1:Pizza,
-        ns1:PizzaBases,
-        ns1:Texture .
+        ns1:Taste,
+        ns1:Type .
 
 ns1:OverallTaste a owl:Class ;
-    rdfs:subClassOf ns1:MainTypes,
+    rdfs:label "overall taste" ;
+    rdfs:subClassOf ns1:Base,
         ns1:Pizza,
-        ns1:PizzaBases,
-        ns1:Texture .
+        ns1:Taste,
+        ns1:Type .
 
 ns1:Palate a owl:Class ;
+    rdfs:label "palate" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:prefer ;
             owl:someValuesFrom ns1:Cheesy ],
         [ a owl:Restriction ;
             owl:onProperty ns1:prefer ;
             owl:someValuesFrom ns1:Meat ],
+        ns1:Base,
         ns1:Dish,
         ns1:Pizza,
-        ns1:PizzaBases,
-        ns1:VegetableTopping,
-        ns1:VersatileDish,
-        ns1:WideVariety .
+        ns1:UniqueToppings,
+        ns1:Variety,
+        ns1:Versatile .
 
 ns1:Quattro a owl:Class ;
+    rdfs:label "quattro" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:includes ;
             owl:someValuesFrom ns1:Parmesan ],
         [ a owl:Restriction ;
             owl:onProperty ns1:includes ;
             owl:someValuesFrom ns1:Gorgonzola ],
-        ns1:Cheeses,
-        ns1:Fontina,
+        ns1:CheeseLike,
         ns1:Formaggi,
-        ns1:FourthCheeseLike,
+        ns1:FourthCheese,
         ns1:Gorgonzola,
         ns1:Like,
+        ns1:LikeFontina,
         ns1:Parmesan,
         ns1:Pizza,
         ns1:Typically,
-        ns1:VegetableTopping .
+        ns1:UniqueToppings .
 
 ns1:Significantly a owl:Class ;
+    rdfs:label "significantly" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:alter ;
             owl:someValuesFrom ns1:OverallTaste ],
         [ a owl:Restriction ;
             owl:onProperty ns1:alter ;
-            owl:someValuesFrom ns1:Texture ],
+            owl:someValuesFrom ns1:Taste ],
         [ a owl:Restriction ;
             owl:onProperty ns1:alter ;
             owl:someValuesFrom ns1:Overall ],
         [ a owl:Restriction ;
             owl:onProperty ns1:alter ;
             owl:someValuesFrom ns1:Pizza ],
-        ns1:MainTypes,
+        ns1:Base,
         ns1:Pizza,
-        ns1:PizzaBases,
-        ns1:Texture .
+        ns1:Taste,
+        ns1:Type .
 
-ns1:_high a ns1:High .
+ns1:_high a owl:NamedIndividual,
+        ns1:High ;
+    rdfs:label "high" .
 
-ns1:_like a ns1:Like .
+ns1:_like a owl:NamedIndividual,
+        ns1:Like ;
+    rdfs:label "like" .
 
-ns1:_likeness a ns1:Like .
+ns1:_likeness a owl:NamedIndividual,
+        ns1:Like ;
+    rdfs:label "likeness" .
 
-ns1:_mixedSeafood a ns1:SeafoodTopping .
+ns1:_mixedSeafood a owl:NamedIndividual,
+        ns1:MixedSeafoodTopping ;
+    rdfs:label "mixed seafood" .
 
-ns1:_mixedSeafoodTopping a ns1:SeafoodTopping .
+ns1:_mixedSeafoodTopping a owl:NamedIndividual,
+        ns1:MixedSeafoodTopping ;
+    rdfs:label "mixed seafood topping" .
 
-ns1:_non a ns1:Non .
+ns1:_non a owl:NamedIndividual,
+        ns1:Non ;
+    rdfs:label "non" .
 
-ns1:_nonVegetarianPizza a ns1:NonVegetarianPizza ;
+ns1:_nonVegetarianPizza a owl:NamedIndividual,
+        ns1:NonVegetarianPizza ;
+    rdfs:label "non vegetarian pizza" ;
     ns1:include ns1:_artichoke,
         ns1:_artichokePlant,
         ns1:_artichokeTopping,
@@ -1628,25 +1972,45 @@ ns1:_nonVegetarianPizza a ns1:NonVegetarianPizza ;
         ns1:_vegetableTopping,
         ns1:_volaille .
 
-ns1:_not a ns1:Non .
+ns1:_not a owl:NamedIndividual,
+        ns1:Non ;
+    rdfs:label "not" .
 
-ns1:_oven a ns1:Oven .
+ns1:_oven a owl:NamedIndividual,
+        ns1:Oven ;
+    rdfs:label "oven" .
 
-ns1:_popular a ns1:Popular .
+ns1:_popular a owl:NamedIndividual,
+        ns1:Popular ;
+    rdfs:label "popular" .
 
-ns1:_seafood a ns1:SeafoodTopping .
+ns1:_seafood a owl:NamedIndividual,
+        ns1:MixedSeafoodTopping ;
+    rdfs:label "seafood" .
 
-ns1:_seafoodPizza a ns1:SeafoodPizza .
+ns1:_seafoodPizza a owl:NamedIndividual,
+        ns1:SeafoodPizza ;
+    rdfs:label "seafood pizza" .
 
-ns1:_seafoodTopping a ns1:SeafoodTopping .
+ns1:_seafoodTopping a owl:NamedIndividual,
+        ns1:MixedSeafoodTopping ;
+    rdfs:label "seafood topping" .
 
-ns1:_similar a ns1:Like .
+ns1:_similar a owl:NamedIndividual,
+        ns1:Like ;
+    rdfs:label "similar" .
 
-ns1:_similarity a ns1:Like .
+ns1:_similarity a owl:NamedIndividual,
+        ns1:Like ;
+    rdfs:label "similarity" .
 
-ns1:_unique a ns1:Unique .
+ns1:_unique a owl:NamedIndividual,
+        ns1:Unique ;
+    rdfs:label "unique" .
 
-ns1:_vegetarianPizza a ns1:NonVegetarianPizza ;
+ns1:_vegetarianPizza a owl:NamedIndividual,
+        ns1:NonVegetarianPizza ;
+    rdfs:label "vegetarian pizza" ;
     ns1:include ns1:_artichoke,
         ns1:_artichokePlant,
         ns1:_artichokeTopping,
@@ -1692,55 +2056,67 @@ ns1:_vegetarianPizza a ns1:NonVegetarianPizza ;
         ns1:_vegetableTopping,
         ns1:_volaille .
 
-ns1:AmericanHot a owl:Class .
+ns1:AmericanHot a owl:Class ;
+    rdfs:label "american hot" .
 
 ns1:Anchovies a owl:Class ;
+    rdfs:label "anchovies" ;
     rdfs:subClassOf ns1:Napoletana,
         ns1:Olives,
         ns1:Pizza .
 
 ns1:CajunSpice a owl:Class ;
+    rdfs:label "cajun spice" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:feature ;
-            owl:someValuesFrom ns1:HotGreen ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:feature ;
-            owl:someValuesFrom ns1:VegetableTopping ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:feature ;
-            owl:someValuesFrom ns1:Hot ],
+            owl:someValuesFrom ns1:Green ],
         [ a owl:Restriction ;
             owl:onProperty ns1:feature ;
             owl:someValuesFrom ns1:HighTemperature ],
         [ a owl:Restriction ;
             owl:onProperty ns1:feature ;
-            owl:someValuesFrom ns1:GreenPeppers ] .
+            owl:someValuesFrom ns1:Hot ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:feature ;
+            owl:someValuesFrom ns1:GreenPepperTopping ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:feature ;
+            owl:someValuesFrom ns1:UniqueToppings ] .
 
 ns1:Capers a owl:Class ;
+    rdfs:label "capers" ;
     rdfs:subClassOf ns1:Napoletana,
         ns1:Olives,
         ns1:Pizza .
 
-ns1:Crispy a owl:Class .
+ns1:Crispy a owl:Class ;
+    rdfs:label "crispy" .
 
-ns1:Fontina a owl:Class .
+ns1:DiMarePizza a owl:Class ;
+    rdfs:label "di mare pizza" .
 
-ns1:FourthCheeseLike a owl:Class .
+ns1:FourthCheese a owl:Class ;
+    rdfs:label "fourth cheese" .
 
 ns1:HotPizza a owl:Class ;
+    rdfs:label "hot pizza" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty ns1:27s ;
+            owl:onProperty ns2:27s ;
             owl:someValuesFrom ns1:Pizza ],
-        ns1:HotSpiced,
-        ns1:Pizza .
+        ns1:Pizza,
+        ns1:Spiciness .
 
-ns1:Mare a owl:Class .
+ns1:LikeFontina a owl:Class ;
+    rdfs:label "like fontina" .
 
-ns1:MarePizza a owl:Class .
+ns1:Mare a owl:Class ;
+    rdfs:label "mare" .
 
-ns1:MushroomTopping a owl:Class .
+ns1:MushroomTopping a owl:Class ;
+    rdfs:label "mushroom topping" .
 
 ns1:Napoletana a owl:Class ;
+    rdfs:label "napoletana" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:topped ;
             owl:someValuesFrom ns1:Capers ],
@@ -1748,313 +2124,482 @@ ns1:Napoletana a owl:Class ;
             owl:onProperty ns1:topped ;
             owl:someValuesFrom ns1:Anchovies ] .
 
-ns1:Red a owl:Class .
+ns1:Red a owl:Class ;
+    rdfs:label "red" .
 
 ns1:Wide a owl:Class ;
-    rdfs:subClassOf ns1:Dish,
+    rdfs:label "wide" ;
+    rdfs:subClassOf ns1:Base,
+        ns1:Dish,
         ns1:Pizza,
-        ns1:PizzaBases,
-        ns1:VegetableTopping,
-        ns1:VersatileDish,
-        ns1:WideVariety .
+        ns1:UniqueToppings,
+        ns1:Variety,
+        ns1:Versatile .
 
-ns1:_amalgam a ns1:Mix .
+ns1:_amalgam a owl:NamedIndividual,
+        ns1:Mixed ;
+    rdfs:label "amalgam" .
 
-ns1:_amalgamate a ns1:Mix .
+ns1:_amalgamate a owl:NamedIndividual,
+        ns1:Mixed ;
+    rdfs:label "amalgamate" .
 
-ns1:_amalgamative a ns1:Mix .
+ns1:_amalgamative a owl:NamedIndividual,
+        ns1:Mixed ;
+    rdfs:label "amalgamative" .
 
-ns1:_amalgamator a ns1:Mix .
+ns1:_amalgamator a owl:NamedIndividual,
+        ns1:Mixed ;
+    rdfs:label "amalgamator" .
 
-ns1:_blend a ns1:Mix .
+ns1:_blend a owl:NamedIndividual,
+        ns1:Mixed ;
+    rdfs:label "blend" .
 
-ns1:_coalesce a ns1:Mix .
+ns1:_coalesce a owl:NamedIndividual,
+        ns1:Mixed ;
+    rdfs:label "coalesce" .
 
-ns1:_coalescency a ns1:Mix .
+ns1:_coalescency a owl:NamedIndividual,
+        ns1:Mixed ;
+    rdfs:label "coalescency" .
 
-ns1:_coalition a ns1:Mix .
+ns1:_coalition a owl:NamedIndividual,
+        ns1:Mixed ;
+    rdfs:label "coalition" .
 
-ns1:_combination a ns1:Mix .
+ns1:_combination a owl:NamedIndividual,
+        ns1:Mixed ;
+    rdfs:label "combination" .
 
-ns1:_combine a ns1:Mix .
+ns1:_combine a owl:NamedIndividual,
+        ns1:Mixed ;
+    rdfs:label "combine" .
 
-ns1:_combining a ns1:Mix .
+ns1:_combining a owl:NamedIndividual,
+        ns1:Mixed ;
+    rdfs:label "combining" .
 
-ns1:_commingle a ns1:Mix .
+ns1:_commingle a owl:NamedIndividual,
+        ns1:Mixed ;
+    rdfs:label "commingle" .
 
-ns1:_commix a ns1:Mix .
+ns1:_commix a owl:NamedIndividual,
+        ns1:Mixed ;
+    rdfs:label "commix" .
 
-ns1:_commixture a ns1:Mix .
+ns1:_commixture a owl:NamedIndividual,
+        ns1:Mixed ;
+    rdfs:label "commixture" .
 
-ns1:_conflate a ns1:Mix .
+ns1:_conflate a owl:NamedIndividual,
+        ns1:Mixed ;
+    rdfs:label "conflate" .
 
-ns1:_flux a ns1:Mix .
+ns1:_flux a owl:NamedIndividual,
+        ns1:Mixed ;
+    rdfs:label "flux" .
 
-ns1:_fuse a ns1:Mix .
+ns1:_fuse a owl:NamedIndividual,
+        ns1:Mixed ;
+    rdfs:label "fuse" .
 
-ns1:_fusible a ns1:Mix .
+ns1:_fusible a owl:NamedIndividual,
+        ns1:Mixed ;
+    rdfs:label "fusible" .
 
-ns1:_fusion a ns1:Mix .
+ns1:_fusion a owl:NamedIndividual,
+        ns1:Mixed ;
+    rdfs:label "fusion" .
 
-ns1:_gustation a ns1:Texture .
+ns1:_gustation a owl:NamedIndividual,
+        ns1:Taste ;
+    rdfs:label "gustation" .
 
-ns1:_gustatorial a ns1:Texture .
+ns1:_gustatorial a owl:NamedIndividual,
+        ns1:Taste ;
+    rdfs:label "gustatorial" .
 
-ns1:_gustatory a ns1:Texture .
+ns1:_gustatory a owl:NamedIndividual,
+        ns1:Taste ;
+    rdfs:label "gustatory" .
 
-ns1:_gustatoryModality a ns1:Texture .
+ns1:_gustatoryModality a owl:NamedIndividual,
+        ns1:Taste ;
+    rdfs:label "gustatory modality" .
 
-ns1:_gustatoryPerception a ns1:Texture .
+ns1:_gustatoryPerception a owl:NamedIndividual,
+        ns1:Taste ;
+    rdfs:label "gustatory perception" .
 
-ns1:_gustatorySensation a ns1:Texture .
+ns1:_gustatorySensation a owl:NamedIndividual,
+        ns1:Taste ;
+    rdfs:label "gustatory sensation" .
 
-ns1:_immix a ns1:Mix .
+ns1:_immix a owl:NamedIndividual,
+        ns1:Mixed ;
+    rdfs:label "immix" .
 
-ns1:_meld a ns1:Mix .
+ns1:_meld a owl:NamedIndividual,
+        ns1:Mixed ;
+    rdfs:label "meld" .
 
-ns1:_merge a ns1:Mix .
+ns1:_merge a owl:NamedIndividual,
+        ns1:Mixed ;
+    rdfs:label "merge" .
 
-ns1:_mingle a ns1:Mix .
+ns1:_mingle a owl:NamedIndividual,
+        ns1:Mixed ;
+    rdfs:label "mingle" .
 
-ns1:_mix a ns1:Mix .
+ns1:_mix a owl:NamedIndividual,
+        ns1:Mixed ;
+    rdfs:label "mix" .
 
-ns1:_mixable a ns1:Mix .
+ns1:_mixable a owl:NamedIndividual,
+        ns1:Mixed ;
+    rdfs:label "mixable" .
 
-ns1:_mixed a ns1:Mix .
+ns1:_mixed a owl:NamedIndividual,
+        ns1:Mixed ;
+    rdfs:label "mixed" .
 
-ns1:_mixer a ns1:Mix .
+ns1:_mixer a owl:NamedIndividual,
+        ns1:Mixed ;
+    rdfs:label "mixer" .
 
-ns1:_mixing a ns1:Mix .
+ns1:_mixing a owl:NamedIndividual,
+        ns1:Mixed ;
+    rdfs:label "mixing" .
 
-ns1:_mixture a ns1:Mix .
+ns1:_mixture a owl:NamedIndividual,
+        ns1:Mixed ;
+    rdfs:label "mixture" .
 
-ns1:_mouthful a ns1:Texture .
+ns1:_mouthful a owl:NamedIndividual,
+        ns1:Taste ;
+    rdfs:label "mouthful" .
 
-ns1:_overall a ns1:Overall .
+ns1:_overall a owl:NamedIndividual,
+        ns1:Overall ;
+    rdfs:label "overall" .
 
-ns1:_overallTaste a ns1:OverallTaste .
+ns1:_overallTaste a owl:NamedIndividual,
+        ns1:OverallTaste ;
+    rdfs:label "overall taste" .
 
-ns1:_premix a ns1:Mix .
+ns1:_premix a owl:NamedIndividual,
+        ns1:Mixed ;
+    rdfs:label "premix" .
 
-ns1:_sample a ns1:Texture .
+ns1:_sample a owl:NamedIndividual,
+        ns1:Taste ;
+    rdfs:label "sample" .
 
-ns1:_sampler a ns1:Texture .
+ns1:_sampler a owl:NamedIndividual,
+        ns1:Taste ;
+    rdfs:label "sampler" .
 
-ns1:_savor a ns1:Texture .
+ns1:_savor a owl:NamedIndividual,
+        ns1:Taste ;
+    rdfs:label "savor" .
 
-ns1:_savour a ns1:Texture .
+ns1:_savour a owl:NamedIndividual,
+        ns1:Taste ;
+    rdfs:label "savour" .
 
-ns1:_senseOfTaste a ns1:Texture .
+ns1:_senseOfTaste a owl:NamedIndividual,
+        ns1:Taste ;
+    rdfs:label "sense of taste" .
 
-ns1:_smack a ns1:Texture .
+ns1:_smack a owl:NamedIndividual,
+        ns1:Taste ;
+    rdfs:label "smack" .
 
-ns1:_taste a ns1:Texture .
+ns1:_taste a owl:NamedIndividual,
+        ns1:Taste ;
+    rdfs:label "taste" .
 
-ns1:_tastePerception a ns1:Texture .
+ns1:_tastePerception a owl:NamedIndividual,
+        ns1:Taste ;
+    rdfs:label "taste perception" .
 
-ns1:_tasteSensation a ns1:Texture .
+ns1:_tasteSensation a owl:NamedIndividual,
+        ns1:Taste ;
+    rdfs:label "taste sensation" .
 
-ns1:_taster a ns1:Texture .
+ns1:_taster a owl:NamedIndividual,
+        ns1:Taste ;
+    rdfs:label "taster" .
 
-ns1:_tasting a ns1:Texture .
+ns1:_tasting a owl:NamedIndividual,
+        ns1:Taste ;
+    rdfs:label "tasting" .
 
-ns1:_tasty a ns1:Texture .
+ns1:_tasty a owl:NamedIndividual,
+        ns1:Taste ;
+    rdfs:label "tasty" .
 
-ns1:_texture a ns1:Texture .
+ns1:_texture a owl:NamedIndividual,
+        ns1:Taste ;
+    rdfs:label "texture" .
 
-ns1:_trial a ns1:Texture .
+ns1:_trial a owl:NamedIndividual,
+        ns1:Taste ;
+    rdfs:label "trial" .
 
-ns1:_trier a ns1:Texture .
+ns1:_trier a owl:NamedIndividual,
+        ns1:Taste ;
+    rdfs:label "trier" .
 
-ns1:_try a ns1:Texture .
+ns1:_try a owl:NamedIndividual,
+        ns1:Taste ;
+    rdfs:label "try" .
 
-ns1:_tryOut a ns1:Texture .
+ns1:_tryOut a owl:NamedIndividual,
+        ns1:Taste ;
+    rdfs:label "try out" .
 
-ns1:_tryout a ns1:Texture .
+ns1:_tryout a owl:NamedIndividual,
+        ns1:Taste ;
+    rdfs:label "tryout" .
 
-ns1:_unify a ns1:Mix .
+ns1:_unify a owl:NamedIndividual,
+        ns1:Mixed ;
+    rdfs:label "unify" .
 
-ns1:_unit a ns1:Mix .
+ns1:_unit a owl:NamedIndividual,
+        ns1:Mixed ;
+    rdfs:label "unit" .
 
-ns1:based a owl:ObjectProperty .
+ns1:based a owl:ObjectProperty ;
+    rdfs:label "based" .
 
-ns1:categorized a owl:ObjectProperty .
+ns1:categorized a owl:ObjectProperty ;
+    rdfs:label "categorized" .
 
-ns1:AdAstraPizza a owl:Class ;
+ns1:AstraPizza a owl:Class ;
+    rdfs:label "astra pizza" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:features ;
             owl:someValuesFrom ns1:Sweet ],
         [ a owl:Restriction ;
             owl:onProperty ns1:features ;
-            owl:someValuesFrom ns1:GreenPeppers ],
+            owl:someValuesFrom ns1:GreenPepperTopping ],
         [ a owl:Restriction ;
             owl:onProperty ns1:features ;
             owl:someValuesFrom ns1:Chicken ] .
 
-ns1:Combinations a owl:Class .
+ns1:FruttiDiMare a owl:Class ;
+    rdfs:label "frutti di mare" .
 
-ns1:Frutti a owl:Class .
+ns1:PolloAd a owl:Class ;
+    rdfs:label "pollo ad" .
 
-ns1:Pollo a owl:Class .
-
-ns1:Spinach a owl:Class .
+ns1:Spinach a owl:Class ;
+    rdfs:label "spinach" .
 
 ns1:Unique a owl:Class ;
+    rdfs:label "unique" ;
     rdfs:subClassOf ns1:Pizza,
-        ns1:VegetableTopping .
+        ns1:UniqueToppings .
 
-ns1:VersatileDish a owl:Class .
+ns1:UniqueCombinations a owl:Class ;
+    rdfs:label "unique combinations" .
+
+ns1:Versatile a owl:Class ;
+    rdfs:label "versatile" .
 
 ns1:Wheat a owl:Class ;
+    rdfs:label "wheat" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty ns1:based ;
-            owl:someValuesFrom ns1:Dough ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:based ;
-            owl:someValuesFrom ns1:Tomatoes ],
-        [ a owl:Restriction ;
             owl:onProperty ns1:topped ;
             owl:someValuesFrom ns1:Tomatoes ],
         [ a owl:Restriction ;
+            owl:onProperty ns1:based ;
+            owl:someValuesFrom ns1:Doughy ],
+        [ a owl:Restriction ;
             owl:onProperty ns1:topped ;
-            owl:someValuesFrom ns1:Cheeses ],
-        ns1:Cheeses,
+            owl:someValuesFrom ns1:CheeseLike ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:based ;
+            owl:someValuesFrom ns1:Tomatoes ],
+        ns1:Base,
+        ns1:CheeseLike,
         ns1:Dish,
-        ns1:Dough,
-        ns1:Flattened,
+        ns1:Doughy,
+        ns1:FlattenedBase,
         ns1:HighTemperature,
         ns1:Italian,
         ns1:Pizza,
-        ns1:PizzaBases,
         ns1:Popular,
-        ns1:Round,
         ns1:Tomatoes,
-        ns1:Typically .
+        ns1:Typically,
+        ns1:UsuallyRound .
 
-ns1:_anchovies a ns1:Anchovies .
+ns1:_anchovies a owl:NamedIndividual,
+        ns1:Anchovies ;
+    rdfs:label "anchovies" .
 
-ns1:_anchovy a ns1:Anchovies .
+ns1:_anchovy a owl:NamedIndividual,
+        ns1:Anchovies ;
+    rdfs:label "anchovy" .
 
-ns1:_caper a ns1:Capers .
+ns1:_caper a owl:NamedIndividual,
+        ns1:Capers ;
+    rdfs:label "caper" .
 
-ns1:_capers a ns1:Capers .
+ns1:_capers a owl:NamedIndividual,
+        ns1:Capers ;
+    rdfs:label "capers" .
 
-ns1:AsparagusTopping a owl:Class .
-
-ns1:GiardinieraPizza a owl:Class ;
+ns1:AdAstra a owl:Class ;
+    rdfs:label "ad astra" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty ns1:topped ;
-            owl:someValuesFrom ns1:HighTemperature ],
+            owl:onProperty ns1:features ;
+            owl:someValuesFrom ns1:Sweet ],
         [ a owl:Restriction ;
-            owl:onProperty ns1:topped ;
-            owl:someValuesFrom ns1:BeefTopping ],
+            owl:onProperty ns1:features ;
+            owl:someValuesFrom ns1:GreenPepperTopping ],
         [ a owl:Restriction ;
-            owl:onProperty ns1:topped ;
-            owl:someValuesFrom ns1:HotSpiced ],
-        [ a owl:Restriction ;
+            owl:onProperty ns1:features ;
+            owl:someValuesFrom ns1:Chicken ] .
+
+ns1:AsparagusTopping a owl:Class ;
+    rdfs:label "asparagus topping" .
+
+ns1:GiuseppePizza a owl:Class ;
+    rdfs:label "giuseppe pizza" ;
+    rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:topped ;
             owl:someValuesFrom ns1:Hot ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:topped ;
+            owl:someValuesFrom ns1:SpicedBeef ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:topped ;
+            owl:someValuesFrom ns1:Spiciness ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:topped ;
+            owl:someValuesFrom ns1:HighTemperature ],
         ns1:Pizza,
-        ns1:VegetableTopping .
+        ns1:UniqueToppings .
 
-ns1:MargheritaPizza a owl:Class .
+ns1:MargheritaPizza a owl:Class ;
+    rdfs:label "margherita pizza" .
 
 ns1:NonVegetarianPizza a owl:Class ;
+    rdfs:label "non vegetarian pizza" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty ns1:ranging ;
-            owl:someValuesFrom ns1:VegetableTopping ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:ranging ;
-            owl:someValuesFrom ns1:Chicken ],
-        [ a owl:Restriction ;
             owl:onProperty ns1:ranging ;
             owl:someValuesFrom ns1:Parmesan ],
         [ a owl:Restriction ;
             owl:onProperty ns1:include ;
-            owl:someValuesFrom ns1:VegetableTopping ],
+            owl:someValuesFrom ns1:ArtichokeTopping ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:include ;
+            owl:someValuesFrom ns1:AsparagusTopping ],
         [ a owl:Restriction ;
             owl:onProperty ns1:loaded ;
             owl:someValuesFrom ns1:Cheesy ],
         [ a owl:Restriction ;
             owl:onProperty ns1:loaded ;
-            owl:someValuesFrom ns1:VegetableTopping ],
+            owl:someValuesFrom ns1:UniqueToppings ],
         [ a owl:Restriction ;
             owl:onProperty ns1:include ;
-            owl:someValuesFrom ns1:Artichoke ],
+            owl:someValuesFrom ns1:UniqueToppings ],
         [ a owl:Restriction ;
             owl:onProperty ns1:loaded ;
-            owl:someValuesFrom ns1:Vegetable ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:include ;
-            owl:someValuesFrom ns1:AsparagusTopping ] .
-
-ns1:Olives a owl:Class .
-
-ns1:Options a owl:Class ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty ns1:include ;
-            owl:someValuesFrom ns1:VegetableTopping ],
+            owl:someValuesFrom ns1:CheesyVegetable ],
         [ a owl:Restriction ;
             owl:onProperty ns1:ranging ;
-            owl:someValuesFrom ns1:Parmesan ],
+            owl:someValuesFrom ns1:UniqueToppings ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:ranging ;
+            owl:someValuesFrom ns1:Chicken ] .
+
+ns1:Olives a owl:Class ;
+    rdfs:label "olives" .
+
+ns1:Options a owl:Class ;
+    rdfs:label "options" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:include ;
+            owl:someValuesFrom ns1:ArtichokeTopping ],
         [ a owl:Restriction ;
             owl:onProperty ns1:topping ;
-            owl:someValuesFrom ns1:ParmaHamTopping ],
+            owl:someValuesFrom ns1:HamTopping ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:topping ;
+            owl:someValuesFrom ns1:UniqueToppings ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:ranging ;
+            owl:someValuesFrom ns1:UniqueToppings ],
         [ a owl:Restriction ;
             owl:onProperty ns1:include ;
             owl:someValuesFrom ns1:AsparagusTopping ],
         [ a owl:Restriction ;
-            owl:onProperty ns1:ranging ;
-            owl:someValuesFrom ns1:Chicken ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:ranging ;
-            owl:someValuesFrom ns1:VegetableTopping ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:topping ;
-            owl:someValuesFrom ns1:VegetableTopping ],
-        [ a owl:Restriction ;
             owl:onProperty ns1:include ;
-            owl:someValuesFrom ns1:Artichoke ],
+            owl:someValuesFrom ns1:UniqueToppings ],
         [ a owl:Restriction ;
             owl:onProperty ns1:topping ;
-            owl:someValuesFrom ns1:Parmesan ] .
-
-ns1:PeperoniSausageTopping a owl:Class .
-
-ns1:PolloAdAstra a owl:Class ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty ns1:features ;
-            owl:someValuesFrom ns1:Sweet ],
+            owl:someValuesFrom ns1:Parmesan ],
         [ a owl:Restriction ;
-            owl:onProperty ns1:features ;
-            owl:someValuesFrom ns1:Chicken ],
+            owl:onProperty ns1:ranging ;
+            owl:someValuesFrom ns1:Parmesan ],
         [ a owl:Restriction ;
-            owl:onProperty ns1:features ;
-            owl:someValuesFrom ns1:GreenPeppers ] .
+            owl:onProperty ns1:ranging ;
+            owl:someValuesFrom ns1:Chicken ] .
 
-ns1:SloppyGiuseppePizza a owl:Class .
+ns1:PeperoniSausage a owl:Class ;
+    rdfs:label "peperoni sausage" .
 
-ns1:_beef a ns1:BeefTopping .
+ns1:SloppyGiuseppe a owl:Class ;
+    rdfs:label "sloppy giuseppe" .
 
-ns1:_beefCattle a ns1:BeefTopping .
+ns1:_beef a owl:NamedIndividual,
+        ns1:SpicedBeef ;
+    rdfs:label "beef" .
 
-ns1:_beefTopping a ns1:BeefTopping .
+ns1:_beefCattle a owl:NamedIndividual,
+        ns1:SpicedBeef ;
+    rdfs:label "beef cattle" .
 
-ns1:_boeuf a ns1:BeefTopping .
+ns1:_beefTopping a owl:NamedIndividual,
+        ns1:SpicedBeef ;
+    rdfs:label "beef topping" .
 
-ns1:_common a ns1:Common .
+ns1:_boeuf a owl:NamedIndividual,
+        ns1:SpicedBeef ;
+    rdfs:label "boeuf" .
 
-ns1:_green a ns1:HotGreen .
+ns1:_common a owl:NamedIndividual,
+        ns1:Common ;
+    rdfs:label "common" .
 
-ns1:_greens a ns1:HotGreen .
+ns1:_green a owl:NamedIndividual,
+        ns1:Green ;
+    rdfs:label "green" .
 
-ns1:_hotGreen a ns1:HotGreen .
+ns1:_greens a owl:NamedIndividual,
+        ns1:Green ;
+    rdfs:label "greens" .
 
-ns1:_hotSpicedBeef a ns1:BeefTopping .
+ns1:_hotGreen a owl:NamedIndividual,
+        ns1:Green ;
+    rdfs:label "hot green" .
 
-ns1:_leafyVegetable a ns1:HotGreen .
+ns1:_hotSpicedBeef a owl:NamedIndividual,
+        ns1:SpicedBeef ;
+    rdfs:label "hot spiced beef" .
 
-ns1:_meat a ns1:Meat ;
+ns1:_leafyVegetable a owl:NamedIndividual,
+        ns1:Green ;
+    rdfs:label "leafy vegetable" .
+
+ns1:_meat a owl:NamedIndividual,
+        ns1:Meat ;
+    rdfs:label "meat" ;
     ns1:loaded ns1:_meat,
         ns1:_meats,
         ns1:_meaty ;
@@ -2064,7 +2609,9 @@ ns1:_meat a ns1:Meat ;
         ns1:_popular,
         ns1:_vegetarian .
 
-ns1:_meats a ns1:Meat ;
+ns1:_meats a owl:NamedIndividual,
+        ns1:Meat ;
+    rdfs:label "meats" ;
     ns1:loaded ns1:_meat,
         ns1:_meats,
         ns1:_meaty ;
@@ -2074,7 +2621,9 @@ ns1:_meats a ns1:Meat ;
         ns1:_popular,
         ns1:_vegetarian .
 
-ns1:_meaty a ns1:Meat ;
+ns1:_meaty a owl:NamedIndividual,
+        ns1:Meat ;
+    rdfs:label "meaty" ;
     ns1:loaded ns1:_meat,
         ns1:_meats,
         ns1:_meaty ;
@@ -2084,7 +2633,9 @@ ns1:_meaty a ns1:Meat ;
         ns1:_popular,
         ns1:_vegetarian .
 
-ns1:_nonVegetarian a ns1:Vegetarian ;
+ns1:_nonVegetarian a owl:NamedIndividual,
+        ns1:Vegetarian ;
+    rdfs:label "non vegetarian" ;
     ns1:include ns1:_artichoke,
         ns1:_artichokePlant,
         ns1:_artichokeTopping,
@@ -2130,11 +2681,17 @@ ns1:_nonVegetarian a ns1:Vegetarian ;
         ns1:_vegetableTopping,
         ns1:_volaille .
 
-ns1:_spicedBeef a ns1:BeefTopping .
+ns1:_spicedBeef a owl:NamedIndividual,
+        ns1:SpicedBeef ;
+    rdfs:label "spiced beef" .
 
-ns1:_spicedBeefTopping a ns1:BeefTopping .
+ns1:_spicedBeefTopping a owl:NamedIndividual,
+        ns1:SpicedBeef ;
+    rdfs:label "spiced beef topping" .
 
-ns1:_vegetarian a ns1:Vegetarian ;
+ns1:_vegetarian a owl:NamedIndividual,
+        ns1:Vegetarian ;
+    rdfs:label "vegetarian" ;
     ns1:include ns1:_artichoke,
         ns1:_artichokePlant,
         ns1:_artichokeTopping,
@@ -2180,21 +2737,30 @@ ns1:_vegetarian a ns1:Vegetarian ;
         ns1:_vegetableTopping,
         ns1:_volaille .
 
-ns1:consisting a owl:ObjectProperty .
+ns1:consisting a owl:ObjectProperty ;
+    rdfs:label "consisting" .
 
-ns1:leavened a owl:ObjectProperty .
+ns1:leavened a owl:ObjectProperty ;
+    rdfs:label "leavened" .
 
 ns1:Cheesy a owl:Class ;
+    rdfs:label "cheesy" ;
     rdfs:subClassOf ns1:Pizza,
         ns1:Vegetarian .
 
-ns1:PanBase a owl:Class .
+ns1:Pan a owl:Class ;
+    rdfs:label "pan" .
 
-ns1:Thin a owl:Class .
+ns1:Thick a owl:Class ;
+    rdfs:label "thick" .
 
-ns1:_cheesyVegetable a ns1:Vegetable .
+ns1:_cheesyVegetable a owl:NamedIndividual,
+        ns1:CheesyVegetable ;
+    rdfs:label "cheesy vegetable" .
 
-ns1:_significantly a ns1:Significantly ;
+ns1:_significantly a owl:NamedIndividual,
+        ns1:Significantly ;
+    rdfs:label "significantly" ;
     ns1:alter ns1:_gustation,
         ns1:_gustatorial,
         ns1:_gustatory,
@@ -2226,13 +2792,23 @@ ns1:_significantly a ns1:Significantly ;
         ns1:_tryOut,
         ns1:_tryout .
 
-ns1:_veg a ns1:Vegetable .
+ns1:_veg a owl:NamedIndividual,
+        ns1:CheesyVegetable ;
+    rdfs:label "veg" .
 
-ns1:_vegetable a ns1:Vegetable .
+ns1:_vegetable a owl:NamedIndividual,
+        ns1:CheesyVegetable ;
+    rdfs:label "vegetable" .
 
-ns1:_veggie a ns1:Vegetable .
+ns1:_veggie a owl:NamedIndividual,
+        ns1:CheesyVegetable ;
+    rdfs:label "veggie" .
+
+ns1:CheesyVegetable a owl:Class ;
+    rdfs:label "cheesy vegetable" .
 
 ns1:Formaggi a owl:Class ;
+    rdfs:label "formaggi" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:includes ;
             owl:someValuesFrom ns1:Gorgonzola ],
@@ -2240,64 +2816,74 @@ ns1:Formaggi a owl:Class ;
             owl:onProperty ns1:includes ;
             owl:someValuesFrom ns1:Parmesan ] .
 
-ns1:Prawns a owl:Class .
-
-ns1:Vegetable a owl:Class .
+ns1:LikePrawnsTopping a owl:Class ;
+    rdfs:label "like prawns topping" .
 
 ns1:Vegetarian a owl:Class ;
+    rdfs:label "vegetarian" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty ns1:loaded ;
-            owl:someValuesFrom ns1:Vegetable ],
-        [ a owl:Restriction ;
             owl:onProperty ns1:ranging ;
-            owl:someValuesFrom ns1:VegetableTopping ],
+            owl:someValuesFrom ns1:Parmesan ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:loaded ;
+            owl:someValuesFrom ns1:Cheesy ],
         [ a owl:Restriction ;
             owl:onProperty ns1:include ;
             owl:someValuesFrom ns1:AsparagusTopping ],
         [ a owl:Restriction ;
             owl:onProperty ns1:include ;
-            owl:someValuesFrom ns1:Artichoke ],
+            owl:someValuesFrom ns1:UniqueToppings ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:loaded ;
+            owl:someValuesFrom ns1:UniqueToppings ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:loaded ;
+            owl:someValuesFrom ns1:CheesyVegetable ],
         [ a owl:Restriction ;
             owl:onProperty ns1:ranging ;
             owl:someValuesFrom ns1:Chicken ],
         [ a owl:Restriction ;
-            owl:onProperty ns1:include ;
-            owl:someValuesFrom ns1:VegetableTopping ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:loaded ;
-            owl:someValuesFrom ns1:VegetableTopping ],
-        [ a owl:Restriction ;
             owl:onProperty ns1:ranging ;
-            owl:someValuesFrom ns1:Parmesan ],
+            owl:someValuesFrom ns1:UniqueToppings ],
         [ a owl:Restriction ;
-            owl:onProperty ns1:loaded ;
-            owl:someValuesFrom ns1:Cheesy ] .
+            owl:onProperty ns1:include ;
+            owl:someValuesFrom ns1:ArtichokeTopping ] .
 
-ns1:_circle a ns1:Round ;
+ns1:_circle a owl:NamedIndividual,
+        ns1:UsuallyRound ;
+    rdfs:label "circle" ;
     ns1:leavened ns1:_dough,
         ns1:_doughy,
         ns1:_wheat,
         ns1:_wheatBerry .
 
-ns1:_circular a ns1:Round ;
+ns1:_circular a owl:NamedIndividual,
+        ns1:UsuallyRound ;
+    rdfs:label "circular" ;
     ns1:leavened ns1:_dough,
         ns1:_doughy,
         ns1:_wheat,
         ns1:_wheatBerry .
 
-ns1:_circularity a ns1:Round ;
+ns1:_circularity a owl:NamedIndividual,
+        ns1:UsuallyRound ;
+    rdfs:label "circularity" ;
     ns1:leavened ns1:_dough,
         ns1:_doughy,
         ns1:_wheat,
         ns1:_wheatBerry .
 
-ns1:_circularize a ns1:Round ;
+ns1:_circularize a owl:NamedIndividual,
+        ns1:UsuallyRound ;
+    rdfs:label "circularize" ;
     ns1:leavened ns1:_dough,
         ns1:_doughy,
         ns1:_wheat,
         ns1:_wheatBerry .
 
-ns1:_commonly a ns1:Typically ;
+ns1:_commonly a owl:NamedIndividual,
+        ns1:Typically ;
+    rdfs:label "commonly" ;
     ns1:includes ns1:_gorgonzola,
         ns1:_mozzarella,
         ns1:_parma,
@@ -2305,13 +2891,17 @@ ns1:_commonly a ns1:Typically ;
         ns1:_parmesan,
         ns1:_ricotta .
 
-ns1:_mainTypes a ns1:MainTypes ;
+ns1:_mainTypes a owl:NamedIndividual,
+        ns1:Type ;
+    rdfs:label "main types" ;
     ns1:used ns1:_pizza,
         ns1:_pizzaPie,
         ns1:_pizzas,
         ns1:_significantly .
 
-ns1:_normally a ns1:Typically ;
+ns1:_normally a owl:NamedIndividual,
+        ns1:Typically ;
+    rdfs:label "normally" ;
     ns1:includes ns1:_gorgonzola,
         ns1:_mozzarella,
         ns1:_parma,
@@ -2319,7 +2909,9 @@ ns1:_normally a ns1:Typically ;
         ns1:_parmesan,
         ns1:_ricotta .
 
-ns1:_ordinarily a ns1:Typically ;
+ns1:_ordinarily a owl:NamedIndividual,
+        ns1:Typically ;
+    rdfs:label "ordinarily" ;
     ns1:includes ns1:_gorgonzola,
         ns1:_mozzarella,
         ns1:_parma,
@@ -2327,37 +2919,49 @@ ns1:_ordinarily a ns1:Typically ;
         ns1:_parmesan,
         ns1:_ricotta .
 
-ns1:_round a ns1:Round ;
+ns1:_round a owl:NamedIndividual,
+        ns1:UsuallyRound ;
+    rdfs:label "round" ;
     ns1:leavened ns1:_dough,
         ns1:_doughy,
         ns1:_wheat,
         ns1:_wheatBerry .
 
-ns1:_roundOfDrinks a ns1:Round ;
+ns1:_roundOfDrinks a owl:NamedIndividual,
+        ns1:UsuallyRound ;
+    rdfs:label "round of drinks" ;
     ns1:leavened ns1:_dough,
         ns1:_doughy,
         ns1:_wheat,
         ns1:_wheatBerry .
 
-ns1:_roundness a ns1:Round ;
+ns1:_roundness a owl:NamedIndividual,
+        ns1:UsuallyRound ;
+    rdfs:label "roundness" ;
     ns1:leavened ns1:_dough,
         ns1:_doughy,
         ns1:_wheat,
         ns1:_wheatBerry .
 
-ns1:_type a ns1:MainTypes ;
+ns1:_type a owl:NamedIndividual,
+        ns1:Type ;
+    rdfs:label "type" ;
     ns1:used ns1:_pizza,
         ns1:_pizzaPie,
         ns1:_pizzas,
         ns1:_significantly .
 
-ns1:_types a ns1:MainTypes ;
+ns1:_types a owl:NamedIndividual,
+        ns1:Type ;
+    rdfs:label "types" ;
     ns1:used ns1:_pizza,
         ns1:_pizzaPie,
         ns1:_pizzas,
         ns1:_significantly .
 
-ns1:_typically a ns1:Typically ;
+ns1:_typically a owl:NamedIndividual,
+        ns1:Typically ;
+    rdfs:label "typically" ;
     ns1:includes ns1:_gorgonzola,
         ns1:_mozzarella,
         ns1:_parma,
@@ -2365,13 +2969,17 @@ ns1:_typically a ns1:Typically ;
         ns1:_parmesan,
         ns1:_ricotta .
 
-ns1:_typify a ns1:MainTypes ;
+ns1:_typify a owl:NamedIndividual,
+        ns1:Type ;
+    rdfs:label "typify" ;
     ns1:used ns1:_pizza,
         ns1:_pizzaPie,
         ns1:_pizzas,
         ns1:_significantly .
 
-ns1:_unremarkably a ns1:Typically ;
+ns1:_unremarkably a owl:NamedIndividual,
+        ns1:Typically ;
+    rdfs:label "unremarkably" ;
     ns1:includes ns1:_gorgonzola,
         ns1:_mozzarella,
         ns1:_parma,
@@ -2379,7 +2987,9 @@ ns1:_unremarkably a ns1:Typically ;
         ns1:_parmesan,
         ns1:_ricotta .
 
-ns1:_usually a ns1:Typically ;
+ns1:_usually a owl:NamedIndividual,
+        ns1:Typically ;
+    rdfs:label "usually" ;
     ns1:includes ns1:_gorgonzola,
         ns1:_mozzarella,
         ns1:_parma,
@@ -2387,161 +2997,241 @@ ns1:_usually a ns1:Typically ;
         ns1:_parmesan,
         ns1:_ricotta .
 
-ns1:_usuallyRound a ns1:Round ;
+ns1:_usuallyRound a owl:NamedIndividual,
+        ns1:UsuallyRound ;
+    rdfs:label "usually round" ;
     ns1:leavened ns1:_dough,
         ns1:_doughy,
         ns1:_wheat,
         ns1:_wheatBerry .
 
-ns1:alter a owl:ObjectProperty .
+ns1:alter a owl:ObjectProperty ;
+    rdfs:label "alter" .
 
-ns1:includes a owl:ObjectProperty .
+ns1:includes a owl:ObjectProperty ;
+    rdfs:label "includes" .
 
-ns1:Onion a owl:Class .
+ns1:MixedSeafoodTopping a owl:Class ;
+    rdfs:label "mixed seafood topping" .
 
-ns1:SeafoodTopping a owl:Class .
+ns1:Onions a owl:Class ;
+    rdfs:label "onions" .
 
 ns1:Sweet a owl:Class ;
-    rdfs:subClassOf ns1:AdAstraPizza,
-        ns1:BeefTopping,
+    rdfs:label "sweet" ;
+    rdfs:subClassOf ns1:AdAstra,
+        ns1:AstraPizza,
         ns1:Chicken,
-        ns1:Combinations,
-        ns1:GiardinieraPizza,
-        ns1:GreenPeppers,
+        ns1:GiuseppePizza,
+        ns1:Green,
+        ns1:GreenPepperTopping,
         ns1:Hot,
-        ns1:HotGreen,
-        ns1:HotSpiced,
         ns1:Like,
-        ns1:Onion,
+        ns1:Onions,
         ns1:Pizza,
-        ns1:Pollo,
-        ns1:PolloAdAstra,
+        ns1:PolloAd,
         ns1:Red,
-        ns1:SloppyGiuseppePizza,
+        ns1:SloppyGiuseppe,
+        ns1:SpicedBeef,
+        ns1:Spiciness,
         ns1:Unique,
-        ns1:VegetableTopping .
+        ns1:UniqueCombinations,
+        ns1:UniqueToppings .
 
-ns1:_afters a ns1:Sweet .
+ns1:_afters a owl:NamedIndividual,
+        ns1:Sweet ;
+    rdfs:label "afters" .
 
-ns1:_artichoke a ns1:Artichoke .
+ns1:_artichoke a owl:NamedIndividual,
+        ns1:ArtichokeTopping ;
+    rdfs:label "artichoke" .
 
-ns1:_artichokePlant a ns1:Artichoke .
+ns1:_artichokePlant a owl:NamedIndividual,
+        ns1:ArtichokeTopping ;
+    rdfs:label "artichoke plant" .
 
-ns1:_artichokeTopping a ns1:Artichoke .
+ns1:_artichokeTopping a owl:NamedIndividual,
+        ns1:ArtichokeTopping ;
+    rdfs:label "artichoke topping" .
 
-ns1:_artichokes a ns1:Artichoke .
+ns1:_artichokes a owl:NamedIndividual,
+        ns1:ArtichokeTopping ;
+    rdfs:label "artichokes" .
 
-ns1:_asparagus a ns1:AsparagusTopping .
+ns1:_asparagus a owl:NamedIndividual,
+        ns1:AsparagusTopping ;
+    rdfs:label "asparagus" .
 
-ns1:_asparagusTopping a ns1:AsparagusTopping .
+ns1:_asparagusTopping a owl:NamedIndividual,
+        ns1:AsparagusTopping ;
+    rdfs:label "asparagus topping" .
 
-ns1:_confection a ns1:Sweet .
+ns1:_confection a owl:NamedIndividual,
+        ns1:Sweet ;
+    rdfs:label "confection" .
 
-ns1:_cynaraScolymus a ns1:Artichoke .
+ns1:_cynaraScolymus a owl:NamedIndividual,
+        ns1:ArtichokeTopping ;
+    rdfs:label "Cynara scolymus" .
 
-ns1:_dessert a ns1:Sweet .
+ns1:_dessert a owl:NamedIndividual,
+        ns1:Sweet ;
+    rdfs:label "dessert" .
 
-ns1:_globeArtichoke a ns1:Artichoke .
+ns1:_globeArtichoke a owl:NamedIndividual,
+        ns1:ArtichokeTopping ;
+    rdfs:label "globe artichoke" .
 
-ns1:_hotSpiced a ns1:HotSpiced ;
-    ns1:27s ns1:_pizza,
+ns1:_hotSpiced a owl:NamedIndividual,
+        ns1:Spiciness ;
+    rdfs:label "hot spiced" ;
+    ns2:27s ns1:_pizza,
         ns1:_pizzaPie,
         ns1:_pizzas .
 
-ns1:_spice a ns1:HotSpiced ;
-    ns1:27s ns1:_pizza,
+ns1:_spice a owl:NamedIndividual,
+        ns1:Spiciness ;
+    rdfs:label "spice" ;
+    ns2:27s ns1:_pizza,
         ns1:_pizzaPie,
         ns1:_pizzas .
 
-ns1:_spiceUp a ns1:HotSpiced ;
-    ns1:27s ns1:_pizza,
+ns1:_spiceUp a owl:NamedIndividual,
+        ns1:Spiciness ;
+    rdfs:label "spice up" ;
+    ns2:27s ns1:_pizza,
         ns1:_pizzaPie,
         ns1:_pizzas .
 
-ns1:_spiced a ns1:HotSpiced ;
-    ns1:27s ns1:_pizza,
+ns1:_spiced a owl:NamedIndividual,
+        ns1:Spiciness ;
+    rdfs:label "spiced" ;
+    ns2:27s ns1:_pizza,
         ns1:_pizzaPie,
         ns1:_pizzas .
 
-ns1:_spicery a ns1:HotSpiced ;
-    ns1:27s ns1:_pizza,
+ns1:_spicery a owl:NamedIndividual,
+        ns1:Spiciness ;
+    rdfs:label "spicery" ;
+    ns2:27s ns1:_pizza,
         ns1:_pizzaPie,
         ns1:_pizzas .
 
-ns1:_spiciness a ns1:HotSpiced ;
-    ns1:27s ns1:_pizza,
+ns1:_spiciness a owl:NamedIndividual,
+        ns1:Spiciness ;
+    rdfs:label "spiciness" ;
+    ns2:27s ns1:_pizza,
         ns1:_pizzaPie,
         ns1:_pizzas .
 
-ns1:_spicy a ns1:HotSpiced ;
-    ns1:27s ns1:_pizza,
+ns1:_spicy a owl:NamedIndividual,
+        ns1:Spiciness ;
+    rdfs:label "spicy" ;
+    ns2:27s ns1:_pizza,
         ns1:_pizzaPie,
         ns1:_pizzas .
 
-ns1:_sweet a ns1:Sweet .
+ns1:_sweet a owl:NamedIndividual,
+        ns1:Sweet ;
+    rdfs:label "sweet" .
 
-ns1:_sweetness a ns1:Sweet .
+ns1:_sweetness a owl:NamedIndividual,
+        ns1:Sweet ;
+    rdfs:label "sweetness" .
 
-ns1:_zest a ns1:HotSpiced ;
-    ns1:27s ns1:_pizza,
+ns1:_zest a owl:NamedIndividual,
+        ns1:Spiciness ;
+    rdfs:label "zest" ;
+    ns2:27s ns1:_pizza,
         ns1:_pizzaPie,
         ns1:_pizzas .
 
-ns1:Flattened a owl:Class ;
+ns1:FlattenedBase a owl:Class ;
+    rdfs:label "flattened base" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:leavened ;
-            owl:someValuesFrom ns1:Dough ],
+            owl:someValuesFrom ns1:Wheat ],
         [ a owl:Restriction ;
             owl:onProperty ns1:leavened ;
-            owl:someValuesFrom ns1:Wheat ] .
+            owl:someValuesFrom ns1:Doughy ] .
 
 ns1:Italian a owl:Class ;
+    rdfs:label "italian" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:consisting ;
-            owl:someValuesFrom ns1:Round ],
+            owl:someValuesFrom ns1:UsuallyRound ],
         [ a owl:Restriction ;
             owl:onProperty ns1:consisting ;
             owl:someValuesFrom ns1:Typically ] .
 
-ns1:_gammon a ns1:ParmaHamTopping .
+ns1:_gammon a owl:NamedIndividual,
+        ns1:HamTopping ;
+    rdfs:label "gammon" .
 
-ns1:_ham a ns1:ParmaHamTopping .
+ns1:_ham a owl:NamedIndividual,
+        ns1:HamTopping ;
+    rdfs:label "ham" .
 
-ns1:_hamTopping a ns1:ParmaHamTopping .
+ns1:_hamTopping a owl:NamedIndividual,
+        ns1:HamTopping ;
+    rdfs:label "ham topping" .
 
-ns1:_jambon a ns1:ParmaHamTopping .
+ns1:_jambon a owl:NamedIndividual,
+        ns1:HamTopping ;
+    rdfs:label "jambon" .
 
-ns1:_parmaHamTopping a ns1:ParmaHamTopping .
+ns1:_parmaHamTopping a owl:NamedIndividual,
+        ns1:HamTopping ;
+    rdfs:label "parma ham topping" .
 
-ns1:known a owl:ObjectProperty .
+ns1:known a owl:ObjectProperty ;
+    rdfs:label "known" .
 
-ns1:used a owl:ObjectProperty .
+ns1:used a owl:ObjectProperty ;
+    rdfs:label "used" .
 
-ns1:Artichoke a owl:Class .
+ns1:ArtichokeTopping a owl:Class ;
+    rdfs:label "artichoke topping" .
 
-ns1:WideVariety a owl:Class ;
+ns1:Variety a owl:Class ;
+    rdfs:label "variety" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:categorized ;
-            owl:someValuesFrom ns1:MainTypes ],
+            owl:someValuesFrom ns1:CheeseLike ],
         [ a owl:Restriction ;
             owl:onProperty ns1:categorized ;
-            owl:someValuesFrom ns1:Cheeses ] .
+            owl:someValuesFrom ns1:Type ] .
 
-ns1:_cheesy a ns1:Cheesy .
+ns1:_cheesy a owl:NamedIndividual,
+        ns1:Cheesy ;
+    rdfs:label "cheesy" .
 
-ns1:_palate a ns1:Palate ;
+ns1:_palate a owl:NamedIndividual,
+        ns1:Palate ;
+    rdfs:label "palate" ;
     ns1:prefer ns1:_cheesy,
         ns1:_meat,
         ns1:_meats,
         ns1:_meaty .
 
-ns1:topping a owl:ObjectProperty .
+ns1:topping a owl:ObjectProperty ;
+    rdfs:label "topping" .
 
-ns1:Hot a owl:Class .
+ns1:Green a owl:Class ;
+    rdfs:label "green" .
 
-ns1:HotGreen a owl:Class .
+ns1:HamTopping a owl:Class ;
+    rdfs:label "ham topping" .
 
-ns1:MainTypes a owl:Class ;
+ns1:Hot a owl:Class ;
+    rdfs:label "hot" .
+
+ns1:Popular a owl:Class ;
+    rdfs:label "popular" ;
+    rdfs:subClassOf ns1:Pizza .
+
+ns1:Type a owl:Class ;
+    rdfs:label "type" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:used ;
             owl:someValuesFrom ns1:Pizza ],
@@ -2549,12 +3239,9 @@ ns1:MainTypes a owl:Class ;
             owl:onProperty ns1:used ;
             owl:someValuesFrom ns1:Significantly ] .
 
-ns1:ParmaHamTopping a owl:Class .
-
-ns1:Popular a owl:Class ;
-    rdfs:subClassOf ns1:Pizza .
-
-ns1:_cheese a ns1:Cheeses ;
+ns1:_cheese a owl:NamedIndividual,
+        ns1:CheeseLike ;
+    rdfs:label "cheese" ;
     ns1:used ns1:_formaggi,
         ns1:_formaggiPizza,
         ns1:_pizza,
@@ -2564,7 +3251,9 @@ ns1:_cheese a ns1:Cheeses ;
         ns1:_quattroFormaggi,
         ns1:_quattroFormaggiPizza .
 
-ns1:_cheeseLike a ns1:Cheeses ;
+ns1:_cheeseLike a owl:NamedIndividual,
+        ns1:CheeseLike ;
+    rdfs:label "cheese like" ;
     ns1:used ns1:_formaggi,
         ns1:_formaggiPizza,
         ns1:_pizza,
@@ -2574,7 +3263,9 @@ ns1:_cheeseLike a ns1:Cheeses ;
         ns1:_quattroFormaggi,
         ns1:_quattroFormaggiPizza .
 
-ns1:_cheeseLikeFontina a ns1:Cheeses ;
+ns1:_cheeseLikeFontina a owl:NamedIndividual,
+        ns1:CheeseLike ;
+    rdfs:label "cheese like fontina" ;
     ns1:used ns1:_formaggi,
         ns1:_formaggiPizza,
         ns1:_pizza,
@@ -2584,7 +3275,9 @@ ns1:_cheeseLikeFontina a ns1:Cheeses ;
         ns1:_quattroFormaggi,
         ns1:_quattroFormaggiPizza .
 
-ns1:_cheeses a ns1:Cheeses ;
+ns1:_cheeses a owl:NamedIndividual,
+        ns1:CheeseLike ;
+    rdfs:label "cheeses" ;
     ns1:used ns1:_formaggi,
         ns1:_formaggiPizza,
         ns1:_pizza,
@@ -2594,7 +3287,9 @@ ns1:_cheeses a ns1:Cheeses ;
         ns1:_quattroFormaggi,
         ns1:_quattroFormaggiPizza .
 
-ns1:_formaggi a ns1:Formaggi ;
+ns1:_formaggi a owl:NamedIndividual,
+        ns1:Formaggi ;
+    rdfs:label "formaggi" ;
     ns1:includes ns1:_gorgonzola,
         ns1:_mozzarella,
         ns1:_parma,
@@ -2602,7 +3297,9 @@ ns1:_formaggi a ns1:Formaggi ;
         ns1:_parmesan,
         ns1:_ricotta .
 
-ns1:_formaggiPizza a ns1:Formaggi ;
+ns1:_formaggiPizza a owl:NamedIndividual,
+        ns1:Formaggi ;
+    rdfs:label "formaggi pizza" ;
     ns1:includes ns1:_gorgonzola,
         ns1:_mozzarella,
         ns1:_parma,
@@ -2610,31 +3307,57 @@ ns1:_formaggiPizza a ns1:Formaggi ;
         ns1:_parmesan,
         ns1:_ricotta .
 
-ns1:_greenPepper a ns1:GreenPeppers .
+ns1:_greenPepper a owl:NamedIndividual,
+        ns1:GreenPepperTopping ;
+    rdfs:label "green pepper" .
 
-ns1:_greenPepperTopping a ns1:GreenPeppers .
+ns1:_greenPepperTopping a owl:NamedIndividual,
+        ns1:GreenPepperTopping ;
+    rdfs:label "green pepper topping" .
 
-ns1:_greenPeppers a ns1:GreenPeppers .
+ns1:_greenPeppers a owl:NamedIndividual,
+        ns1:GreenPepperTopping ;
+    rdfs:label "green peppers" .
 
-ns1:_hotGreenPepper a ns1:GreenPeppers .
+ns1:_hotGreenPepper a owl:NamedIndividual,
+        ns1:GreenPepperTopping ;
+    rdfs:label "hot green pepper" .
 
-ns1:_jalapeno a ns1:GreenPeppers .
+ns1:_jalapeno a owl:NamedIndividual,
+        ns1:GreenPepperTopping ;
+    rdfs:label "jalapeno" .
 
-ns1:_jalapenoPepper a ns1:GreenPeppers .
+ns1:_jalapenoPepper a owl:NamedIndividual,
+        ns1:GreenPepperTopping ;
+    rdfs:label "jalapeno pepper" .
 
-ns1:_jalapenoPepperTopping a ns1:GreenPeppers .
+ns1:_jalapenoPepperTopping a owl:NamedIndividual,
+        ns1:GreenPepperTopping ;
+    rdfs:label "jalapeno pepper topping" .
 
-ns1:_pepper a ns1:GreenPeppers .
+ns1:_pepper a owl:NamedIndividual,
+        ns1:GreenPepperTopping ;
+    rdfs:label "pepper" .
 
-ns1:_pepperTopping a ns1:GreenPeppers .
+ns1:_pepperTopping a owl:NamedIndividual,
+        ns1:GreenPepperTopping ;
+    rdfs:label "pepper topping" .
 
-ns1:_peppercorn a ns1:GreenPeppers .
+ns1:_peppercorn a owl:NamedIndividual,
+        ns1:GreenPepperTopping ;
+    rdfs:label "peppercorn" .
 
-ns1:_peppers a ns1:GreenPeppers .
+ns1:_peppers a owl:NamedIndividual,
+        ns1:GreenPepperTopping ;
+    rdfs:label "peppers" .
 
-ns1:_peppery a ns1:GreenPeppers .
+ns1:_peppery a owl:NamedIndividual,
+        ns1:GreenPepperTopping ;
+    rdfs:label "peppery" .
 
-ns1:_quattro a ns1:Quattro ;
+ns1:_quattro a owl:NamedIndividual,
+        ns1:Quattro ;
+    rdfs:label "quattro" ;
     ns1:includes ns1:_gorgonzola,
         ns1:_mozzarella,
         ns1:_parma,
@@ -2642,7 +3365,9 @@ ns1:_quattro a ns1:Quattro ;
         ns1:_parmesan,
         ns1:_ricotta .
 
-ns1:_quattroFormaggi a ns1:Formaggi ;
+ns1:_quattroFormaggi a owl:NamedIndividual,
+        ns1:Formaggi ;
+    rdfs:label "quattro formaggi" ;
     ns1:includes ns1:_gorgonzola,
         ns1:_mozzarella,
         ns1:_parma,
@@ -2650,7 +3375,9 @@ ns1:_quattroFormaggi a ns1:Formaggi ;
         ns1:_parmesan,
         ns1:_ricotta .
 
-ns1:_quattroFormaggiPizza a ns1:Formaggi ;
+ns1:_quattroFormaggiPizza a owl:NamedIndividual,
+        ns1:Formaggi ;
+    rdfs:label "quattro formaggi pizza" ;
     ns1:includes ns1:_gorgonzola,
         ns1:_mozzarella,
         ns1:_parma,
@@ -2658,23 +3385,31 @@ ns1:_quattroFormaggiPizza a ns1:Formaggi ;
         ns1:_parmesan,
         ns1:_ricotta .
 
-ns1:_sweetPepper a ns1:GreenPeppers .
+ns1:_sweetPepper a owl:NamedIndividual,
+        ns1:GreenPepperTopping ;
+    rdfs:label "sweet pepper" .
 
-ns1:_sweetPeppers a ns1:GreenPeppers .
+ns1:_sweetPeppers a owl:NamedIndividual,
+        ns1:GreenPepperTopping ;
+    rdfs:label "sweet peppers" .
 
-ns1:include a owl:ObjectProperty .
+ns1:include a owl:ObjectProperty ;
+    rdfs:label "include" .
 
-ns1:loaded a owl:ObjectProperty .
+ns1:loaded a owl:ObjectProperty ;
+    rdfs:label "loaded" .
 
-ns1:ranging a owl:ObjectProperty .
+ns1:ranging a owl:ObjectProperty ;
+    rdfs:label "ranging" .
 
 ns1:Meat a owl:Class ;
+    rdfs:label "meat" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty ns1:loaded ;
-            owl:someValuesFrom ns1:Meat ],
-        [ a owl:Restriction ;
             owl:onProperty ns1:topping ;
             owl:someValuesFrom ns1:Non ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:loaded ;
+            owl:someValuesFrom ns1:Meat ],
         [ a owl:Restriction ;
             owl:onProperty ns1:topping ;
             owl:someValuesFrom ns1:Popular ],
@@ -2682,7 +3417,9 @@ ns1:Meat a owl:Class ;
             owl:onProperty ns1:topping ;
             owl:someValuesFrom ns1:Vegetarian ] .
 
-ns1:_wheat a ns1:Wheat ;
+ns1:_wheat a owl:NamedIndividual,
+        ns1:Wheat ;
+    rdfs:label "wheat" ;
     ns1:based ns1:_dough,
         ns1:_doughy,
         ns1:_tomato,
@@ -2694,7 +3431,9 @@ ns1:_wheat a ns1:Wheat ;
         ns1:_tomato,
         ns1:_tomatoes .
 
-ns1:_wheatBerry a ns1:Wheat ;
+ns1:_wheatBerry a owl:NamedIndividual,
+        ns1:Wheat ;
+    rdfs:label "wheat berry" ;
     ns1:based ns1:_dough,
         ns1:_doughy,
         ns1:_tomato,
@@ -2706,74 +3445,100 @@ ns1:_wheatBerry a ns1:Wheat ;
         ns1:_tomato,
         ns1:_tomatoes .
 
-ns1:Like a owl:Class .
+ns1:Like a owl:Class ;
+    rdfs:label "like" .
 
-ns1:feature a owl:ObjectProperty .
+ns1:feature a owl:ObjectProperty ;
+    rdfs:label "feature" .
 
-ns1:BeefTopping a owl:Class .
+ns1:SpicedBeef a owl:Class ;
+    rdfs:label "spiced beef" .
 
-ns1:_heat a ns1:HighTemperature .
+ns1:_heat a owl:NamedIndividual,
+        ns1:HighTemperature ;
+    rdfs:label "heat" .
 
-ns1:_highTemperature a ns1:HighTemperature .
+ns1:_highTemperature a owl:NamedIndividual,
+        ns1:HighTemperature ;
+    rdfs:label "high temperature" .
 
-ns1:_hot a ns1:HighTemperature,
-        ns1:Hot .
+ns1:_hot a owl:NamedIndividual,
+        ns1:HighTemperature,
+        ns1:Hot ;
+    rdfs:label "hot" .
 
-ns1:_hotness a ns1:HighTemperature .
+ns1:_hotness a owl:NamedIndividual,
+        ns1:HighTemperature ;
+    rdfs:label "hotness" .
 
-ns1:_temperature a ns1:HighTemperature .
+ns1:_temperature a owl:NamedIndividual,
+        ns1:HighTemperature ;
+    rdfs:label "temperature" .
 
-ns1:_tomato a ns1:Tomatoes .
+ns1:_tomato a owl:NamedIndividual,
+        ns1:Tomatoes ;
+    rdfs:label "tomato" .
 
-ns1:_tomatoes a ns1:Tomatoes .
+ns1:_tomatoes a owl:NamedIndividual,
+        ns1:Tomatoes ;
+    rdfs:label "tomatoes" .
 
 ns1:Dish a owl:Class ;
+    rdfs:label "dish" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:consisting ;
-            owl:someValuesFrom ns1:Typically ],
+            owl:someValuesFrom ns1:UsuallyRound ],
         [ a owl:Restriction ;
             owl:onProperty ns1:consisting ;
-            owl:someValuesFrom ns1:Round ],
-        ns1:Pizza,
-        ns1:PizzaBases .
+            owl:someValuesFrom ns1:Typically ],
+        ns1:Base,
+        ns1:Pizza .
 
-ns1:features a owl:ObjectProperty .
+ns1:features a owl:ObjectProperty ;
+    rdfs:label "features" .
 
 ns1:Chicken a owl:Class ;
+    rdfs:label "chicken" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:topping ;
-            owl:someValuesFrom ns1:VegetableTopping ],
+            owl:someValuesFrom ns1:HamTopping ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:topping ;
+            owl:someValuesFrom ns1:UniqueToppings ],
         [ a owl:Restriction ;
             owl:onProperty ns1:topping ;
             owl:someValuesFrom ns1:Parmesan ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:topping ;
-            owl:someValuesFrom ns1:ParmaHamTopping ],
         ns1:Pizza .
 
-ns1:Dough a owl:Class ;
+ns1:Doughy a owl:Class ;
+    rdfs:label "doughy" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:topped ;
-            owl:someValuesFrom ns1:Cheeses ],
+            owl:someValuesFrom ns1:CheeseLike ],
         [ a owl:Restriction ;
             owl:onProperty ns1:topped ;
             owl:someValuesFrom ns1:Tomatoes ],
-        ns1:Pizza,
-        ns1:PizzaBases .
+        ns1:Base,
+        ns1:Pizza .
 
-ns1:Parmesan a owl:Class .
+ns1:Parmesan a owl:Class ;
+    rdfs:label "parmesan" .
 
 ns1:Gorgonzola a owl:Class ;
+    rdfs:label "gorgonzola" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:topping ;
             owl:someValuesFrom ns1:Common ] .
 
-ns1:HotSpiced a owl:Class ;
+ns1:Spiciness a owl:Class ;
+    rdfs:label "spiciness" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty ns1:27s ;
+            owl:onProperty ns2:27s ;
             owl:someValuesFrom ns1:Pizza ] .
 
-ns1:_chicken a ns1:Chicken ;
+ns1:_chicken a owl:NamedIndividual,
+        ns1:Chicken ;
+    rdfs:label "chicken" ;
     ns1:topping ns1:_cheeseTopping,
         ns1:_cheesesTopping,
         ns1:_cheesyVegetableTopping,
@@ -2791,7 +3556,9 @@ ns1:_chicken a ns1:Chicken ;
         ns1:_uniqueToppings,
         ns1:_vegetableTopping .
 
-ns1:_dough a ns1:Dough ;
+ns1:_dough a owl:NamedIndividual,
+        ns1:Doughy ;
+    rdfs:label "dough" ;
     ns1:topped ns1:_cheese,
         ns1:_cheeseLike,
         ns1:_cheeseLikeFontina,
@@ -2799,7 +3566,9 @@ ns1:_dough a ns1:Dough ;
         ns1:_tomato,
         ns1:_tomatoes .
 
-ns1:_doughy a ns1:Dough ;
+ns1:_doughy a owl:NamedIndividual,
+        ns1:Doughy ;
+    rdfs:label "doughy" ;
     ns1:topped ns1:_cheese,
         ns1:_cheeseLike,
         ns1:_cheeseLikeFontina,
@@ -2807,7 +3576,9 @@ ns1:_doughy a ns1:Dough ;
         ns1:_tomato,
         ns1:_tomatoes .
 
-ns1:_gallusGallus a ns1:Chicken ;
+ns1:_gallusGallus a owl:NamedIndividual,
+        ns1:Chicken ;
+    rdfs:label "Gallus gallus" ;
     ns1:topping ns1:_cheeseTopping,
         ns1:_cheesesTopping,
         ns1:_cheesyVegetableTopping,
@@ -2825,7 +3596,9 @@ ns1:_gallusGallus a ns1:Chicken ;
         ns1:_uniqueToppings,
         ns1:_vegetableTopping .
 
-ns1:_poulet a ns1:Chicken ;
+ns1:_poulet a owl:NamedIndividual,
+        ns1:Chicken ;
+    rdfs:label "poulet" ;
     ns1:topping ns1:_cheeseTopping,
         ns1:_cheesesTopping,
         ns1:_cheesyVegetableTopping,
@@ -2843,7 +3616,9 @@ ns1:_poulet a ns1:Chicken ;
         ns1:_uniqueToppings,
         ns1:_vegetableTopping .
 
-ns1:_volaille a ns1:Chicken ;
+ns1:_volaille a owl:NamedIndividual,
+        ns1:Chicken ;
+    rdfs:label "volaille" ;
     ns1:topping ns1:_cheeseTopping,
         ns1:_cheesesTopping,
         ns1:_cheesyVegetableTopping,
@@ -2860,26 +3635,29 @@ ns1:_volaille a ns1:Chicken ;
         ns1:_toppings,
         ns1:_uniqueToppings,
         ns1:_vegetableTopping .
-
-ns1:Round a owl:Class ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty ns1:leavened ;
-            owl:someValuesFrom ns1:Wheat ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:leavened ;
-            owl:someValuesFrom ns1:Dough ] .
 
 ns1:Typically a owl:Class ;
+    rdfs:label "typically" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:includes ;
-            owl:someValuesFrom ns1:Gorgonzola ],
+            owl:someValuesFrom ns1:Parmesan ],
         [ a owl:Restriction ;
             owl:onProperty ns1:includes ;
-            owl:someValuesFrom ns1:Parmesan ],
-        ns1:Cheeses,
+            owl:someValuesFrom ns1:Gorgonzola ],
+        ns1:CheeseLike,
         ns1:Pizza .
 
-ns1:Cheeses a owl:Class ;
+ns1:UsuallyRound a owl:Class ;
+    rdfs:label "usually round" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:leavened ;
+            owl:someValuesFrom ns1:Doughy ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:leavened ;
+            owl:someValuesFrom ns1:Wheat ] .
+
+ns1:CheeseLike a owl:Class ;
+    rdfs:label "cheese like" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:used ;
             owl:someValuesFrom ns1:Pizza ],
@@ -2890,85 +3668,108 @@ ns1:Cheeses a owl:Class ;
             owl:onProperty ns1:used ;
             owl:someValuesFrom ns1:Quattro ] .
 
-ns1:HighTemperature a owl:Class .
+ns1:HighTemperature a owl:Class ;
+    rdfs:label "high temperature" .
 
-ns1:_gorgonzola a ns1:Gorgonzola ;
+ns1:_gorgonzola a owl:NamedIndividual,
+        ns1:Gorgonzola ;
+    rdfs:label "gorgonzola" ;
     ns1:topping ns1:_common .
 
-ns1:_mozzarella a ns1:Gorgonzola ;
+ns1:_mozzarella a owl:NamedIndividual,
+        ns1:Gorgonzola ;
+    rdfs:label "mozzarella" ;
     ns1:topping ns1:_common .
 
-ns1:_ricotta a ns1:Gorgonzola ;
+ns1:_ricotta a owl:NamedIndividual,
+        ns1:Gorgonzola ;
+    rdfs:label "ricotta" ;
     ns1:topping ns1:_common .
 
-ns1:PizzaBases a owl:Class ;
+ns1:Base a owl:Class ;
+    rdfs:label "base" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty ns1:based ;
-            owl:someValuesFrom ns1:Dough ],
+            owl:onProperty ns1:used ;
+            owl:someValuesFrom ns1:Significantly ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:leavened ;
+            owl:someValuesFrom ns1:Doughy ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:leavened ;
+            owl:someValuesFrom ns1:Wheat ],
         [ a owl:Restriction ;
             owl:onProperty ns1:cater ;
             owl:someValuesFrom ns1:Palate ],
         [ a owl:Restriction ;
             owl:onProperty ns1:alter ;
-            owl:someValuesFrom ns1:Overall ],
+            owl:someValuesFrom ns1:Pizza ],
         [ a owl:Restriction ;
             owl:onProperty ns1:based ;
-            owl:someValuesFrom ns1:Tomatoes ],
+            owl:someValuesFrom ns1:Doughy ],
         [ a owl:Restriction ;
-            owl:onProperty ns1:used ;
-            owl:someValuesFrom ns1:Pizza ],
+            owl:onProperty ns1:alter ;
+            owl:someValuesFrom ns1:Taste ],
         [ a owl:Restriction ;
             owl:onProperty ns1:alter ;
             owl:someValuesFrom ns1:OverallTaste ],
         [ a owl:Restriction ;
-            owl:onProperty ns1:leavened ;
-            owl:someValuesFrom ns1:Dough ],
+            owl:onProperty ns1:alter ;
+            owl:someValuesFrom ns1:Overall ],
         [ a owl:Restriction ;
             owl:onProperty ns1:used ;
-            owl:someValuesFrom ns1:Significantly ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:alter ;
-            owl:someValuesFrom ns1:Texture ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:alter ;
             owl:someValuesFrom ns1:Pizza ],
         [ a owl:Restriction ;
-            owl:onProperty ns1:leavened ;
-            owl:someValuesFrom ns1:Wheat ] .
+            owl:onProperty ns1:based ;
+            owl:someValuesFrom ns1:Tomatoes ] .
 
 ns1:Tomatoes a owl:Class ;
+    rdfs:label "tomatoes" ;
     rdfs:subClassOf ns1:Pizza .
 
-ns1:GreenPeppers a owl:Class .
+ns1:GreenPepperTopping a owl:Class ;
+    rdfs:label "green pepper topping" .
 
-ns1:topped a owl:ObjectProperty .
+ns1:topped a owl:ObjectProperty ;
+    rdfs:label "topped" .
 
-ns1:_parma a ns1:Parmesan .
+ns1:_parma a owl:NamedIndividual,
+        ns1:Parmesan ;
+    rdfs:label "parma" .
 
-ns1:_parmaHam a ns1:Parmesan .
+ns1:_parmaHam a owl:NamedIndividual,
+        ns1:Parmesan ;
+    rdfs:label "parma ham" .
 
-ns1:_parmesan a ns1:Parmesan .
+ns1:_parmesan a owl:NamedIndividual,
+        ns1:Parmesan ;
+    rdfs:label "Parmesan",
+        "parmesan" .
 
-ns1:Texture a owl:Class .
+ns1:Taste a owl:Class ;
+    rdfs:label "taste" .
 
-ns1:Mix a owl:Class .
+ns1:Mixed a owl:Class ;
+    rdfs:label "mixed" .
 
-ns1:VegetableTopping a owl:Class ;
+ns1:UniqueToppings a owl:Class ;
+    rdfs:label "unique toppings" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:used ;
             owl:someValuesFrom ns1:Quattro ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:used ;
+            owl:someValuesFrom ns1:Pizza ],
         [ a owl:Restriction ;
             owl:onProperty ns1:cater ;
             owl:someValuesFrom ns1:Palate ],
         [ a owl:Restriction ;
             owl:onProperty ns1:used ;
-            owl:someValuesFrom ns1:Pizza ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:used ;
             owl:someValuesFrom ns1:Formaggi ] .
 
-ns1:_pizza a ns1:Pizza ;
-    ns1:27s ns1:_pizza,
+ns1:_pizza a owl:NamedIndividual,
+        ns1:Pizza ;
+    rdfs:label "pizza" ;
+    ns2:27s ns1:_pizza,
         ns1:_pizzaPie,
         ns1:_pizzas ;
     ns1:feature ns1:_cheeseTopping,
@@ -3163,8 +3964,10 @@ ns1:_pizza a ns1:Pizza ;
         ns1:_zest ;
     ns1:topping ns1:_common .
 
-ns1:_pizzaPie a ns1:Pizza ;
-    ns1:27s ns1:_pizza,
+ns1:_pizzaPie a owl:NamedIndividual,
+        ns1:Pizza ;
+    rdfs:label "pizza pie" ;
+    ns2:27s ns1:_pizza,
         ns1:_pizzaPie,
         ns1:_pizzas ;
     ns1:feature ns1:_cheeseTopping,
@@ -3359,8 +4162,10 @@ ns1:_pizzaPie a ns1:Pizza ;
         ns1:_zest ;
     ns1:topping ns1:_common .
 
-ns1:_pizzas a ns1:Pizza ;
-    ns1:27s ns1:_pizza,
+ns1:_pizzas a owl:NamedIndividual,
+        ns1:Pizza ;
+    rdfs:label "pizzas" ;
+    ns2:27s ns1:_pizza,
         ns1:_pizzaPie,
         ns1:_pizzas ;
     ns1:feature ns1:_cheeseTopping,
@@ -3555,7 +4360,9 @@ ns1:_pizzas a ns1:Pizza ;
         ns1:_zest ;
     ns1:topping ns1:_common .
 
-ns1:_cheeseTopping a ns1:VegetableTopping ;
+ns1:_cheeseTopping a owl:NamedIndividual,
+        ns1:UniqueToppings ;
+    rdfs:label "cheese topping" ;
     ns1:cater ns1:_palate ;
     ns1:used ns1:_formaggi,
         ns1:_formaggiPizza,
@@ -3566,7 +4373,9 @@ ns1:_cheeseTopping a ns1:VegetableTopping ;
         ns1:_quattroFormaggi,
         ns1:_quattroFormaggiPizza .
 
-ns1:_cheesesTopping a ns1:VegetableTopping ;
+ns1:_cheesesTopping a owl:NamedIndividual,
+        ns1:UniqueToppings ;
+    rdfs:label "cheeses topping" ;
     ns1:cater ns1:_palate ;
     ns1:used ns1:_formaggi,
         ns1:_formaggiPizza,
@@ -3577,7 +4386,9 @@ ns1:_cheesesTopping a ns1:VegetableTopping ;
         ns1:_quattroFormaggi,
         ns1:_quattroFormaggiPizza .
 
-ns1:_cheesyVegetableTopping a ns1:VegetableTopping ;
+ns1:_cheesyVegetableTopping a owl:NamedIndividual,
+        ns1:UniqueToppings ;
+    rdfs:label "cheesy vegetable topping" ;
     ns1:cater ns1:_palate ;
     ns1:used ns1:_formaggi,
         ns1:_formaggiPizza,
@@ -3588,7 +4399,9 @@ ns1:_cheesyVegetableTopping a ns1:VegetableTopping ;
         ns1:_quattroFormaggi,
         ns1:_quattroFormaggiPizza .
 
-ns1:_pizzaToppings a ns1:VegetableTopping ;
+ns1:_pizzaToppings a owl:NamedIndividual,
+        ns1:UniqueToppings ;
+    rdfs:label "pizza toppings" ;
     ns1:cater ns1:_palate ;
     ns1:used ns1:_formaggi,
         ns1:_formaggiPizza,
@@ -3599,7 +4412,9 @@ ns1:_pizzaToppings a ns1:VegetableTopping ;
         ns1:_quattroFormaggi,
         ns1:_quattroFormaggiPizza .
 
-ns1:_topping a ns1:VegetableTopping ;
+ns1:_topping a owl:NamedIndividual,
+        ns1:UniqueToppings ;
+    rdfs:label "topping" ;
     ns1:cater ns1:_palate ;
     ns1:used ns1:_formaggi,
         ns1:_formaggiPizza,
@@ -3610,7 +4425,9 @@ ns1:_topping a ns1:VegetableTopping ;
         ns1:_quattroFormaggi,
         ns1:_quattroFormaggiPizza .
 
-ns1:_toppings a ns1:VegetableTopping ;
+ns1:_toppings a owl:NamedIndividual,
+        ns1:UniqueToppings ;
+    rdfs:label "toppings" ;
     ns1:cater ns1:_palate ;
     ns1:used ns1:_formaggi,
         ns1:_formaggiPizza,
@@ -3621,7 +4438,9 @@ ns1:_toppings a ns1:VegetableTopping ;
         ns1:_quattroFormaggi,
         ns1:_quattroFormaggiPizza .
 
-ns1:_uniqueToppings a ns1:VegetableTopping ;
+ns1:_uniqueToppings a owl:NamedIndividual,
+        ns1:UniqueToppings ;
+    rdfs:label "unique toppings" ;
     ns1:cater ns1:_palate ;
     ns1:used ns1:_formaggi,
         ns1:_formaggiPizza,
@@ -3632,7 +4451,9 @@ ns1:_uniqueToppings a ns1:VegetableTopping ;
         ns1:_quattroFormaggi,
         ns1:_quattroFormaggiPizza .
 
-ns1:_vegetableTopping a ns1:VegetableTopping ;
+ns1:_vegetableTopping a owl:NamedIndividual,
+        ns1:UniqueToppings ;
+    rdfs:label "vegetable topping" ;
     ns1:cater ns1:_palate ;
     ns1:used ns1:_formaggi,
         ns1:_formaggiPizza,
@@ -3644,124 +4465,125 @@ ns1:_vegetableTopping a ns1:VegetableTopping ;
         ns1:_quattroFormaggiPizza .
 
 ns1:Pizza a owl:Class ;
+    rdfs:label "pizza" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:feature ;
-            owl:someValuesFrom ns1:HotGreen ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:feature ;
-            owl:someValuesFrom ns1:Hot ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:27s ;
-            owl:someValuesFrom ns1:Pizza ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:features ;
-            owl:someValuesFrom ns1:Sweet ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:known ;
-            owl:someValuesFrom ns1:Pizza ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:includes ;
-            owl:someValuesFrom ns1:Parmesan ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:known ;
-            owl:someValuesFrom ns1:Cheesy ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:ranging ;
-            owl:someValuesFrom ns1:Chicken ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:include ;
-            owl:someValuesFrom ns1:Artichoke ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:includes ;
-            owl:someValuesFrom ns1:Gorgonzola ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:features ;
-            owl:someValuesFrom ns1:Mix ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:include ;
-            owl:someValuesFrom ns1:VegetableTopping ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:loaded ;
-            owl:someValuesFrom ns1:VegetableTopping ],
+            owl:someValuesFrom ns1:Green ],
         [ a owl:Restriction ;
             owl:onProperty ns1:known ;
             owl:someValuesFrom ns1:Like ],
         [ a owl:Restriction ;
-            owl:onProperty ns1:ranging ;
-            owl:someValuesFrom ns1:Parmesan ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:topping ;
-            owl:someValuesFrom ns1:Common ],
-        [ a owl:Restriction ;
             owl:onProperty ns1:features ;
-            owl:someValuesFrom ns1:GreenPeppers ],
+            owl:someValuesFrom ns1:Mixed ],
         [ a owl:Restriction ;
-            owl:onProperty ns1:known ;
-            owl:someValuesFrom ns1:VegetableTopping ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:topped ;
-            owl:someValuesFrom ns1:BeefTopping ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:topped ;
-            owl:someValuesFrom ns1:Anchovies ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:topped ;
-            owl:someValuesFrom ns1:HotSpiced ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:known ;
-            owl:someValuesFrom ns1:SeafoodPizza ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:features ;
-            owl:someValuesFrom ns1:ParmaHamTopping ],
+            owl:onProperty ns1:feature ;
+            owl:someValuesFrom ns1:Hot ],
         [ a owl:Restriction ;
             owl:onProperty ns1:features ;
             owl:someValuesFrom ns1:Chicken ],
         [ a owl:Restriction ;
-            owl:onProperty ns1:known ;
-            owl:someValuesFrom ns1:Vegetarian ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:feature ;
-            owl:someValuesFrom ns1:HighTemperature ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:known ;
-            owl:someValuesFrom ns1:Unique ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:feature ;
-            owl:someValuesFrom ns1:VegetableTopping ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:loaded ;
-            owl:someValuesFrom ns1:Cheesy ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:topped ;
-            owl:someValuesFrom ns1:HighTemperature ],
-        [ a owl:Restriction ;
             owl:onProperty ns1:include ;
-            owl:someValuesFrom ns1:AsparagusTopping ],
+            owl:someValuesFrom ns1:UniqueToppings ],
         [ a owl:Restriction ;
             owl:onProperty ns1:known ;
             owl:someValuesFrom ns1:NonVegetarianPizza ],
         [ a owl:Restriction ;
-            owl:onProperty ns1:ranging ;
-            owl:someValuesFrom ns1:VegetableTopping ],
+            owl:onProperty ns1:features ;
+            owl:someValuesFrom ns1:Sweet ],
         [ a owl:Restriction ;
-            owl:onProperty ns1:topped ;
-            owl:someValuesFrom ns1:Hot ],
+            owl:onProperty ns1:include ;
+            owl:someValuesFrom ns1:ArtichokeTopping ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:known ;
+            owl:someValuesFrom ns1:UniqueToppings ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:known ;
+            owl:someValuesFrom ns1:Spiciness ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:features ;
+            owl:someValuesFrom ns1:GreenPepperTopping ],
+        [ a owl:Restriction ;
+            owl:onProperty ns2:27s ;
+            owl:someValuesFrom ns1:Pizza ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:ranging ;
+            owl:someValuesFrom ns1:UniqueToppings ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:ranging ;
+            owl:someValuesFrom ns1:Chicken ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:include ;
+            owl:someValuesFrom ns1:AsparagusTopping ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:includes ;
+            owl:someValuesFrom ns1:Gorgonzola ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:feature ;
+            owl:someValuesFrom ns1:UniqueToppings ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:known ;
+            owl:someValuesFrom ns1:Pizza ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:known ;
+            owl:someValuesFrom ns1:Unique ],
         [ a owl:Restriction ;
             owl:onProperty ns1:topped ;
             owl:someValuesFrom ns1:Gorgonzola ],
         [ a owl:Restriction ;
-            owl:onProperty ns1:known ;
-            owl:someValuesFrom ns1:HotSpiced ],
+            owl:onProperty ns1:topped ;
+            owl:someValuesFrom ns1:SpicedBeef ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:loaded ;
+            owl:someValuesFrom ns1:UniqueToppings ],
         [ a owl:Restriction ;
             owl:onProperty ns1:topped ;
             owl:someValuesFrom ns1:Capers ],
         [ a owl:Restriction ;
             owl:onProperty ns1:known ;
-            owl:someValuesFrom ns1:SeafoodTopping ],
+            owl:someValuesFrom ns1:Cheesy ],
         [ a owl:Restriction ;
-            owl:onProperty ns1:loaded ;
-            owl:someValuesFrom ns1:Vegetable ],
+            owl:onProperty ns1:includes ;
+            owl:someValuesFrom ns1:Parmesan ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:topping ;
+            owl:someValuesFrom ns1:Common ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:ranging ;
+            owl:someValuesFrom ns1:Parmesan ],
         [ a owl:Restriction ;
             owl:onProperty ns1:topped ;
-            owl:someValuesFrom ns1:Tomatoes ] .
+            owl:someValuesFrom ns1:Tomatoes ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:known ;
+            owl:someValuesFrom ns1:MixedSeafoodTopping ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:loaded ;
+            owl:someValuesFrom ns1:Cheesy ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:loaded ;
+            owl:someValuesFrom ns1:CheesyVegetable ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:topped ;
+            owl:someValuesFrom ns1:Anchovies ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:topped ;
+            owl:someValuesFrom ns1:Hot ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:topped ;
+            owl:someValuesFrom ns1:Spiciness ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:known ;
+            owl:someValuesFrom ns1:Vegetarian ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:topped ;
+            owl:someValuesFrom ns1:HighTemperature ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:feature ;
+            owl:someValuesFrom ns1:HighTemperature ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:known ;
+            owl:someValuesFrom ns1:SeafoodPizza ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:features ;
+            owl:someValuesFrom ns1:HamTopping ] .
 
