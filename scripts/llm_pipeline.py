@@ -79,7 +79,7 @@ def create_pipeline() -> Pipeline:
     """
     spacy_model = spacy.load("en_core_web_lg")
     corpus_loader = TextCorpusLoader(
-        corpus_path=f"{os.getenv('DATA_PATH')}/pizza_description.txt"
+        corpus_path=os.path.join(os.getenv('DATA_PATH'), "pizza_description.txt")
     )
     pipeline = Pipeline(
         spacy_model=spacy_model,
@@ -101,7 +101,6 @@ def add_pipeline_components(pipeline: Pipeline) -> Pipeline:
     Pipeline
         The pipeline updated with new components.
     """
-
     openai_generator = CustomLLMGenerator()
     llm_cterm_extraction = LLMTermExtraction(
         prompt_template=openai_prompt_concept_term_extraction,
