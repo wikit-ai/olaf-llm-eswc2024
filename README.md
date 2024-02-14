@@ -67,3 +67,9 @@ Script to create an OWL ontology based ont the pizza textual description with a 
 python scripts/no_llm_pipeline.py
 ```
 Results are stored in `results/no_llm_pipeline/no_llm_pipeline_kr_rgf_graph_eswc2024.ttl` and `results/no_llm_pipeline/no_llm_pipeline_kr_eswc2024.json`.
+
+# Results
+
+All results are stored in the folder corresponding to the ontology learning technique used. 
+
+Results analysis are available in the `results/results_analysis.ipynb` notebook.
