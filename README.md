@@ -52,7 +52,7 @@ Results are stored in `results/llm_text_to_owl/llm_owl_pizza_onto_eswc2024.ttl`
 
 ## LLM pipeline
 
-Script to create an OWL ontology based ont the pizza textual description with a pipeline made up with LLM components.
+Script to create an OWL ontology based on the pizza textual description with a pipeline made up with LLM components.
 
 ```bash
 python scripts/llm_pipeline.py
@@ -61,9 +61,24 @@ Results are stored in `results/llm_pipeline/llm_pipeline_kr_rgf_graph_eswc2024.t
 
 ## No LLM pipeline 
 
-Script to create an OWL ontology based ont the pizza textual description with a pipeline made up without LLM components.
+Script to create an OWL ontology based on the pizza textual description with a pipeline made up without LLM components.
 
 ```bash
 python scripts/no_llm_pipeline.py
 ```
+
 Results are stored in `results/no_llm_pipeline/no_llm_pipeline_kr_rgf_graph_eswc2024.ttl` and `results/no_llm_pipeline/no_llm_pipeline_kr_eswc2024.json`.
+
+## Pipeline components
+
+The `scripts/pipeline_components_analysis.ipynb` notebook compare available techniques in OLAF for each ontology learning pipeline component.
+
+Results are stored in `results/pipeline_components`.
+
+# Results
+
+All results are stored in the folder corresponding to the ontology learning technique used. 
+
+Results analysis are available in the `results/results_analysis.ipynb` notebook.
+
+The folder `results/pipeline_components` contains materials to discuss the performances of pipeline components.
