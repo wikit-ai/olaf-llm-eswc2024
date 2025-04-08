@@ -26,7 +26,7 @@ def pizza_prompt(pizza_labels: list[str]) -> list[dict[str, str]]:
         },
         {
             "role": "user",
-            "content": "Write a text describing pizzas. The text must define a pizza, pizza kinds and well known pizzas with its ingredients. It must contains all the terms given."
+            "content": "Write a text describing pizzas. The text must define a pizza, pizza kinds, and well-known pizzas with its ingredients. It must contain all the terms given."
         },
         {
             "role": "user",

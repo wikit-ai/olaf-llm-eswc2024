@@ -1,0 +1,90 @@
+@prefix : <https://github.com/wikit-ai/olaf-llm-nlp4kgc2024/o/example#> .
+
+:Pizza a :Dish ;
+    :hasOrigin :Italy ;
+    :hasBase :Base ;
+    :hasTopping :Topping ;
+    :hasType :PizzaType .
+
+:Base a :Component ;
+    :hasType :BaseType .
+
+:Topping a :Component ;
+    :hasType :ToppingType .
+
+:PizzaType a :Type ;
+    :hasSubType :DeepPanPizza, :ThinAndCrispyPizza, :CheesyPizza, :MeatyPizza, :VegetarianPizza, :SeafoodPizza, :SpicyPizza, :UniqueToppingPizza, :UniqueCombinationPizza .
+
+:BaseType a :Type ;
+    :hasSubType :DeepPanBase, :ThinAndCrispyBase .
+
+:ToppingType a :Type ;
+    :hasSubType :CheeseTopping, :MeatTopping, :VegetableTopping, :SeafoodTopping, :HotGreenPepperTopping, :HotSpicedBeefTopping, :JalapenoPepperTopping, :CajunSpiceTopping, :HamTopping, :MushroomTopping, :ArtichokeTopping, :AsparagusTopping, :GreenPepperTopping, :LeekTopping, :OliveTopping, :OnionTopping, :SpinachTopping, :PrawnsTopping, :MixedSeafoodTopping, :ChickenTopping, :SweetPeppersTopping, :RedOnionsTopping, :AnchoviesTopping, :CapersTopping, :TomatoesTopping, :MozzarellaTopping, :BasilTopping, :FourCheesesTopping, :ParmaHamTopping, :PeperoniSausageTopping .
+
+:DeepPanPizza a :PizzaType .
+:ThinAndCrispyPizza a :PizzaType .
+:CheesyPizza a :PizzaType .
+:MeatyPizza a :PizzaType .
+:VegetarianPizza a :PizzaType .
+:SeafoodPizza a :PizzaType .
+:SpicyPizza a :PizzaType .
+:UniqueToppingPizza a :PizzaType .
+:UniqueCombinationPizza a :PizzaType .
+
+:DeepPanBase a :BaseType .
+:ThinAndCrispyBase a :BaseType .
+
+:CheeseTopping a :ToppingType .
+:MeatTopping a :ToppingType .
+:VegetableTopping a :ToppingType .
+:SeafoodTopping a :ToppingType .
+:HotGreenPepperTopping a :ToppingType .
+:HotSpicedBeefTopping a :ToppingType .
+:JalapenoPepperTopping a :ToppingType .
+:CajunSpiceTopping a :ToppingType .
+:HamTopping a :ToppingType .
+:MushroomTopping a :ToppingType .
+:ArtichokeTopping a :ToppingType .
+:AsparagusTopping a :ToppingType .
+:GreenPepperTopping a :ToppingType .
+:LeekTopping a :ToppingType .
+:OliveTopping a :ToppingType .
+:OnionTopping a :ToppingType .
+:SpinachTopping a :ToppingType .
+:PrawnsTopping a :ToppingType .
+:MixedSeafoodTopping a :ToppingType .
+:ChickenTopping a :ToppingType .
+:SweetPeppersTopping a :ToppingType .
+:RedOnionsTopping a :ToppingType .
+:AnchoviesTopping a :ToppingType .
+:CapersTopping a :ToppingType .
+:TomatoesTopping a :ToppingType .
+:MozzarellaTopping a :ToppingType .
+:BasilTopping a :ToppingType .
+:FourCheesesTopping a :ToppingType .
+:ParmaHamTopping a :ToppingType .
+:PeperoniSausageTopping a :ToppingType .
+
+:FourCheesesTopping :includes :MozzarellaTopping, :GorgonzolaTopping, :ParmesanTopping, :FontinaTopping, :RicottaTopping .
+
+:MeatyPizza :includes :ChickenTopping, :ParmaHamTopping, :PeperoniSausageTopping .
+
+:VegetarianPizza :includes :ArtichokeTopping, :AsparagusTopping, :GreenPepperTopping, :LeekTopping, :MushroomTopping, :OliveTopping, :OnionTopping, :SpinachTopping .
+
+:SeafoodPizza :includes :PrawnsTopping, :MixedSeafoodTopping .
+
+:SpicyPizza :includes :HotGreenPepperTopping, :HotSpicedBeefTopping, :JalapenoPepperTopping, :CajunSpiceTopping .
+
+:UniqueToppingPizza :includes :CapricciosaPizza, :NapoletanaPizza, :MargheritaPizza .
+
+:UniqueCombinationPizza :includes :PolloAdAstraPizza, :SloppyGiuseppePizza .
+
+:CapricciosaPizza :hasTopping :HamTopping, :MushroomTopping, :ArtichokeTopping, :OliveTopping .
+
+:NapoletanaPizza :hasTopping :AnchoviesTopping, :CapersTopping, :OliveTopping .
+
+:MargheritaPizza :hasTopping :TomatoesTopping, :MozzarellaTopping, :BasilTopping .
+
+:PolloAdAstraPizza :hasTopping :ChickenTopping, :SweetPeppersTopping, :RedOnionsTopping .
+
+:SloppyGiuseppePizza :hasTopping :HotSpicedBeefTopping, :GreenPepperTopping, :RedOnionsTopping .
